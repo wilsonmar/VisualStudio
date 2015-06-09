@@ -15,6 +15,7 @@ Charles Sterling posted these blog entry in two parts on June 1, 2015:
 ## <a name="WhatEdition"> What Edition of Visual Studio?</a>
 
 While it's true that there is a free ("Express") edition of the Visual Studio IDE,
+(see 
 Microsoft still sells MSDN licenses based on different editions of Visual Studio.
 
 While it's true that source code Microsoft uses to create Visual is open-source on Github,
@@ -23,6 +24,7 @@ additional features not in open source are still being sold as part of MSDN Visu
 One of those features is running load tests, which require the Ultimate edition of Visual Studio.
 
 While it's true that Visual Studio is available online,
+(see https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs)
 many developers still prefer to download and install Visual Studio on computers used to develop code,
 where response time is near instantaneous.
 
