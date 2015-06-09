@@ -125,10 +125,6 @@ While the Visual Studio Community 2015 + Xamarin tools for developing "native" m
 https://www.visualstudio.com/en-us/features/xamarin-vs.aspx
 Xamarin is licensed for $1500 per platform per year per develop.
 
-## <a name="MachineLearning"> Machine Learning</a>
-
-http://azure.microsoft.com/en-us/services/machine-learning/api/
-
 ## <a name="Powershell"> Powershell</a>
 
 One of the major benefits of using Microsoft servers is that it has a powerful shell scripting language: 
@@ -153,3 +149,8 @@ include
 and 
 * Save All the Tabs at
 https://visualstudiogallery.msdn.microsoft.com/0c5642e8-f6aa-4353-830c-946a315c163d?SRC=Home
+
+## <a name="MachineLearning"> Machine Learning</a>
+I would like to take advantage of
+http://azure.microsoft.com/en-us/services/machine-learning/api/
+
