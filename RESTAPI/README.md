@@ -20,12 +20,23 @@ who have no need for animated cat gifs for amusement.
 ### <a name="REST"> REST</a>
 The Get started with the VSO REST APIs article at
 https://www.visualstudio.com/integrate/get-started/rest/basics
-makes use of the curl command-line utility to demonstrate URL calling patterns:
+makes use of the curl command-line utility to demonstrate the pattern of calls to APIs recognized by VisualStudio.com:
 
 ```
 curl -u {username}[:{password}] 
 https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version=1.0
 ```
+
+The 
+
+| Verb	| Used for... |
+|----|----|
+|GET |	Get a resource or list of resources|
+|POST	| Create a resource. Get a list of resources using a more advanced query|
+|PUT |	Create a resource if it doesn't exist or, if it does, update it|
+|PATCH	Update a resource |
+|DELETE	| Delete a resource |
+
 
 ### <a name="WebServer"> Web Service Engines</a>
 The README.md page for the node-js-sample repo begins by describing 
