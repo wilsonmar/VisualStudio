@@ -23,6 +23,7 @@ https://www.visualstudio.com/integrate/get-started/rest/basics
 makes use of the curl utility to demonstrate the pattern of URLs:
 
 ```
+curl -u {username}[:{password}] 
 https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version=1.0
 ```
 
