@@ -15,7 +15,7 @@ For each version there are different <a href="#Editions">editions</a>.
 
 
 ## <a name="DownloadOptions"> Download Options</a>
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8066305/2e73216c-0ea4-11e5-9460-3c50115d79af.png" />
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8066305/2e73216c-0ea4-11e5-9460-3c50115d79af.png" width="350" />
 As an example, the download page for Microsoft Visual Studio Community 2013 with Update 4 
 https://www.visualstudio.com/en-us/downloads/
 provides two options for downloading installers:
@@ -46,6 +46,12 @@ However, Visual Studio can be made to take the place of VuGen to
 edit C-language scripts and invoke LoadRunner's mdrv.exe load generator.
 
 
+Microsoft has source code for .NET server on
+https://github.com/Microsoft/dotnet
+(with discussions on http://blogs.msdn.com/b/dotnet/)
+rather than Microsoft's CodePlex.com for crowd-sourced contributions.
+
+
 ## <a name="Editions"> What Edition of Visual Studio?</a>
 
 ### Visual Studio Express vs Community 2013 Free Edition
@@ -62,17 +68,10 @@ web HTML apps, Windows apps, and Windows Desktop apps.
 
 Source code Microsoft uses to create Visual Studio is NOT open-source on Github.
 
-One of those features is running load tests, which require the **Ultimate edition** of Visual Studio
+One of those features is running <a href="#Perftest.md">performance/load tests</a>, 
+which require the **Ultimate edition** of Visual Studio
 (not Express editions).
 
-Download of Visual Studio Community 2013 from
-https://visualstudiogallery.msdn.microsoft.com/
-file 
-
-
-Microsoft has source code for .NET server on
-https://github.com/Microsoft/dotnet
-(with discussions on http://blogs.msdn.com/b/dotnet/)
 
 ### Visual Studio Code on Macs and Linux
 Microsoft created a "Visual Studio works on Macs and Linux"
