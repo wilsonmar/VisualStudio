@@ -54,14 +54,15 @@ rather than Microsoft's CodePlex.com for crowd-sourced contributions.
 
 ## <a name="Editions"> What Edition of Visual Studio?</a>
 
+For each version of Visual Studio over time:
+
 ### Visual Studio Express vs Community 2013 Free Edition
-While it's true that there are free editions of the Visual Studio IDE
+There are free editions of the Visual Studio IDE
 (see https://www.visualstudio.com/en-us/products/free-developer-offers-vs.aspx),
-Microsoft still sells MSDN licenses based on different editions of Visual Studio
+but Microsoft still sells MSDN licenses based on different editions of Visual Studio
 because functionality is limited on free editions.
 
 Express editions cannot install Visual Studio <a href="#PlugIns">plug-ins</a>. 
-
 However Community editions can.
 Also, Community editions is cross-plantform: it can be used to build across platforms - 
 web HTML apps, Windows apps, and Windows Desktop apps.
@@ -108,11 +109,9 @@ or multiple Git repositories for maximum flexibility.
 See
 https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs
 
-While it's true http://anydevanyapp.com/
-
-
-
 ## <a name="Mobile"> Mobile</a>
+
+See http://anydevanyapp.com/
 
 Visual Studio Community 2015 + Cordova tools for developing "hybrid" mobile apps
 https://www.visualstudio.com/en-us/features/cordova-vs.aspx
@@ -135,12 +134,12 @@ shows how to set a red color to highlight
 
 ### <a name="PlugIns"> Plug-Ins</a>
 
+Adam Driscoll's PowerShell Tools for Visual Studio (free)
+https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
+
 NuGet Package Manager 
 https://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c?SRC=Home
 (like NPM for Node.js) is the top plug-in for Visual Studio.
-
-Adam Driscoll's PowerShell Tools for Visual Studio (free)
-https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
 
 Others in the **Visual Studio Gallary** of Products and Extensions for Visual Studio
 https://visualstudiogallery.msdn.microsoft.com/
