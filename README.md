@@ -39,8 +39,10 @@ and HP LoadRunner for performance testing.
 
 The differentiator for Visual Studio is that it provides a single full-fledged user interface for developers and testers alike.
 
-HP LoadRunner's VuGen is based on an open-source clone of Visual Studio 2008,
+HP LoadRunner's VuGen IDE is based on an open-source clone of Visual Studio 2008,
 so does not contain many of the convenience features in Visual Studio of current vintage.
+However, Visual Studio can be made to take the place of VuGen to 
+edit C-language scripts and invoke LoadRunner's mdrv.exe load generator.
 
 
 ## <a name="Editions"> What Edition of Visual Studio?</a>
@@ -163,6 +165,10 @@ http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
 shows how to set a red color to highlight 
 
 ### <a name="PlugIns"> Plug-Ins</a>
+
+NuGet Package Manager 
+https://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c?SRC=Home
+(like NPM for Node.js) is the top plug-in for Visual Studio.
 
 Adam Driscoll's PowerShell Tools for Visual Studio (free)
 https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
