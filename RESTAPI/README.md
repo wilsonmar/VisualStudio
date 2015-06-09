@@ -20,7 +20,7 @@ who have no need for animated cat gifs for amusement.
 ### <a name="REST"> REST</a>
 The Get started with the VSO REST APIs article at
 https://www.visualstudio.com/integrate/get-started/rest/basics
-makes use of the curl utility to demonstrate the pattern of URLs:
+makes use of the curl command-line utility to demonstrate URL calling patterns:
 
 ```
 curl -u {username}[:{password}] 
