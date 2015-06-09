@@ -11,7 +11,7 @@ What else do I need to do to be an MVP on Performance Testing? ;)
 * 2008
 * 2003
 
-There are different editions for each version.
+For each version there are different <a href="#Editions">editions</a>.
 
 
 ## <a name="DownloadOptions"> Download Options</a>
@@ -40,7 +40,7 @@ HP LoadRunner's VuGen is based on an open-source clone of Visual Studio 2008,
 so does not contain many of the convenience features in Visual Studio of current vintage.
 
 
-## <a name="WhatEdition"> What Edition of Visual Studio?</a>
+## <a name="Editions"> What Edition of Visual Studio?</a>
 
 ### Visual Studio Express vs Community 2013 Free Edition
 While it's true that there is a free ("Express") edition of the Visual Studio IDE
