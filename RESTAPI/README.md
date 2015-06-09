@@ -1,5 +1,11 @@
 This page and associated test script describes use of Visual Studio and the C# language to create a basic 
-web service listener
+web service listener.
+
+This repo is similar to Charles Sterling's
+Getting started with Cloud-based Load Test REST APIs blog at
+http://blogs.msdn.com/b/visualstudioalm/archive/2014/12/04/getting-started-with-cloud-based-load-test-rest-apis.aspx 
+which references the Visual Studio Online REST API Reference at 
+https://www.visualstudio.com/en-us/integrate/api/overview
 
 This repo is equivalent to what repository https://github.com/heroku/node-js-sample
 provides for the node.js web server written in JavaScript. 
@@ -10,6 +16,15 @@ notice that it only displays a simple "Hellow World!".
 This is because the example is "bare bones" and intended to work with web services between computers 
 who have no need for animated cat gifs for amusement.
 
+
+### <a name="REST"> REST</a>
+The Get started with the VSO REST APIs article at
+https://www.visualstudio.com/integrate/get-started/rest/basics
+makes use of the curl utility to demonstrate the pattern of URLs:
+
+```
+https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version=1.0
+```
 
 ### <a name="WebServer"> Web Service Engines</a>
 The README.md page for the node-js-sample repo begins by describing 
