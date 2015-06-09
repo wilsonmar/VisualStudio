@@ -29,6 +29,7 @@ so does not contain many of the convenience features in Visual Studio of current
 
 ## <a name="WhatEdition"> What Edition of Visual Studio?</a>
 
+### Visual Studio Express / Community Free Edition
 While it's true that there is a free ("Express") edition of the Visual Studio IDE
 (see https://www.visualstudio.com/en-us/products/free-developer-offers-vs.aspx),
 Microsoft still sells MSDN licenses based on different editions of Visual Studio.
@@ -40,6 +41,7 @@ additional features not in open source are still being sold as part of MSDN Visu
 One of those features is running load tests, which require the **Ultimate edition** of Visual Studio
 (not Express editions).
 
+### Visual Studio Code on Macs and Linux
 While it's true that there "Visual Studio works on Macs and Linux"
 (see https://www.visualstudio.com/products/code-vs or http://code.visualstudio.com),
 the free software is branded "Visual Studio Code". 
@@ -49,11 +51,19 @@ Follow its @code Twitter handle.
 The program provides IntelliCode and [TaskRunner](https://code.visualstudio.com/Docs/tasks)
 that runs TypeScript (.ts files) and JS Hint at http://jshint.com/.
 
+VSCode offers debugging for Node.js, but not yet for ASP.NET 5.
+
+
+### Visual Studio Github
 https://visualstudio.github.com/index.html
 offers a Github Extension for Visual Studio 2015, in RC (Release Candidate) maturity as of June 2015.
 This enables Visual Studio to use Github as a source code repository instead of Microsoft's own 
 TFS (Team Foundation Server).
 
+But where's the local git repo support?
+
+
+## Visual Studio Online
 While it's true that Visual Studio is available **online**
 (see https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs),
 many developers still prefer to download and install Visual Studio on computers used to develop code,
@@ -76,6 +86,8 @@ Charles Sterling posted these blog entry in two parts on June 1, 2015:
 
 
 ## <a name="UsingAzure"> Perftest the Azure Cloud</a>
+https://www.udemy.com/introduction-to-cloud-computing-and-microsoft-azure/#/
+provides an introduction to Azure cloud computing (why DevTest, etc.).
 
 https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
 provides a calculator to determine how many virtual user minutes (VUMs) you will use.
