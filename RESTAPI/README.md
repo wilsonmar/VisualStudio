@@ -20,7 +20,8 @@ Express does for Node.js what Microsoft's IIS (Internet Information Server) does
 
 Walmart's subsidiary has also written a web services engine.
 
-The app.json file specifies the resources, like a manifest file:
+[Node's app.json file](https://github.com/heroku/node-js-sample/blob/master/app.json)
+specifies resources, like a manifest file:
 
 ```
 {
@@ -38,7 +39,8 @@ The equivalent in ASP.NET is the .config file:
 ???
 ```
 
-Node's **index.js** file holds the configuration logic:
+[Node's **index.js** file](https://github.com/heroku/node-js-sample/blob/master/index.js) 
+holds the configuration logic:
 
 ```
 var express = require('express')
