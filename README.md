@@ -13,6 +13,13 @@ What else do I need to do to be an MVP on Performance Testing? ;)
 There are different editions for each version.
 
 
+## <a name="DownloadOptions"> Download Options</a>
+As an example, the download page for Microsoft Visual Studio Community 2013 with Update 4 
+https://www.visualstudio.com/en-us/downloads/
+provides two options for downloading installers:
+  * **Install Now** downloads 1.2 MB file vs_community.exe.
+  * **DVD9 ISO Image** download 6.9 GB file vs2013.4_ce_enu.iso which requires another utility to read.
+
 ## <a name="Distinctives"> Distinctives of Microsoft's Approach</a>
 
 Microsoft has no shortage of competitors.
