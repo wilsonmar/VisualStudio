@@ -2,6 +2,14 @@ Here are my notes on using of VisualStudio from Microsoft for ensuring the perfo
 
 What else do I need to do to be an MVP on Performance Testing? ;)
 
+## <a name="Versions"> Versions</a>
+
+* 2015 was released in late 2014
+* 2013
+* 2010
+* 2008
+* 2003
+
 ## <a name="Distinctives"> Distinctives of Microsoft's Approach</a>
 
 Microsoft's offerings 
@@ -18,13 +26,14 @@ While it's true that there is a free ("Express") edition of the Visual Studio ID
 (see 
 Microsoft still sells MSDN licenses based on different editions of Visual Studio.
 
-While it's true that source code Microsoft uses to create Visual is open-source on Github,
+While it's true that source code Microsoft uses to create Visual is open-source on Github
+(see https://visualstudio.github.com/),
 additional features not in open source are still being sold as part of MSDN Visual Studio licenses.
 
 One of those features is running load tests, which require the Ultimate edition of Visual Studio.
 
-While it's true that Visual Studio is available online,
-(see https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs)
+While it's true that Visual Studio is available online
+(see https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs),
 many developers still prefer to download and install Visual Studio on computers used to develop code,
 where response time is near instantaneous.
 
