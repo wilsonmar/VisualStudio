@@ -34,13 +34,15 @@ While it's true that there is a free ("Express") edition of the Visual Studio ID
 (see https://www.visualstudio.com/en-us/products/free-developer-offers-vs.aspx),
 Microsoft still sells MSDN licenses based on different editions of Visual Studio.
 
-Source code Microsoft uses to create Visual Studio is open-source on Github
-additional features not in open source are still being sold as part of MSDN Visual Studio licenses.
+Source code Microsoft uses to create Visual Studio is NOT open-source on Github.
 
 One of those features is running load tests, which require the **Ultimate edition** of Visual Studio
 (not Express editions).
 
-Visual Studio Community 2013
+Download of Visual Studio Community 2013 from
+https://visualstudiogallery.msdn.microsoft.com/
+file 
+
 
 Microsoft has source code for .NET server on
 https://github.com/Microsoft/dotnet
@@ -138,3 +140,16 @@ https://github.com/psake/psake
 is an automated build tool (such as Make, Rake, MSBuild, etc.) written in PowerShell.
 http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
 shows how to set a red color to highlight 
+
+
+Adam Driscoll's PowerShell Tools for Visual Studio (free)
+https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
+
+Others in the **Visual Studio Gallary** of Products and Extensions for Visual Studio
+https://visualstudiogallery.msdn.microsoft.com/
+include 
+
+* ReSharper from JetBrains
+and 
+* Save All the Tabs at
+https://visualstudiogallery.msdn.microsoft.com/0c5642e8-f6aa-4353-830c-946a315c163d?SRC=Home
