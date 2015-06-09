@@ -22,6 +22,10 @@ provides two options for downloading installers:
 
 ## <a name="Distinctives"> Distinctives of Microsoft's Approach</a>
 
+Visual Studio provides a single IDE for developing in "all" languages platforms,
+including node.js, PHP, and mobile (with Microsoft Xamarin)
+https://www.visualstudio.com/en-us/features/xamarin-vs.aspx
+
 Microsoft has no shortage of competitors.
 
 For its IDE features Visual Studio has competitors in JetBrain's Webstorm, open-source Eclipse (backed by IBM).
@@ -31,8 +35,9 @@ and HP LoadRunner for performance testing.
 
 The differentiator for Visual Studio is that it provides a single full-fledged user interface for developers and testers alike.
 
-HP LoadRunner's VuGen is based on an open-source knock-off of Visual Studio 2008,
+HP LoadRunner's VuGen is based on an open-source clone of Visual Studio 2008,
 so does not contain many of the convenience features in Visual Studio of current vintage.
+
 
 ## <a name="WhatEdition"> What Edition of Visual Studio?</a>
 
@@ -86,9 +91,9 @@ where response time is near instantaneous.
 The online edition makes use of Team Foundation Version Control (TFVC) for one massively scalable repo, 
 or multiple Git repositories for maximum flexibility.
 
+## <a name="Unittest"> Unit Testing </a>
+See
 https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs
-
-https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
 
 While it's true http://anydevanyapp.com/
 
@@ -97,6 +102,8 @@ While it's true http://anydevanyapp.com/
 Charles Sterling posted these blog entry in two parts on June 1, 2015:
 
 * http://blogs.msdn.com/b/charles_sterling/archive/2015/06/02/load-test-series-part-i-creating-web-performance-tests-for-a-load-test.aspx
+
+* https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
 
 
 
