@@ -42,12 +42,12 @@ One of those features is running load tests, which require the **Ultimate editio
 
 While it's true that there "Visual Studio works on Macs and Linux"
 (see https://www.visualstudio.com/products/code-vs or http://code.visualstudio.com),
-the software is branded "Visual Studio Code". 
-The installer for OS X (file VSCode-darwin.zip) is 64.7 MB (expands to 196.7 MB),
+the free software is branded "Visual Studio Code". 
+The VSCode installer for OS X (file VSCode-darwin.zip) is 64.7 MB (expands to 196.7 MB),
 described as "Preview" maturity as of June 2015.
 Follow its @code Twitter handle.
-
-While it's true http://anydevanyapp.com/
+The program provides IntelliCode and [TaskRunner](https://code.visualstudio.com/Docs/tasks)
+that runs TypeScript (.ts files) and JS Hint at http://jshint.com/.
 
 https://visualstudio.github.com/index.html
 offers a Github Extension for Visual Studio 2015, in RC (Release Candidate) maturity as of June 2015.
@@ -64,6 +64,8 @@ or multiple Git repositories for maximum flexibility.
 https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs
 
 https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
+
+While it's true http://anydevanyapp.com/
 
 
 ## <a name="Perftest"> Performance Testing </a>
