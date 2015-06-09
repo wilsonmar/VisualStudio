@@ -29,20 +29,25 @@ so does not contain many of the convenience features in Visual Studio of current
 
 ## <a name="WhatEdition"> What Edition of Visual Studio?</a>
 
-### Visual Studio Express / Community Free Edition
+### Visual Studio Express vs Community 2013 Free Edition
 While it's true that there is a free ("Express") edition of the Visual Studio IDE
 (see https://www.visualstudio.com/en-us/products/free-developer-offers-vs.aspx),
 Microsoft still sells MSDN licenses based on different editions of Visual Studio.
 
-While it's true that source code Microsoft uses to create Visual Studio is open-source on Github
-(see https://visualstudio.github.com/),
+Source code Microsoft uses to create Visual Studio is open-source on Github
 additional features not in open source are still being sold as part of MSDN Visual Studio licenses.
 
 One of those features is running load tests, which require the **Ultimate edition** of Visual Studio
 (not Express editions).
 
+Visual Studio Community 2013
+
+Microsoft has source code for .NET server on
+https://github.com/Microsoft/dotnet
+(with discussions on http://blogs.msdn.com/b/dotnet/)
+
 ### Visual Studio Code on Macs and Linux
-While it's true that there "Visual Studio works on Macs and Linux"
+Microsoft created a "Visual Studio works on Macs and Linux"
 (see https://www.visualstudio.com/products/code-vs or http://code.visualstudio.com),
 the free software is branded "Visual Studio Code". 
 The VSCode installer for OS X (file VSCode-darwin.zip) is 64.7 MB (expands to 196.7 MB),
@@ -61,7 +66,8 @@ This enables Visual Studio to use Github as a source code repository instead of 
 TFS (Team Foundation Server).
 
 But where's the local git repo support?
-
+For VS 2012, see 
+http://www.codeproject.com/Articles/581907/IntegratingplusandplusUsingplusGithubplusinplusVis
 
 ## Visual Studio Online
 While it's true that Visual Studio is available **online**
@@ -128,3 +134,7 @@ PowerShell, which Microsoft managed to keep coherant as features were added over
 (while various Linux shells fragmented).
 See Scott Hanselman on http://azure.microsoft.com/en-us/documentation/videos/azure-powershell-101-managing-azure-storage-from-the-command-line/ (12 minutes)
 
+https://github.com/psake/psake
+is an automated build tool (such as Make, Rake, MSBuild, etc.) written in PowerShell.
+http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
+shows how to set a red color to highlight 
