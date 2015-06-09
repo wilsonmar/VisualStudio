@@ -19,10 +19,10 @@ For each version there are different <a href="#Editions">editions</a>.
 As an example, the download page for Microsoft Visual Studio Community 2013 with Update 4 
 https://www.visualstudio.com/en-us/downloads/
 provides two options for downloading installers:
-  * **Install Now** downloads 1.2 MB file vs_community.exe.
-  * **Install** downloads 1.1 MB file vs_ultimate_download.exe which manages the download to conclusion.
+  * **Install Now** downloads 1.2 MB file vs_community.exe and installs after dowload.
+  * **Download Now** downloads 1.1 MB file vs_ultimate_download.exe which manages the download to conclusion.
   This is the approach I recommend.
-  * **DVD9 ISO Image** download 6.9 GB file vs2013.4_ce_enu.iso which requires another utility to read,
+  * **DVD9 ISO Image** download the whole 6.9 GB file vs2013.4_ce_enu.iso which requires another utility to read,
   and leaves it to the browser or other program to manage broken downloads.
 
 Do not download a Language Pack unless you need another language than English.
