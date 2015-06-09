@@ -16,6 +16,12 @@ notice that it only displays a simple "Hellow World!".
 This is because the example is "bare bones" and intended to work with web services between computers 
 who have no need for animated cat gifs for amusement.
 
+### <a name="WebSvcs"> Why Web Services APIs</a>
+
+Microsoft offers several ways:
+  * Web Services API
+  * WCF
+  * OData
 
 ### <a name="REST"> REST</a>
 The Get started with the VSO REST APIs article at
