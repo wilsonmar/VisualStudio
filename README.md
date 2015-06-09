@@ -21,6 +21,9 @@ provides two options for downloading installers:
   * **Install Now** downloads 1.2 MB file vs_community.exe.
   * **DVD9 ISO Image** download 6.9 GB file vs2013.4_ce_enu.iso which requires another utility to read.
 
+Do not download a Language Pack unless you need another language than English.
+
+
 ## <a name="Distinctives"> Distinctives of Microsoft's Approach</a>
 
 Visual Studio provides a single IDE for developing in "all" languages platforms,
@@ -43,9 +46,16 @@ so does not contain many of the convenience features in Visual Studio of current
 ## <a name="Editions"> What Edition of Visual Studio?</a>
 
 ### Visual Studio Express vs Community 2013 Free Edition
-While it's true that there is a free ("Express") edition of the Visual Studio IDE
+While it's true that there are free editions of the Visual Studio IDE
 (see https://www.visualstudio.com/en-us/products/free-developer-offers-vs.aspx),
-Microsoft still sells MSDN licenses based on different editions of Visual Studio.
+Microsoft still sells MSDN licenses based on different editions of Visual Studio
+because functionality is limited on free editions.
+
+Express editions cannot install Visual Studio <a href="#PlugIns">plug-ins</a>. 
+
+However Community editions can.
+Also, Community editions is cross-plantform: it can be used to build across platforms - 
+web HTML apps, Windows apps, and Windows Desktop apps.
 
 Source code Microsoft uses to create Visual Studio is NOT open-source on Github.
 
@@ -140,7 +150,7 @@ While the Visual Studio Community 2015 + Xamarin tools for developing "native" m
 https://www.visualstudio.com/en-us/features/xamarin-vs.aspx
 Xamarin is licensed for $1500 per platform per year per develop.
 
-## <a name="Powershell"> Powershell</a>
+### <a name="Powershell"> Powershell</a>
 
 One of the major benefits of using Microsoft servers is that it has a powerful shell scripting language: 
 PowerShell, which Microsoft managed to keep coherant as features were added over time
@@ -152,6 +162,7 @@ is an automated build tool (such as Make, Rake, MSBuild, etc.) written in PowerS
 http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
 shows how to set a red color to highlight 
 
+### <a name="PlugIns"> Plug-Ins</a>
 
 Adam Driscoll's PowerShell Tools for Visual Studio (free)
 https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
