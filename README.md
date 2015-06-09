@@ -15,6 +15,7 @@ For each version there are different <a href="#Editions">editions</a>.
 
 
 ## <a name="DownloadOptions"> Download Options</a>
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8066305/2e73216c-0ea4-11e5-9460-3c50115d79af.png" />
 As an example, the download page for Microsoft Visual Studio Community 2013 with Update 4 
 https://www.visualstudio.com/en-us/downloads/
 provides two options for downloading installers:
@@ -111,37 +112,6 @@ https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs
 While it's true http://anydevanyapp.com/
 
 
-## <a name="Perftest"> Performance Testing </a>
-Charles Sterling posted these blog entry in two parts on June 1, 2015:
-
-* http://blogs.msdn.com/b/charles_sterling/archive/2015/06/02/load-test-series-part-i-creating-web-performance-tests-for-a-load-test.aspx
-
-* https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
-
-
-
-## <a name="UsingAzure"> Perftest the Azure Cloud</a>
-https://www.udemy.com/introduction-to-cloud-computing-and-microsoft-azure/#/
-provides an introduction to Azure cloud computing (why DevTest, etc.).
-
-https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
-provides a calculator to determine how many virtual user minutes (VUMs) you will use.
-
-While it's true the first 20,000 VUMs are free each month. That's 333 hours or over 13 continuous days by one virtual user
-or 333 vusers running one hour per month.
-See http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45.
-provides a full calculator to determine total cost based on your estimates
-of server, database, notifications, etc. which are not free.
-
-Microsoft also sells **monitoring** with alerts with event trace and exception logs on its servers in Azure. 
-See https://www.visualstudio.com/features/application-insights-vs
-to read about Microsoft's **Application Insights** offering.
-
-Compare that against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
-
-https://www.visualstudio.com/en-us/get-started/test/load-test-your-app-vs
-
-* http://blogs.msdn.com/b/charles_sterling/archive/2015/06/02/load-test-series-part-iii-taking-your-load-test-to-the-cloud-i-e-creating-a-cloud-based-load-test.aspx
 
 ## <a name="Mobile"> Mobile</a>
 
