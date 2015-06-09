@@ -6,6 +6,7 @@ What else do I need to do to be an MVP on Performance Testing? ;)
 
 * 2015 was released in late 2014
 * 2013
+* 2012
 * 2010
 * 2008
 * 2003
@@ -167,4 +168,19 @@ https://visualstudiogallery.msdn.microsoft.com/0c5642e8-f6aa-4353-830c-946a315c1
 ## <a name="MachineLearning"> Machine Learning</a>
 I would like to take advantage of
 http://azure.microsoft.com/en-us/services/machine-learning/api/
+
+
+## Authentication via OAuth
+* OAuth redirect header
+* How to create OAuth Tokens and Secretes?
+* What options are configurable?
+
+### Add Connected Service SDK
+is the modern way to connect to cloud services in VS 2015 with VS 2015 SDK.
+
+Dynamics CRM, SAP, Salesforce, Adobe DataLogics
+
+VSIX Extension
+
+Provider
 
