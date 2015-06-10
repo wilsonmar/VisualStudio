@@ -13,6 +13,10 @@ What else do I need to do to be an MVP on Performance Testing? ;)
 
 For each version there are different <a href="#Editions">editions</a>.
 
+TIP: If you have installers for currently supported version 2013 or 2012, 
+use them rather than downloading the big installer with the latest update 
+([currently 4](https://support.microsoft.com/en-us/kb/2994375)),
+then download the smaller **updater** and apply it to the version already installed.
 
 ## <a name="DownloadOptions"> Download Options</a>
 For example, the download page for Microsoft Visual Studio 2013 with Update 4 
@@ -21,16 +25,23 @@ provides two options for downloading installers:
 
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8066305/2e73216c-0ea4-11e5-9460-3c50115d79af.png" width="350" />
 
+  * **Download Now** downloads 1.1 MB file vs_ultimate_download.exe.
+  Invoke it to manage download to default folder:
+
+   ```
+   C:\Users\%USSERNAME%\My Documents\Ultimate 2013
+   ```
+   
+  After the big installer file is fully "acquired", 
+  run a special utility to mount the ISO file as a regular folder.
+  This is the approach I recommend.
+
   * **Install Now** downloads 1.2 MB file vs_ultimate.exe.
   which when invoked downloads the rest and installs it automatically.
  
   * **DVD9 ISO Image** download the whole 6.9 GB file vs2013.4_ce_enu.iso which requires another utility to read,
-  and leaves it to the browser or other program to manage broken downloads.
+  and leaves it to the browser or other program to manage broken downloads
   After downloading you'll need to run a special utility to open the ISO file.
-
-  * **Download Now** downloads 1.1 MB file vs_ultimate_download.exe which manages the download to conclusion.
-  You'll also need to download and run a special utility to open the ISO file.
-  This is the approach I recommend.
 
 Login to VisualStudio.com is presented during download, but that's not mandatory.
 
@@ -39,6 +50,8 @@ Do not download a Language Pack unless you need another language than English.
 Notice licensed editions have a 90 day free trial period.
 But the request is registration within 30 days.
 
+
+## <a name="ISO"> ISO File Utility</a>
 
 ## <a name="Distinctives"> Distinctives of Microsoft's Approach</a>
 
