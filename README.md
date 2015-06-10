@@ -56,6 +56,8 @@ But the request is registration within 30 days.
 
 ## <a name="ISO"> ISO File Utility</a>
 
+???
+
 ## <a name="Distinctives"> Distinctives of Microsoft's Approach</a>
 
 Visual Studio provides a single IDE for developing in "all" languages platforms,
@@ -98,9 +100,27 @@ However Community editions can.
 Also, Community editions is cross-plantform: it can be used to build across platforms - 
 web HTML apps, Windows apps, and Windows Desktop apps.
 
+The Community edition is equivalent to the Pro edition in
+[this table comparing editions](https://www.visualstudio.com/products/compare-visual-studio-products-vs).
+
+Notice the Pro edition does not include Lab Management functionality:
+
+ * Virtual environment setup & teardown 	  	  	 
+ * Provision environment from template 	  	  	 
+ * Checkpoint environment
+
+The Online edition doesn't have them either.
+
+COMMENTARY:
+It is ironic to me that Microsoft is one of the pioneers in the "Software Developer in Test"
+job title, yet the "Test Pro" edition does not include Debugging functionality
+or even Architecture Diagrams and Code visualization.
+
 Running <a href="#Perftest.md">performance/load tests</a>, 
 require the **Ultimate edition** of Visual Studio
 (not Express/Community editions).
+
+MSDN subscribers also get 40% off PluralSight.com video tutorials.
 
 
 ### Visual Studio Code on Macs and Linux
