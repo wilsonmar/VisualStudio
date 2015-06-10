@@ -14,9 +14,12 @@ What else do I need to do to be an MVP on Performance Testing? ;)
 For each version there are different <a href="#Editions">editions</a>.
 
 TIP: If you have installers for currently supported version 2013 or 2012, 
-use them rather than downloading the big installer with the latest update 
-([currently 4](https://support.microsoft.com/en-us/kb/2994375)),
+use them rather than downloading the big installer with the 
+[latest update](http://go.microsoft.com/fwlink/?LinkId=510314) 
+([currently 4 release November 12, 2014](https://support.microsoft.com/en-us/kb/2994375)),
 then download the smaller **updater** and apply it to the version already installed.
+
+Updates are cumulative such that update 4 contains all the contents in updates 1,2, and 3.
 
 ## <a name="DownloadOptions"> Download Options</a>
 For example, the download page for Microsoft Visual Studio 2013 with Update 4 
