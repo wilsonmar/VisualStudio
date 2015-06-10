@@ -19,25 +19,46 @@ the server time component.
 So the ideal situation is to have a load generator near the front-end web server
 within the data center to adequately measure time spent on the server.
 
-Efforts to tune configurations and predict what production usage will cost 
+Efforts to tune configurations and predict what <a href="#Costing">production usage will cost</a>
 typically require a way to impose an emulated load on the system. 
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png">
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png" width="350" /></a>
 https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
-provides a calculator to determine how many virtual user minutes (VUMs) you will use.
+provides a calculator to determine how many virtual user minutes (VUMs) 
+a scenario will use.
 
 Each Cloud account is provided first 20,000 VUMs free each month. 
 That's 333 hours or over 13 continuous days by one virtual user
 or 333 vusers running one hour per month.
 
-See http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45.
-provides a full calculator to determine total cost based on your estimates
+## <a name="Costing"> Costing</a>
+Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
+contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
 Microsoft also sells **monitoring** with alerts with event trace and exception logs on its servers in Azure. 
 See https://www.visualstudio.com/features/application-insights-vs
 to read about Microsoft's **Application Insights** offering.
+
+Under App Service, free usage is with IP address and HTTP protocol 
+rather than domain names with HTTPS.
+Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
+(a calculation error in the calculator).
+
+DO THIS:
+Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
+"Standard" App Service (providing network load balancing, autoscale, and backup support)
+in order to select the righ size of server:
+
+| Size | VMs | Cores | RAM GB | Storage GB | $/hour | $/month |
+| ---- | --- | ----  | ---- | ----         | ----     | ---- |
+| S1   | 1   | 1     | 1.75 | 50           | $0.10 | $074.40 |
+| S2   | 1   | 2     | 3.5  | 50           | $0.20 | $148.80 |
+| S3   | 1   | 4     | 7.0  | 50           | $0.40 | $297.60 |
+
+
+
 
 Compare that against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
 
