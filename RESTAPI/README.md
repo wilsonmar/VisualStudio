@@ -22,6 +22,9 @@ Microsoft offers several ways:
   * Web Services API
   * WCF
   * OData
+ 
+This document focuses on the Web Servies API only.
+
 
 ### <a name="REST"> REST</a>
 The Get started with the VSO REST APIs article at
@@ -108,6 +111,3 @@ https://toolbelt.heroku.com/
 So let's dive into the node-js-sample repo's folders.
 
 
-## <a name="Documentation"> Documentation</a>
-
-For more information ....
