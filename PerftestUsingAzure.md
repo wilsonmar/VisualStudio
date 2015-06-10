@@ -32,6 +32,7 @@ Each Cloud account is provided first 20,000 VUMs free each month.
 That's 333 hours or over 13 continuous days by one virtual user
 or 333 vusers running one hour per month.
 
+
 ## <a name="Costing"> Costing</a>
 Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
@@ -52,12 +53,18 @@ Conduct experiment performance test runs on how many transactions can be process
 in order to select the righ size of server:
 
 | Size | VMs | Cores | RAM GB | Storage GB | $/hour | $/month |
-| ---- | --- | ----  | ---- | ----         | ----     | ---- |
+| ---- | --- | ----  | ---- | ----         | ----   | ---- |
 | S1   | 1   | 1     | 1.75 | 50           | $0.10 | $074.40 |
 | S2   | 1   | 2     | 3.5  | 50           | $0.20 | $148.80 |
 | S3   | 1   | 4     | 7.0  | 50           | $0.40 | $297.60 |
 
+Notice that cost is directly proportional to the number of cores. 
 
+However, using more cores does not necessarily mean a proportional increase in processing rate is achieved.
+Typically, doubling the number of cores would yield 70% or less improvement in processing throughput.
+
+COMMENTARY:
+I propose that Microsoft consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
 
 
 Compare that against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
