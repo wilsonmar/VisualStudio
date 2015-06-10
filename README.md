@@ -74,11 +74,9 @@ However Community editions can.
 Also, Community editions is cross-plantform: it can be used to build across platforms - 
 web HTML apps, Windows apps, and Windows Desktop apps.
 
-Source code Microsoft uses to create Visual Studio is NOT open-source on Github.
-
-One of those features is running <a href="#Perftest.md">performance/load tests</a>, 
-which require the **Ultimate edition** of Visual Studio
-(not Express editions).
+Running <a href="#Perftest.md">performance/load tests</a>, 
+require the **Ultimate edition** of Visual Studio
+(not Express/Community editions).
 
 
 ### Visual Studio Code on Macs and Linux
