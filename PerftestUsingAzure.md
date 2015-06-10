@@ -59,9 +59,11 @@ Notice that cost is directly proportional to the number of cores.
 
 However, using more cores does not necessarily mean a proportional increase in processing rate is achieved.
 Typically, doubling the number of cores would yield 70% or less improvement in processing throughput.
+This means more smaller servers may be cost less overall than larger servers.
 
 COMMENTARY:
-I propose that Microsoft consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
+Microsoft may consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
+However, this would complicate calculations somewhat.
 
 DO THIS:
 Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
