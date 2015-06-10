@@ -42,6 +42,7 @@ Microsoft also sells **monitoring** with alerts with event trace and exception l
 See https://www.visualstudio.com/features/application-insights-vs
 to read about Microsoft's **Application Insights** offering.
 
+## <a name="AppSvcScaleUpCostingLogic"> App Service Scale-Up Costing Logic</a>
 Under App Service, free usage is with IP address and HTTP protocol 
 rather than domain names with HTTPS.
 Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
@@ -49,11 +50,11 @@ Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hou
 
 Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
-| Size | VMs | Cores | RAM GB | Std. Storage GB | Prem. Storage | $/hour | $/month |
-| ---- | --- | ----  | ---- | ----        | --- | ----   | ---- |
-| S1   | 1   | 1     | 1.75 | 50          | 250 | $0.10 | $074.40 |
-| S2   | 1   | 2     | 3.5  | 50          | 250 | $0.20 | $148.80 |
-| S3   | 1   | 4     | 7.0  | 50          | 250 | $0.40 | $297.60 |
+| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | $/month |
+| ---- | --- | ----  | ---- | ----              | ----   | ---- |
+| S1   | 1   | 1     | 1.75 | 50                | $0.10 | $074.40 |
+| S2   | 1   | 2     | 3.5  | 50                | $0.20 | $148.80 |
+| S3   | 1   | 4     | 7.0  | 50                | $0.40 | $297.60 |
 
 Notice that cost is directly proportional to the number of cores. 
 
@@ -68,8 +69,20 @@ However, this would complicate calculations somewhat.
 DO THIS:
 Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
 "Standard" App Service (providing network load balancing, autoscale, and backup support)
-in order to select the righ size of server:
+in order to select the righ size of server that can servicie a set of transactions at the lowest overall price.
 
+## <a name="AppSvcScaleAcrossCostingLogic"> App Service Scale-Across Costing Logic</a>
+Similarly, the cost per VM stays the same as the number VMs deployed increases.
+
+The question is whether what number of server instances are necessary at each particular point in time.
+
+Auto-provisioning by server automation scripts make it possible to automatically adjust the number of 
+servers in use at any point in time.
+
+Additionally, while in Preview mode (June 2015), Premium prices are lower than Standard.
+
+
+## <a name="#StormRunner"> Comparison Across Competitors</a>
 Compare that against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
 
 * http://blogs.msdn.com/b/charles_sterling/archive/2015/06/02/load-test-series-part-iii-taking-your-load-test-to-the-cloud-i-e-creating-a-cloud-based-load-test.aspx
