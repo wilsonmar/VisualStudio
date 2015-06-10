@@ -121,6 +121,19 @@ require the **Ultimate edition** of Visual Studio
 
 MSDN subscribers also get 40% off PluralSight.com video tutorials.
 
+### <a name="Mobile"> Mobile</a>
+
+A big part of the resurgence in popularity is Visual Studio's ability to provide one IDE
+to work across many mobile platforms (iOS, Android, Windows Phone, etc.).
+See http://anydevanyapp.com/
+
+Visual Studio Community 2015 + Cordova tools for developing "hybrid" mobile apps
+https://www.visualstudio.com/en-us/features/cordova-vs.aspx
+
+While the Visual Studio Community 2015 + Xamarin tools for developing "native" mobile apps
+https://www.visualstudio.com/en-us/features/xamarin-vs.aspx
+Xamarin is licensed for $1500 per platform per year per develop.
+
 
 ### Visual Studio Code on Macs and Linux
 Microsoft created a "Visual Studio works on Macs and Linux"
@@ -153,20 +166,18 @@ where response time is near instantaneous.
 The online edition makes use of Team Foundation Version Control (TFVC) for one massively scalable repo, 
 or multiple Git repositories for maximum flexibility.
 
-## <a name="Unittest"> Unit Testing </a>
-See
-https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs
+## <a name="VS_Tips"> Visual Studio Usage Tips</a>
+http://blogs.msdn.com/b/benwilli/archive/2015/04/07/back-to-basics-visual-studio-tips.aspx
 
-## <a name="Mobile"> Mobile</a>
-
-See http://anydevanyapp.com/
-
-Visual Studio Community 2015 + Cordova tools for developing "hybrid" mobile apps
-https://www.visualstudio.com/en-us/features/cordova-vs.aspx
-
-While the Visual Studio Community 2015 + Xamarin tools for developing "native" mobile apps
-https://www.visualstudio.com/en-us/features/xamarin-vs.aspx
-Xamarin is licensed for $1500 per platform per year per develop.
+1. Install the Productivity Power Tools
+2. Pin your data tips
+3. Use “Navigate To”
+4. Code Snippets
+5. Quickly adding namespace using statements
+6. Turn on Line Numbers (with Quick Launch!)
+7. Edit whole ines
+8. Add existing files with Show All Files
+9. Edit directly in the Diff tool
 
 ### <a name="Powershell"> Powershell</a>
 
@@ -181,7 +192,7 @@ http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
 shows how to set a red color to highlight 
 
 
-### <a name="PlugIns"> Plug-Ins</a>
+### <a name="PlugIns"> Plug-Ins (Productivity Power Tools)</a>
 
 Adam Driscoll's PowerShell Tools for Visual Studio (free)
 https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
