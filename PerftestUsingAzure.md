@@ -28,30 +28,50 @@ https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
 provides a calculator to determine how many virtual user minutes (VUMs) 
 a scenario will use.
 
-Each Cloud account is provided first 20,000 VUMs free each month. 
-That's 333 hours or over 13 continuous days by one virtual user
-or 333 vusers running one hour per month.
-
 
 ## <a name="CostingLogic"> Costing Logic</a>
 Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
+The attached Excel 2013 file contains a worksheet for each category of costing
+described below:
+
+
+* <a href="#AppSvcScaleUpCostingLogic"> App Service</a>
+
+
 Microsoft also sells **monitoring** with alerts with event trace and exception logs on its servers in Azure. 
 See https://www.visualstudio.com/features/application-insights-vs
 to read about Microsoft's **Application Insights** offering.
 
+## <a name="VSOnlineVUMs"> VS Online VUMs</a>
+
+Each Cloud account is provided first 20,000 VUMs free each month. 
+That's 333 hours or over 13 continuous days by one virtual user
+or 333 vusers running one hour per month.
+
+After that, each 100 VUM is $0.40 (40 cents).
+
+
 ## <a name="AppSvcScaleUpCostingLogic"> App Service Scale-Up Costing Logic</a>
+
 Under App Service, free usage is with IP address and HTTP protocol 
 rather than domain names with HTTPS.
 Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
-(a calculation error in the calculator).
+
+QUESTION:
+Is this an error in the calculator?
 
 24 hours in a day * 31 days = 744.
 Since the number of days during each month varies,
 the actual total would vary as well.
 The calculation is for a month that has 31 days.
+
+However, servers are not typically used continuously the whole month.
+
+Most performance testing runs are conducted in bursts of an hour or a few hours.
+
 
 Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
@@ -86,6 +106,34 @@ Auto-provisioning by server automation scripts make it possible to automatically
 servers in use at any point in time.
 
 Additionally, while in Preview mode (June 2015), Premium prices are lower than Standard.
+
+
+## <a name="WebWorkerCosting"> Web Worker Costing</a>
+
+A8 and A9 includes 40 Gbit/Sec Infiniband at almost double the cost significant price increase.
+
+QUESTION: 
+A7 and A10 have the same specs (8 cores, 56 GB), but have different prices.
+I assume that A10 has 112 GB instead of 56.
+
+The largest of each Standard series (D14, A11, G5) have a lower cost than double the next lower one
+even though the RAM doubled. From 15% to 21% less.
+
+Linux are 59% less than Windows (A4 $0.352 vs. $0.592).
+
+## <a name="SQLCosting"> SQL Costing</a>
+
+
+
+
+## <a name="MFA"> Multi-Factor Authentication</a>
+MFA is charged both by user and by authentication exchange:
+* $1.40 per use to maintain keys for that user.
+* $0.14 per authentication exchange.
+
+Compare versus https://www.authy.com/pricing/
+* $0.15 per user (Azure costs 11 times more)
+* $0.05 per successful authentication (Azure costs 3 times more)
 
 
 ## <a name="#StormRunner"> Comparison Across Competitors</a>
