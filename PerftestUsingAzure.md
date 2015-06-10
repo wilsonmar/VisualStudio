@@ -22,12 +22,6 @@ within the data center to adequately measure time spent on the server.
 Efforts to tune configurations and predict what <a href="#Costing">production usage will cost</a>
 typically require a way to impose an emulated load on the system. 
 
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png">
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png" width="350" /></a>
-https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
-provides a calculator to determine how many virtual user minutes (VUMs) 
-a scenario will use.
-
 
 ## <a name="CostingLogic"> Costing Logic</a>
 Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
@@ -40,11 +34,6 @@ described below:
 
 * <a href="#AppSvcScaleUpCostingLogic"> App Service</a>
 
-
-Microsoft also sells **monitoring** with alerts with event trace and exception logs on its servers in Azure. 
-See https://www.visualstudio.com/features/application-insights-vs
-to read about Microsoft's **Application Insights** offering.
-
 ## <a name="VSOnlineVUMs"> VS Online VUMs</a>
 
 Each Cloud account is provided first 20,000 VUMs free each month. 
@@ -52,7 +41,13 @@ That's 333 hours or over 13 continuous days by one virtual user
 or 333 vusers running one hour per month.
 
 After that, each 100 VUM is $0.40 (40 cents).
+That's $0.24 (24 cents) per Vuser Hour.
 
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png" width="350" /></a>
+https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
+provides a calculator to determine how many virtual user minutes (VUMs) 
+a scenario will use.
 
 ## <a name="AppSvcScaleUpCostingLogic"> App Service Scale-Up Costing Logic</a>
 
@@ -123,7 +118,13 @@ Linux are 59% less than Windows (A4 $0.352 vs. $0.592).
 
 ## <a name="SQLCosting"> SQL Costing</a>
 
+Within the worksheet "SQL",
+the multiplier increase from the base Windows server price is calculated in the 
+"BaseX" column. For example, 1.43 means 43% more (almost half-again more) than the base Windows server price.
+2.78 means 178% (almost double) the base Windows server price.
 
+QUESTION:
+Why is Standard SQL Server Basic A3 less than Windows base ($0.696)?
 
 
 ## <a name="MFA"> Multi-Factor Authentication</a>
@@ -134,6 +135,13 @@ MFA is charged both by user and by authentication exchange:
 Compare versus https://www.authy.com/pricing/
 * $0.15 per user (Azure costs 11 times more)
 * $0.05 per successful authentication (Azure costs 3 times more)
+
+
+## <a name="Monitoring"> Monitoring</a>
+
+Microsoft also sells **monitoring** with alerts with event trace and exception logs on its servers in Azure. 
+See https://www.visualstudio.com/features/application-insights-vs
+to read about Microsoft's **Application Insights** offering.
 
 
 ## <a name="#StormRunner"> Comparison Across Competitors</a>
