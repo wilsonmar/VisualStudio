@@ -1,4 +1,4 @@
-This mark-down text file describes the use of Microsoft's Azure cloud to conduct performance testing.
+This mark-down text file describes an analysis of costing of Microsoft's Azure cloud to conduct performance testing.
 
 This assumes that the reader is familiar with 
 Azure cloud computing (why DevTest, etc.) as taught in
