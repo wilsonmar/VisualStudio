@@ -167,9 +167,10 @@ The online edition makes use of Team Foundation Version Control (TFVC) for one m
 or multiple Git repositories for maximum flexibility.
 
 ## <a name="VS_Tips"> Visual Studio Usage Tips</a>
+Ben Williams's list of tips at
 http://blogs.msdn.com/b/benwilli/archive/2015/04/07/back-to-basics-visual-studio-tips.aspx
 
-1. Install the Productivity Power Tools
+1. Install the Productivity Power Tools Plug-in
 2. Pin your data tips
 3. Use “Navigate To”
 4. Code Snippets
@@ -179,23 +180,13 @@ http://blogs.msdn.com/b/benwilli/archive/2015/04/07/back-to-basics-visual-studio
 8. Add existing files with Show All Files
 9. Edit directly in the Diff tool
 
-### <a name="Powershell"> Powershell</a>
+### <a name="PlugIns"> Plug-Ins (Extension Pack)</a>
 
-One of the major benefits of using Microsoft servers is that it has a powerful shell scripting language: 
-PowerShell, which Microsoft managed to keep coherant as features were added over time
-(while various Linux shells fragmented).
-See Scott Hanselman on http://azure.microsoft.com/en-us/documentation/videos/azure-powershell-101-managing-azure-storage-from-the-command-line/ (12 minutes)
+These can be downloaded and installed from inside Visual Studio's Tools menu "Extensions and Updates".
 
-https://github.com/psake/psake
-is an automated build tool (such as Make, Rake, MSBuild, etc.) written in PowerShell.
-http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
-shows how to set a red color to highlight 
-
-
-### <a name="PlugIns"> Plug-Ins (Productivity Power Tools)</a>
-
-Adam Driscoll's PowerShell Tools for Visual Studio (free)
-https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
+Productivity Power Tools 2013
+https://visualstudiogallery.msdn.microsoft.com/dbcb8670-889e-4a54-a226-a48a15e4cace
+continues the tradition of one for each VS version.
 
 NuGet Package Manager 
 https://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c?SRC=Home
@@ -214,18 +205,19 @@ https://vlasovstudio.com/
 and http://visualstudioextensions.vlasovstudio.com/
 provides additional descriptions on top plug-ins.
 
+### <a name="Powershell"> Powershell</a>
 
-## Authentication via OAuth
-* OAuth redirect header
-* How to create OAuth Tokens and Secretes?
-* What options are configurable?
+One of the major benefits of using Microsoft servers is that it has a powerful shell scripting language: 
+PowerShell, which Microsoft managed to keep coherant as features were added over time
+(while various Linux shells fragmented).
+See Scott Hanselman on http://azure.microsoft.com/en-us/documentation/videos/azure-powershell-101-managing-azure-storage-from-the-command-line/ (12 minutes)
 
-### Add Connected Service SDK
-is the modern way to connect to cloud services in VS 2015 with VS 2015 SDK.
+https://github.com/psake/psake
+is an automated build tool (such as Make, Rake, MSBuild, etc.) written in PowerShell.
+http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
+shows how to set a red color to highlight 
 
-Dynamics CRM, SAP, Salesforce, Adobe DataLogics
+Adam Driscoll's PowerShell Tools for Visual Studio (free)
+https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
 
-VSIX Extension
-
-Provider
 
