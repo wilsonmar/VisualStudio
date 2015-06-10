@@ -100,10 +100,9 @@ However Community editions can.
 Also, Community editions is cross-plantform: it can be used to build across platforms - 
 web HTML apps, Windows apps, and Windows Desktop apps.
 
-The Community edition is equivalent to the Pro edition in
-[this table comparing editions](https://www.visualstudio.com/products/compare-visual-studio-products-vs).
-
-Notice the Pro edition does not include Lab Management functionality:
+The Community edition is equivalent to the Pro edition.
+In [this table comparing editions](https://www.visualstudio.com/products/compare-visual-studio-products-vs).
+notice the Pro edition does not include Lab Management functionality:
 
  * Virtual environment setup & teardown 	  	  	 
  * Provision environment from template 	  	  	 
