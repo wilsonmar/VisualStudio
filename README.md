@@ -199,11 +199,6 @@ and
 * Save All the Tabs at
 https://visualstudiogallery.msdn.microsoft.com/0c5642e8-f6aa-4353-830c-946a315c163d?SRC=Home
 
-## <a name="MachineLearning"> Machine Learning</a>
-I would like to take advantage of
-http://azure.microsoft.com/en-us/services/machine-learning/api/
-
-
 ## Authentication via OAuth
 * OAuth redirect header
 * How to create OAuth Tokens and Secretes?
