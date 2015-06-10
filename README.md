@@ -32,7 +32,7 @@ provides two options for downloading installers:
   Invoke it to manage download to default folder:
 
    ```
-   C:\Users\%USSERNAME%\My Documents\Ultimate 2013
+   C:\Users\%USERNAME%\My Documents\Ultimate 2013
    ```
    
   After the big installer file is fully "acquired", 
