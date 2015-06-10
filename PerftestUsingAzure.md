@@ -33,7 +33,7 @@ That's 333 hours or over 13 continuous days by one virtual user
 or 333 vusers running one hour per month.
 
 
-## <a name="Costing"> Costing</a>
+## <a name="CostingLogic"> Costing Logic</a>
 Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
@@ -47,16 +47,13 @@ rather than domain names with HTTPS.
 Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
 (a calculation error in the calculator).
 
-DO THIS:
-Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
-"Standard" App Service (providing network load balancing, autoscale, and backup support)
-in order to select the righ size of server:
+Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
-| Size | VMs | Cores | RAM GB | Storage GB | $/hour | $/month |
-| ---- | --- | ----  | ---- | ----         | ----   | ---- |
-| S1   | 1   | 1     | 1.75 | 50           | $0.10 | $074.40 |
-| S2   | 1   | 2     | 3.5  | 50           | $0.20 | $148.80 |
-| S3   | 1   | 4     | 7.0  | 50           | $0.40 | $297.60 |
+| Size | VMs | Cores | RAM GB | Std. Storage GB | Prem. Storage | $/hour | $/month |
+| ---- | --- | ----  | ---- | ----        | --- | ----   | ---- |
+| S1   | 1   | 1     | 1.75 | 50          | 250 | $0.10 | $074.40 |
+| S2   | 1   | 2     | 3.5  | 50          | 250 | $0.20 | $148.80 |
+| S3   | 1   | 4     | 7.0  | 50          | 250 | $0.40 | $297.60 |
 
 Notice that cost is directly proportional to the number of cores. 
 
@@ -66,6 +63,10 @@ Typically, doubling the number of cores would yield 70% or less improvement in p
 COMMENTARY:
 I propose that Microsoft consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
 
+DO THIS:
+Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
+"Standard" App Service (providing network load balancing, autoscale, and backup support)
+in order to select the righ size of server:
 
 Compare that against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
 
