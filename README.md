@@ -183,8 +183,11 @@ or multiple Git repositories for maximum flexibility.
 
 ## <a name="VS_Tips"> Visual Studio Usage Tips</a>
 Getting in the habit of using keyboard shortcuts enhances productivity.
-It's not just about saving micro-seconds that add up over your career.
-It's the ability to stay focused on the code rather than how to control the tool (Visual Studio).
+http://visualstudioshortcuts.com/2013/ shows all 813 shortcuts for VS 2013.
+
+It's not just about saving micro-seconds that add up saving you several days during your whole career.
+It's the ability to stay focused on the code being developed rather than how to control the tool (Visual Studio).
+Avoidance of mental "task switching" is required to maintain the concentration ("flow") that developers enjoy.
 
 Susan Ibach's videos at
 http://channel9.msdn.com/Series/vstips
