@@ -22,7 +22,8 @@ within the data center to adequately measure time spent on the server.
 Efforts to tune configurations and predict what production usage will cost 
 typically require a way to impose an emulated load on the system. 
 
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png" width="350" />
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8075255/4f1b414a-0efb-11e5-87f9-2337b74b7eea.png" width="350" /></a>
 https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
 provides a calculator to determine how many virtual user minutes (VUMs) you will use.
 
