@@ -181,6 +181,7 @@ is an automated build tool (such as Make, Rake, MSBuild, etc.) written in PowerS
 http://blogs.msdn.com/b/heaths/archive/2014/06/28/seeing-colors-with-psake.aspx
 shows how to set a red color to highlight 
 
+
 ### <a name="PlugIns"> Plug-Ins</a>
 
 Adam Driscoll's PowerShell Tools for Visual Studio (free)
@@ -198,6 +199,11 @@ include
 and 
 * Save All the Tabs at
 https://visualstudiogallery.msdn.microsoft.com/0c5642e8-f6aa-4353-830c-946a315c163d?SRC=Home
+
+https://vlasovstudio.com/
+and http://visualstudioextensions.vlasovstudio.com/
+provides additional descriptions on top plug-ins.
+
 
 ## Authentication via OAuth
 * OAuth redirect header
