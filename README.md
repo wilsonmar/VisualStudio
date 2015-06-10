@@ -4,12 +4,12 @@ What else do I need to do to be an MVP on Performance Testing? ;)
 
 ## <a name="Versions"> Versions</a>
 
-* 2015 was released in late 2014
-* 2013
-* 2012
-* 2010
-* 2008
-* 2003
+http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#History
+presents a table of the correspondence between product names, 
+internal code names, internal version number, release date,
+and what version of the core .NET Framework each supports.
+
+Visual Studio 2013 supports up to 4.5.2.
 
 For each version there are different <a href="#Editions">editions</a>.
 
@@ -19,7 +19,7 @@ use them rather than downloading the big installer with the
 ([currently 4 release November 12, 2014](https://support.microsoft.com/en-us/kb/2994375)),
 then download the smaller **updater** and apply it to the version already installed.
 
-Updates are cumulative such that update 4 contains all the contents in updates 1,2, and 3.
+Updates are cumulative such that update 4 contains all the contents in updates 1, 2, and 3.
 
 ## <a name="DownloadOptions"> Download Options</a>
 For example, the download page for Microsoft Visual Studio 2013 with Update 4 
@@ -29,20 +29,27 @@ provides two options for downloading installers:
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8066305/2e73216c-0ea4-11e5-9460-3c50115d79af.png" width="350" />
 
   * **Download Now** downloads 1.1 MB file vs_ultimate_download.exe.
-  Invoke it to manage download to default folder:
+  Invoke it to manage download of installers into default folder:
 
    ```
    C:\Users\%USERNAME%\My Documents\Ultimate 2013
    ```
    
-  After the big installer file is fully "acquired", 
-  run a special utility to mount the ISO file as a regular folder.
-  This is the approach I recommend.
+  After the big installer file is fully "acquired", the folder contains file **vs_ultimate.exe**.
+  Invoke it. Agree to the terms. Leave the folder at:
+  
+   ```
+   C:\Program Files (x86)\Microsoft Visual Studio 12.0
+   ```
+   
+  TIP: 
+  This is the approach I recommend because it give you the option to save the installer for reuse
+  by other colleagues or on other machines.
 
   * **Install Now** downloads 1.2 MB file vs_ultimate.exe.
-  which when invoked downloads the rest and installs it automatically.
+  which when invoked downloads the rest and installs it automatically without additional user intervention.
  
-  * **DVD9 ISO Image** download the whole 6.9 GB file vs2013.4_ce_enu.iso which requires another utility to read,
+  * **DVD9 ISO Image** downloads the whole 6.9 GB file vs2013.4_ult_enu.iso which requires another utility to read,
   and leaves it to the browser or other program to manage broken downloads
   After downloading you'll need to run a special utility to open the ISO file.
 
@@ -54,9 +61,15 @@ Notice licensed editions have a 90 day free trial period.
 But the request is registration within 30 days.
 
 
-## <a name="ISO"> ISO File Utility</a>
+### <a name="OptionalFeatures"> Optional Features to Install</a>
 
-???
+* Blend for Visual Studio 
+* LightSwitch 
+* Microsoft Foundation Classes for C++ [uncheck]
+* Microsoft Office Developer Tools [uncheck]
+* Microsoft SQL Server Data Tools
+* Microsoft Web Developer Tools
+* Silverlight Development Kit [uncheck]
 
 ## <a name="Distinctives"> Distinctives of Microsoft's Approach</a>
 
@@ -115,9 +128,11 @@ It is ironic to me that Microsoft is one of the pioneers in the "Software Develo
 job title, yet the "Test Pro" edition does not include Debugging functionality
 or even Architecture Diagrams and Code visualization.
 
-Running <a href="#Perftest.md">performance/load tests</a>, 
-require the **Ultimate edition** of Visual Studio
-(not Express/Community editions).
+As http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#Editions_feature_grid
+highlights, another irony is that the **Test edition of Visual Studio does not run load tests**.
+
+The **Ultimate edition** of Visual Studio is required to run
+<a href="#Perftest.md">performance/load tests</a>**.
 
 MSDN subscribers also get 40% off PluralSight.com video tutorials.
 
