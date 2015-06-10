@@ -48,6 +48,11 @@ rather than domain names with HTTPS.
 Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
 (a calculation error in the calculator).
 
+24 hours in a day * 31 days = 744.
+Since the number of days during each month varies,
+the actual total would vary as well.
+The calculation is for a month that has 31 days.
+
 Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
 | Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | $/month |
@@ -73,6 +78,7 @@ in order to select the righ size of server that can servicie a set of transactio
 
 ## <a name="AppSvcScaleAcrossCostingLogic"> App Service Scale-Across Costing Logic</a>
 Similarly, the cost per VM stays the same as the number VMs deployed increases.
+Azure does not offer a "volume discount" for the number of VMs used.
 
 The question is whether what number of server instances are necessary at each particular point in time.
 
