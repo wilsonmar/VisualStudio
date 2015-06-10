@@ -167,6 +167,13 @@ The online edition makes use of Team Foundation Version Control (TFVC) for one m
 or multiple Git repositories for maximum flexibility.
 
 ## <a name="VS_Tips"> Visual Studio Usage Tips</a>
+Getting in the habit of using keyboard shortcuts enhances productivity.
+It's not just about saving micro-seconds that add up over your career.
+It's the ability to stay focused on the code rather than how to control the tool (Visual Studio).
+
+Susan Ibach's videos at
+http://channel9.msdn.com/Series/vstips
+
 Ben Williams's list of tips at
 http://blogs.msdn.com/b/benwilli/archive/2015/04/07/back-to-basics-visual-studio-tips.aspx
 
@@ -210,6 +217,9 @@ provides additional descriptions on top plug-ins.
 One of the major benefits of using Microsoft servers is that it has a powerful shell scripting language: 
 PowerShell, which Microsoft managed to keep coherant as features were added over time
 (while various Linux shells fragmented).
+
+See https://www.microsoftvirtualacademy.com/en-US/training-courses/getting-started-with-powershell-3-0-jump-start-8276
+
 See Scott Hanselman on http://azure.microsoft.com/en-us/documentation/videos/azure-powershell-101-managing-azure-storage-from-the-command-line/ (12 minutes)
 
 https://github.com/psake/psake
@@ -220,4 +230,14 @@ shows how to set a red color to highlight
 Adam Driscoll's PowerShell Tools for Visual Studio (free)
 https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
 
+## <a name="SocialMedia"> Social Media</a>
+* http://developer.microsoft.com/
+* https://www.facebook.com/MicrosoftItPro app
+* https://www.facebook.com/WindowsServer app
+* https://www.facebook.com/microsoftazure app
+* https://www.facebook.com/MSVirtAcademy education website
+* 
+* https://www.facebook.com/MSFTDev.US?brand_redir=469287159809482
+* LinkedIn
+* Twitter
 
