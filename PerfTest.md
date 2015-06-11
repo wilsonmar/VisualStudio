@@ -13,7 +13,7 @@ Automated scripts create **virtual users** that take the place of browser real h
 
 ### <a name="NewPerftest"> Create New Performance Testing Script by Recording</a>
 With options 1 - 3, create a new solution (shown in <a target="_blank" href="http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/qe103">
-this video</a>:
+this video</a> and <a target="_blank" href="http://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Load-testing-applications-in-Visual-Studio">this for VS2010</a>):
 
 1. Install and Launch the Ultimate Visual Studio or Visual Studio Online.
 2. Press Ctrl+Shift+N or select menu File | New | Project
@@ -33,7 +33,9 @@ this video</a>:
     * QUESTION: Transaction names are NOT added during recording?
 
 6. Click stop recording button. Visual Studio detects dynamic parameters, etc.
-7. Save the solution.
+7. TIP: Save the solution folder, then zip it up.
+
+A recording is just the beginning.
 
 
 ### <a name="OpenSampleProject"> Open Sample Project</a>
