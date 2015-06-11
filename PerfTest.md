@@ -2,7 +2,7 @@ This text mark-down (.md) file describes how to do performance testing using Vis
 using an approach that introduces concepts as you work hands-on following step-by-step instructions.
 
 ## <a name="Scripting"> Performance and Load Test Scripting</a>
-Real users are emulated by an automated script.
+Automated scripts create **virtual users** that take the place of browser real human users.
 
  * <a href="#NewPerftest"> Create New Performance Testing Script by Recording</a>
  * <a href="#OpenSampleProject"> Open a Sample Project</a>
@@ -32,6 +32,7 @@ this video</a>:
 
 6. Click stop recording button. Visual Studio detects dynamic parameters, etc.
 7. Save the solution.
+
 
 ### <a name="OpenSampleProject"> Open Sample Project</a>
 Opening an existing project provides a glimpse into the complete set of folders and files involved.
