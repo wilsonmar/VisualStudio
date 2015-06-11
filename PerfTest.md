@@ -42,15 +42,14 @@ If you're using Visual Studio Ultimate 2013:
 1. From within an internet browser, open URL
 https://code.msdn.microsoft.com/Getting-started-with-17a52e95
 2. Click on **C# (33.4 KB)** to download into your Downloads folder.
-3. Open the sample project in VS Ultimate 2013.
-4. From the Solution Explorer, open **SampleWebTest.webtest**.
-5. Select the URL listed in SampleWebTest.webtest file.
+3. In Windows Explorer, unzip file **Visual Studio Load Testing** downloaded.
 
-6. In the properties list 
-7. update the property labelled 'Url' to your app's/website's URL.
-8. From the team explorer, connect to your Visual Studio Online account.
-9. Open the SampleLoadTest.loadtest file. From the 'Load Test' menu, select 'Run' -> 'Selected Test'
-10. The Load test from the cloud will now start and show you graphs of how your application is performing during the load test.
+ * Descriptions.html contains the page providing the download link.
+
+4. If you have a folder containing Visual Studio projects, copy the **C#** folder there and rename.
+5. In VS Ultimate 2013, navigate to the **GettingStartedWithLoadTesting.sln** to open it.
+6. From the Solution Explorer pane, open **SampleWebTest.webtest**.
+7. Select the URL listed in SampleWebTest.webtest file.
 
 
 ### <a name="ConvertFiddler"> Convert Fiddler Recording</a>
