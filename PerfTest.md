@@ -76,8 +76,8 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applicat
 With Visual Studio, in the Solution Explorer, right-click on the project and select **Add** a **Load Test**
 for the New Test Wizard.
 
-* A Web Performance Test focuses on response time.
-* A Load Test is also called a **stress** test.
+* A **Web Performance Test** focuses on response time by one or a few users.
+* A **Load Test** is also called a **stress** test because it involves many virtual users.
 
 Unlike LoadRunner, which has a separate Controller, Visual Studio provides a one-stop shop.
 
