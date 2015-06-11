@@ -1,11 +1,18 @@
 This page and associated test script describes use of Visual Studio and the C# language to create a basic 
 web service listener.
 
+http://www.asp.net/web-api
+
 This repo is similar to Charles Sterling's
 Getting started with Cloud-based Load Test REST APIs blog at
 http://blogs.msdn.com/b/visualstudioalm/archive/2014/12/04/getting-started-with-cloud-based-load-test-rest-apis.aspx 
 which references the Visual Studio Online REST API Reference at 
 https://www.visualstudio.com/en-us/integrate/api/overview
+
+ASP.NET Web API code samples from Mike Wasson of Microsoft at
+https://code.msdn.microsoft.com/site/search?f[0].Type=User&f[0].Value=Mike.Wasson
+and http://www.asp.net/web-api/overview/creating-web-apis/creating-a-web-api-that-supports-crud-operations
+will be referenced here.
 
 This repo is equivalent to what repository https://github.com/heroku/node-js-sample
 provides for the node.js web server written in JavaScript. 
@@ -17,13 +24,14 @@ This is because the example is "bare bones" and intended to work with web servic
 who have no need for animated cat gifs for amusement.
 
 ### <a name="WebSvcs"> Why Web Services APIs</a>
+This tutorial focuses on the Web Servies API only.
 
 Microsoft offers several ways:
   * Web Services API
   * WCF
-  * OData
- 
-This document focuses on the Web Servies API only.
+  * OData - see http://www.odata.org/
+ From https://code.msdn.microsoft.com/ASPNET-Web-API-OData-cecdb524
+ The Open Data Protocol (OData) is a data access protocol for the web. OData provides a uniform way to query and manipulate data sets through CRUD operations (create, read, update, and delete). Using ASP.NET Web API, it is easy to create an OData endpoint. You can control which OData operations are exposed. You can host multiple OData endpoints, alongside non-OData endpoints. You have full control over your data model, back-end business logic, and data layer.
 
 
 ### <a name="REST"> REST</a>
