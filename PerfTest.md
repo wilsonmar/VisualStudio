@@ -1,6 +1,7 @@
 This text mark-down (.md) file describes how to do performance testing using Visual Studio Ultimate 2013,
 using an approach that introduces concepts as you work hands-on following step-by-step instructions.
-This is so you get up to speed in the quickest time.
+This is so you get productive in the quickest possible time.
+
 
 ## <a name="Scripting"> Performance and Load Test Scripting</a>
 Automated scripts create **virtual users** that take the place of browser real human users.
@@ -45,18 +46,24 @@ https://code.msdn.microsoft.com/Getting-started-with-17a52e95
 2. Click on **C# (33.4 KB)** to download into your Downloads folder.
 3. In Windows Explorer, unzip file **Visual Studio Load Testing** downloaded.
 
- * Descriptions.html contains the page providing the download link.
+ * File "Descriptions.html" contains the page providing the download link.
 
 4. If you have a folder containing Visual Studio projects, copy the **C#** folder there and rename.
 5. In VS Ultimate 2013, navigate to the **GettingStartedWithLoadTesting.sln** to open it.
 6. From the Solution Explorer pane, open **SampleWebTest.webtest**.
-7. Select the URL listed in SampleWebTest.webtest file.
+7. Select the URL listed in file "SampleWebTest.webtest".
+
+If you're using Visual Studio Ultimate 2012 or 2010:
+<a target="_blank" href="https://msdn.microsoft.com/en-us/library/dd293540%28v=vs.110%29.aspx">
+This MSDN website</a> 
+walks you through how to create the
+"ColorWebAppTest" project.
 
 
 ### <a name="ConvertFiddler"> Convert Fiddler Recording</a>
 An alternate way of creating a WebTest script is make a recording using **Fiddler**
-to generate a pcap file,
-which is converted to a webtest script.
+to generate a pcap file.
+The pcap file is parsed by ??? to create a WebTest script.
 
 <hr />
 
@@ -91,9 +98,11 @@ Each Scenario consists of:
    * <a href="#TestMix"> Test Mix</a>
    * <a href="#NetworkMix"> Network Mix</a>
    * <a href="#BrowserMix"> Browser Mix</a> specifies the distribution of different browsers. LoadRunner requires additional custom coding to do this.
+ 
+More ???   
 
 ### <a name="LoadPattern"> Scenario Load Pattern</a>
-Load Pattern 
+Load Pattern ???
 
 
 ### <a name="TestMixModel">Text Mix Model</a>
@@ -128,8 +137,8 @@ so it's best to not monitor until serious load is imposed.
 
 Test settings for a local test run are stored in the **vsonline.testsettings** file.
 
+* SampleLoadTest.loadtest contains XML defining Counter Sets and references the TestProfile
 * SampleWebTest.webtest
-* SampleLoadTest.loadtest
 * GettingStartedWithLoadTesting.csproj
 * AssemblyInfo.cs in the Properties folder
 
