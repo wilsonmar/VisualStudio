@@ -1,5 +1,6 @@
 This text mark-down (.md) file describes how to do performance testing using Visual Studio Ultimate 2013,
 using an approach that introduces concepts as you work hands-on following step-by-step instructions.
+This is so you get up to speed in the quickest time.
 
 ## <a name="Scripting"> Performance and Load Test Scripting</a>
 Automated scripts create **virtual users** that take the place of browser real human users.
@@ -121,6 +122,16 @@ Counter sets specify what computers in the test rig to **monitor**.
 TIP:
 Monitoring involves generation of logs which fill up disk space, 
 so it's best to not monitor until serious load is imposed.
+
+
+### <a name="TestSettings"> Test Settings</a>
+
+Test settings for a local test run are stored in the **vsonline.testsettings** file.
+
+* SampleWebTest.webtest
+* SampleLoadTest.loadtest
+* GettingStartedWithLoadTesting.csproj
+* AssemblyInfo.cs in the Properties folder
 
 
 ## <a name="CloudPerftest"> Cloud Performance Testing </a>
