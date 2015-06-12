@@ -151,9 +151,13 @@ Xamarin is licensed for $1500 per platform per year per develop.
 
 
 ### Visual Studio Code on Macs and Linux
-Microsoft created a "Visual Studio works on Macs and Linux"
+Microsoft created Code IDE that works on Macs and Linux
 (see https://www.visualstudio.com/products/code-vs or http://code.visualstudio.com),
-the free software is branded "Visual Studio Code". 
+
+* http://code.visualstudio.com
+* https://twitter.com/code
+
+The free software is branded "Visual Studio Code". 
 The VSCode installer for OS X (file VSCode-darwin.zip) is 64.7 MB (expands to 196.7 MB),
 described as "Preview" maturity as of June 2015.
 Follow its @code Twitter handle.
