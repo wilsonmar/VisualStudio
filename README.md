@@ -8,8 +8,7 @@ http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#History
 presents a table of the correspondence between product names, 
 internal code names, internal version number, release date,
 and what version of the core .NET Framework each supports.
-
-Visual Studio 2013 supports up to 4.5.2.
+Note Visual Studio 2013 supports up to .NET 4.5.2.
 
 For each version there are different <a href="#Editions">editions</a>.
 
