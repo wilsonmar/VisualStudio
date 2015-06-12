@@ -2,6 +2,12 @@ This text mark-down (.md) file describes how to do performance testing using Vis
 using an approach that introduces concepts as you work hands-on following step-by-step instructions.
 This is so you get productive in the quickest possible time.
 
+## Why?
+One can file performance and load defects 
+<a target="_blank" href="https://msdn.microsoft.com/en-us/library/dd293538%28v=vs.110%29.aspx">
+from within Visual Studio</a>.
+
+But the reason for doing this is evolving from catching mistakes to struct.
 
 ## <a name="Scripting"> Performance and Load Test Scripting</a>
 Automated scripts create **virtual users** that take the place of browser real human users.
