@@ -1,7 +1,11 @@
 This page and associated test script describes use of Visual Studio and the C# language to create a basic 
 web service listener.
 
-http://www.asp.net/web-api
+There are several architectures for services which listen for and respond to web service requests.
+
+ * WEB API http://www.asp.net/web-api
+ * MVC 
+ * FastCGI (PHP)
 
 http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 
