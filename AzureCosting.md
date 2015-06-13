@@ -37,8 +37,10 @@ described below:
 ## <a name="VSOnlineVUMs"> VS Online VUMs</a>
 
 Each Cloud account is provided first 20,000 VUMs free each month. 
-That's 333 hours or over 13 continuous days by one virtual user
-or 333 vusers running one hour per month.
+Because you must have a minimum of 25 VUsers per agent core in your run,
+that's 800 minutes or (x60=) or **13.3 hours of free runs**.
+
+No VUserMinutes are charged for runs that end in an error state.
 
 After that, each 100 VUM is $0.40 (40 cents).
 That's $0.24 (24 cents) per Vuser Hour.
@@ -48,6 +50,19 @@ That's $0.24 (24 cents) per Vuser Hour.
 https://www.visualstudio.com/en-us/explore/vso-cloud-load-testing-vs
 provides a calculator to determine how many virtual user minutes (VUMs) 
 a scenario will use.
+
+From https://www.visualstudio.com/en-us/support/load-testing-faq-vs.aspx#EarlierVersions
+
+VUserMinutes = (Maximum user load for the run) * (Duration of the run in minutes).
+
+The minimum values used for calculating VUserMinutes are 25 VUsers and 1 minute. If your run values are smaller than the minimums, then the value will be rounded up to the minimum value. For example, if your load test is set up to run with 100 VUsers for 30 seconds, then the VUserMinutes will be calculated with 1 minute for the duration: 100 (VUsers) * 1 (minute) = 100. The same rule applies to VUser count calculation.
+
+If your run duration is 5 minutes and 15 seconds, then the run duration will be rounded up to the next integer value. In this example, the duration will be 6 minutes.
+
+VUserMinutes (minimum 250, including warm-up period) are deducted from your account for:
+
+*    Completed runs, based on the full duration of the run
+*    Aborted runs, based on the elapsed run duration
 
 ## <a name="AppSvcScaleUpCostingLogic"> App Service Scale-Up Costing Logic</a>
 
