@@ -62,7 +62,7 @@ But the request is registration within 30 days.
 
 ### <a name="OptionalFeatures"> Optional Features to Install</a>
 
-* Blend for Visual Studio 
+* Blend for Visual Studio for UI Design of XAML-based interfaces for Windows Presentation Foundation and Silverlight applications.. See https://en.wikipedia.org/wiki/Microsoft_Blend
 * LightSwitch 
 * Microsoft Foundation Classes for C++ [uncheck]
 * Microsoft Office Developer Tools [uncheck]
