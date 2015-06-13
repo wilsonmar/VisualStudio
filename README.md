@@ -255,6 +255,12 @@ https://vlasovstudio.com/
 and http://visualstudioextensions.vlasovstudio.com/
 provides additional descriptions on top plug-ins.
 
+### <a name="FontColorTemplates"> Font color templates</a>
+QUESTION:
+Visual Studio Font color templates like the one for Sublime Text at
+https://flattr.com/thing/814991/chriskempsontomorrow-theme-on-GitHub,
+https://github.com/chriskempson/base16, and
+https://github.com/kkga/spacegray
 
 ### <a name="Powershell"> Powershell</a>
 
