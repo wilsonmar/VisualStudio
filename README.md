@@ -135,7 +135,8 @@ The **Ultimate edition** of Visual Studio is required to run
 
 MSDN subscribers also get 40% off PluralSight.com video tutorials.
 
-### <a name="Mobile"> Mobile</a>
+
+### <a name="CommunityEdition"> Visual Studio Community</a>
 
 A big part of the resurgence in popularity is Visual Studio's ability to provide one IDE
 to work across many mobile platforms (iOS, Android, Windows Phone, etc.).
@@ -149,21 +150,40 @@ https://www.visualstudio.com/en-us/features/xamarin-vs.aspx
 Xamarin is licensed for $1500 per platform per year per develop.
 
 
-### Visual Studio Code on Macs and Linux
-Microsoft created Code IDE that works on Macs and Linux
-(see https://www.visualstudio.com/products/code-vs or http://code.visualstudio.com),
+### <a name="CommunityCode"> Visual Studio Code</a>
 
-* http://code.visualstudio.com
-* https://twitter.com/code
+Microsoft released its Code IDE April 2015 during its BUILD conference.
 
-The free software is branded "Visual Studio Code". 
-The VSCode installer for OS X (file VSCode-darwin.zip) is 64.7 MB (expands to 196.7 MB),
+ * http://www.hanselman.com/blog/IntroducingVisualStudioCodeForWindowsMacAndLinux.aspx
+ * http://blogs.msdn.com/b/vscode/ is where updates are announced, expected once each month.
+ * https://twitter.com/code (@code)
+
+It installer is available from:
+
+ * http://code.visualstudio.com
+ * https://www.visualstudio.com/en-us/products/code-vs.aspx
+ * https://chocolatey.org/packages/VisualStudioCode for Windows
+ * VSCode installer for OS X (file VSCode-darwin.zip) is 64.7 MB (expands to 196.7 MB),
 described as "Preview" maturity as of June 2015.
-Follow its @code Twitter handle.
-The program provides IntelliCode and [TaskRunner](https://code.visualstudio.com/Docs/tasks)
-that runs TypeScript (.ts files) and JS Hint at http://jshint.com/.
+
+**VSCode works on Macs and Linux** as well as Windows.
+It's cross-platform like its competitor Sublime Text.
+
+Ohter competitors to VSCode:
+
+ * WebStorm
+ * JetBrains
+ * Vi
+
+VSCode provides IntelliCode and [TaskRunner](https://code.visualstudio.com/Docs/tasks)
+that runs TypeScript (.ts files) and JS Hint from http://jshint.com/.
 
 VSCode offers debugging for Node.js, but not yet for ASP.NET 5.
+
+Built-in integration with local Git and Github.com.
+
+Integration with HockyApp which Microsoft bought (competitor to Apple's TestFlight)
+for beta distribution, crash reporting, and analytics.
 
 
 ### Visual Studio Github
@@ -183,6 +203,7 @@ many developers still prefer to download and install Visual Studio on computers 
 where response time is near instantaneous.
 The online edition makes use of Team Foundation Version Control (TFVC) for one massively scalable repo, 
 or multiple Git repositories for maximum flexibility.
+
 
 ## <a name="VS_Tips"> Visual Studio Usage Tips</a>
 Getting in the habit of using keyboard shortcuts enhances productivity.
@@ -208,6 +229,7 @@ http://blogs.msdn.com/b/benwilli/archive/2015/04/07/back-to-basics-visual-studio
 8. Add existing files with Show All Files
 9. Edit directly in the Diff tool
 
+
 ### <a name="PlugIns"> Plug-Ins (Extension Pack)</a>
 
 These can be downloaded and installed from inside Visual Studio's Tools menu "Extensions and Updates".
@@ -232,6 +254,7 @@ https://visualstudiogallery.msdn.microsoft.com/0c5642e8-f6aa-4353-830c-946a315c1
 https://vlasovstudio.com/
 and http://visualstudioextensions.vlasovstudio.com/
 provides additional descriptions on top plug-ins.
+
 
 ### <a name="Powershell"> Powershell</a>
 
