@@ -2,14 +2,22 @@ This text mark-down (.md) file describes how to do performance testing using Vis
 using an approach that introduces concepts as you work hands-on following step-by-step instructions.
 This is so you get productive in the quickest possible time.
 
-## Why?
+## Contents
+
+1. <a href="#Why">Why</a>
+2. <a href="#CreateScript"> Performance and Load Test Scripting</a>
+3. <a href="#ResponseValidation"> Validate Response</a>
+4. <a href="#VaryData"> Vary Data</a>
+
+
+## <a name="Why">Why?</a>
 One can file performance and load defects 
 <a target="_blank" href="https://msdn.microsoft.com/en-us/library/dd293538%28v=vs.110%29.aspx">
 from within Visual Studio</a>.
 
 But the reason for doing this is evolving from catching mistakes to struct.
 
-## <a name="Scripting"> Performance and Load Test Scripting</a>
+## <a name="CreateScript"> Performance and Load Test Scripting</a>
 Automated scripts create **virtual users** that take the place of browser real human users.
 
  * <a href="#NewPerftest"> Create New Performance Testing Script by Recording</a>
@@ -178,3 +186,10 @@ Credits: This expands on these:
 
 * https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
 
+## <a name="ResponseValidation"> Response Validation</a>
+
+
+## <a name="VaryData"> Vary Data</a>
+
+See https://msdn.microsoft.com/en-us/library/ms243142.aspx
+To add a data source (named ColorWebAppData) to a web performance test
