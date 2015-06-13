@@ -41,7 +41,7 @@ provides two options for downloading installers:
    C:\Program Files (x86)\Microsoft Visual Studio 12.0
    ```
    
-  TIP: 
+  PROTIP: 
   This is the approach I recommend because it give you the option to save the installer for reuse
   by other colleagues or on other machines.
 
@@ -182,7 +182,9 @@ VSCode offers debugging for Node.js, but not yet for ASP.NET 5.
 
 Built-in integration with local Git and Github.com.
 
-Integration with HockyApp which Microsoft bought (competitor to Apple's TestFlight)
+QUESTION:
+Integration with <a target="_blank" href="http://hockeyapp.net/">
+HockyApp</a> which Microsoft bought (competitor to Apple's TestFlight)
 for beta distribution, crash reporting, and analytics.
 
 
