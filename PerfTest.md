@@ -34,6 +34,8 @@ Defects in performance and load can be filed within
 from within Visual Studio</a>.
 
 ## <a name="Config"> Configure Recording Options</a>
+If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
+appears, click "Enable". 
 
 
 ## <a name="CreateScript"> Performance and Load Test Scripting</a>
