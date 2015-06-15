@@ -219,6 +219,6 @@ The states for a load test run within Visual Studio Online are:
  * **Aborted**: The test run has been stopped by the user clicking the stop button. This state can also occur if there are issues related to your load test. For example, aborted can occur if there are issues in your test scripts.
  * **Error**: The test run has stopped due to an error with the service itself. For example, there might be an infrastructure issue in the service and it is unable to continue to run your test. This is not an issue caused by your load test or test scripts.
 
-
+<img src="https://cloud.githubusercontent.com/assets/300046/8152936/87507aaa-12e1-11e5-9663-cb1f69007a75.png" />
 
 ## <a name="AnalyzeRunResults"> Analyze Run Results</a>
