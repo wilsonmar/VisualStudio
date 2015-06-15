@@ -5,12 +5,15 @@ This is so you get productive in the quickest possible time.
 ## Contents
 
 1. <a href="#Why">Why</a>
-2. <a href="#CreateScript"> Performance and Load Test Scripting</a>
-3. <a href="#ResponseValidation"> Validate Response</a>
-4. <a href="#VaryData"> Vary Data</a>
-5. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
-6. <a href="#MonitorRuns"> Monitor Runs</a>
-7. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
+2. <a href="#Config">Configure Recording Options</a>
+3. <a href="#CreateScript"> Script Performance and Load Test Test</a>
+4. <a href="#Archive"> Archive Assets</a>
+5. <a href="#DefineTransactions"> Define Transactions</a>
+6. <a href="#ResponseValidation"> Validate Responses</a>
+7. <a href="#VaryData"> Vary Data</a>
+8. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
+9. <a href="#MonitorRuns"> Monitor Runs</a>
+10. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 
 
 ## <a name="Why">Why?</a>
@@ -20,11 +23,15 @@ from within Visual Studio</a>.
 
 But the reason for doing this is evolving from catching mistakes to struct.
 
+## <a name="Config"> Configure Recording Options</a>
+
+
 ## <a name="CreateScript"> Performance and Load Test Scripting</a>
 Automated scripts create **virtual users** that take the place of browser real human users.
 
  * <a href="#NewPerftest"> Create New Performance Testing Script by Recording</a>
  * <a href="#OpenSampleProject"> Open a Sample Project</a>
+ * <a href="#UseFuncTests"> Use CodedUI Functional Tests</a>
  * <a href="#ConvertFiddler"> Convert Fiddler Recording</a>
 
 
@@ -79,6 +86,11 @@ This MSDN website</a>
 walks you through how to create the
 "ColorWebAppTest" project.
 
+### <a name="UseFuncTests"> Use CodedUI Functional Tests</a>
+QUESTION:
+Can Load Tests leverage JUnit tests and functional tests coded in CodedUI?
+
+
 
 ### <a name="ConvertFiddler"> Convert Fiddler Recording</a>
 An alternate way of creating a WebTest script is make a recording using **Fiddler**
@@ -87,6 +99,38 @@ The pcap file is parsed by ??? to create a WebTest script.
 
 <hr />
 
+## <a name="Archive"> Archive Project Assets</a>
+Performance and lod tests can use up a large amount of disk space.
+And servers may need to be brought down when not used.
+So project assets need to be moved to a storage medium for lower cost than 
+instantly available drives which are more expensive to rent.
+
+WARNING: Do not manually edit the .loadtest xml.
+Doing so would result in 
+
+Incremental archival would ensure that back versions of files are automatically saved
+and available to analyze what changed and to reverse those changes if need be.
+
+<hr />
+
+## <a name="DefineTransactions"> Define Transactions</a>
+Specify the name of what should be measured.
+
+## <a name="ResponseValidation"> Validate Response</a>
+Ensure that what is returned is what is expected.
+
+
+## <a name="VaryData"> Vary Data</a>
+
+See https://msdn.microsoft.com/en-us/library/ms243142.aspx
+To add a data source (named ColorWebAppData) to a web performance test
+
+
+## <a name="SetRunTimeSettings"> Set RunTime Settings</a>
+
+
+
+<hr />
 ## <a name="LoadGenerators"> Load Generators</a>
 There are several ways to perform load tests:
 
@@ -123,7 +167,6 @@ More ???
 
 ### <a name="LoadPattern"> Scenario Load Pattern</a>
 Load Pattern ???
-
 
 ### <a name="TestMixModel">Text Mix Model</a>
 
@@ -171,11 +214,7 @@ With VS 2015, load Tests in Azure can scale out to 25,000 users spanning 100 cor
 http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx
 
 
-## <a name="Unittest"> Unit Testing </a>
-QUESTION:
-Can Load Tests leverage unit tests and functional tests?
-
-See
+<hr />
 
 
 
@@ -189,18 +228,6 @@ Credits: This expands on these:
 * https://www.visualstudio.com/en-us/get-started/test/load-test-your-app-vs
 
 * https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
-
-## <a name="ResponseValidation"> Response Validation</a>
-
-
-## <a name="VaryData"> Vary Data</a>
-
-See https://msdn.microsoft.com/en-us/library/ms243142.aspx
-To add a data source (named ColorWebAppData) to a web performance test
-
-
-## <a name="SetRunTimeSettings"> Set RunTime Settings</a>
-
 
 ## <a name="MonitorRuns"> Monitor Runs</a>
 
@@ -222,3 +249,6 @@ The states for a load test run within Visual Studio Online are:
 <img src="https://cloud.githubusercontent.com/assets/300046/8152936/87507aaa-12e1-11e5-9663-cb1f69007a75.png" />
 
 ## <a name="AnalyzeRunResults"> Analyze Run Results</a>
+
+
+
