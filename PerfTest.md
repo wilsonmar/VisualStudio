@@ -8,6 +8,9 @@ This is so you get productive in the quickest possible time.
 2. <a href="#CreateScript"> Performance and Load Test Scripting</a>
 3. <a href="#ResponseValidation"> Validate Response</a>
 4. <a href="#VaryData"> Vary Data</a>
+5. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
+6. <a href="#MonitorRuns"> Monitor Runs</a>
+7. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 
 
 ## <a name="Why">Why?</a>
@@ -193,3 +196,28 @@ Credits: This expands on these:
 
 See https://msdn.microsoft.com/en-us/library/ms243142.aspx
 To add a data source (named ColorWebAppData) to a web performance test
+
+
+## <a name="SetRunTimeSettings"> Set RunTime Settings</a>
+
+
+## <a name="MonitorRuns"> Monitor Runs</a>
+
+Subscribe to alerts
+http://social.msdn.microsoft.com/Forums/vstudio/en-US/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status
+
+View Visual Studio Online Portal
+https://www.visualstudio.com/support-overview-vs
+
+http://blogs.msdn.com/b/vsoservice/
+
+The states for a load test run within Visual Studio Online are:
+
+ * **In-Progress**: The test run is currently running in the cloud.
+ * **Completed**: The test run has completed successfully.
+ * **Aborted**: The test run has been stopped by the user clicking the stop button. This state can also occur if there are issues related to your load test. For example, aborted can occur if there are issues in your test scripts.
+ * **Error**: The test run has stopped due to an error with the service itself. For example, there might be an infrastructure issue in the service and it is unable to continue to run your test. This is not an issue caused by your load test or test scripts.
+
+
+
+## <a name="AnalyzeRunResults"> Analyze Run Results</a>
