@@ -12,8 +12,10 @@ This is so you get productive in the quickest possible time.
 6. <a href="#ResponseValidation"> Validate Responses</a>
 7. <a href="#VaryData"> Vary Data</a>
 8. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
-9. <a href="#MonitorRuns"> Monitor Runs</a>
-10. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
+9. <a href="#LoadGenerators"> Setup Load Generators</a>
+10. <a href="#Scenarios"> Scenarios</a>
+11. <a href="#MonitorRuns"> Monitor Runs</a>
+12. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 
 <hr />
 
@@ -178,6 +180,14 @@ There are several ways to perform load tests:
 3. From an internet browser on the Visual Studio Online website running in Microsoft's Azure cloud.
 4. From another software product (such as LoadRunner or SOASTA) using servers in Azure.
 
+### <a name="CloudPerftest"> Cloud Performance Testing </a>
+With VS 2013, cloud-based Load Testing can, in a single load test run, emulate up to 5,000 users running from
+10 agents spanning 20 cores.
+
+With VS 2015, load Tests in Azure can scale out to 25,000 users spanning 100 cores 
+http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx
+
+
 
 ## <a name="NewLoadTest"> New Load Test</a>
 With Visual Studio, in the Solution Explorer, right-click on the project and select **Add** a **Load Test**
@@ -240,14 +250,6 @@ Test settings for a local test run are stored in the **vsonline.testsettings** f
 * SampleWebTest.webtest
 * GettingStartedWithLoadTesting.csproj
 * AssemblyInfo.cs in the Properties folder
-
-
-## <a name="CloudPerftest"> Cloud Performance Testing </a>
-With VS 2013, cloud-based Load Testing can, in a single load test run, emulate up to 5,000 users running from
-10 agents spanning 20 cores.
-
-With VS 2015, load Tests in Azure can scale out to 25,000 users spanning 100 cores 
-http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx
 
 
 <hr />
