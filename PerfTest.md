@@ -37,6 +37,13 @@ from within Visual Studio</a>.
 If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
 appears, click "Enable". 
 
+QUESTION:
+Are SSL/TLS certificates or a proxy needed?
+ 
+
+To Access via Network see
+http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applications-behind-firewall-using-trusted-ip.aspx
+
 
 ## <a name="CreateScript"> Performance and Load Test Scripting</a>
 Automated scripts create **virtual users** that take the place of browser real human users.
@@ -118,7 +125,11 @@ So project assets need to be moved to a storage medium for lower cost than
 instantly available drives which are more expensive to rent.
 
 WARNING: Do not manually edit the .loadtest xml.
-Doing so would result in 
+Doing so would result in errors such as:
+
+ * VS1550084 - run aborted because the .loadtest xml file could not be parsed.
+ * VS1550026 & VS1550027 - too many applications or counters have been selected to run for load test.
+
 
 Incremental archival would ensure that back versions of files are automatically saved
 and available to analyze what changed and to reverse those changes if need be.
@@ -127,6 +138,7 @@ and available to analyze what changed and to reverse those changes if need be.
 
 ## <a name="DefineTransactions"> Define Transactions</a>
 Specify the name of what should be measured.
+
 
 ## <a name="ResponseValidation"> Validate Response</a>
 Ensure that what is returned is what is expected.
@@ -139,8 +151,23 @@ To add a data source (named ColorWebAppData) to a web performance test
 
 
 ## <a name="SetRunTimeSettings"> Set RunTime Settings</a>
+See https://msdn.microsoft.com/en-us/library/ff406976.aspx
 
+   * General Properties
 
+   * Logging Properties
+
+   * Results Properties
+
+   * SQL Tracing Properties
+
+   * Test Iterations Properties
+
+   * Timing Properties
+
+   * WebTest Connections Properties
+
+   * Changing Run Setting Properties
 
 <hr />
 ## <a name="LoadGenerators"> Load Generators</a>
@@ -150,10 +177,6 @@ There are several ways to perform load tests:
 2. From within Visual Studio Ultimate installed on a local machine, run on a TFS (Test Foundation Server).
 3. From an internet browser on the Visual Studio Online website running in Microsoft's Azure cloud.
 4. From another software product (such as LoadRunner or SOASTA) using servers in Azure.
-
-
-### <a name="NetworkAccess"> Access via Network</a>
-http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applications-behind-firewall-using-trusted-ip.aspx
 
 
 ## <a name="NewLoadTest"> New Load Test</a>
@@ -179,6 +202,7 @@ More ???
 
 ### <a name="LoadPattern"> Scenario Load Pattern</a>
 Load Pattern ???
+
 
 ### <a name="TestMixModel">Text Mix Model</a>
 
