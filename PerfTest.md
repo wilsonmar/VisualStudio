@@ -15,13 +15,22 @@ This is so you get productive in the quickest possible time.
 9. <a href="#MonitorRuns"> Monitor Runs</a>
 10. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 
+<hr />
 
 ## <a name="Why">Why?</a>
-One can file performance and load defects 
+Load (Stress) Testing is used for performance tuning, to uncover bottlenecks, and for capacity planning.
+
+The reason for doing it is evolving from catching mistakes to preparing a fast-response environment.
+
+Doing the "homework" of creating scritps and analyzing performance and capacity
+enables production issues to be diagnosed quickly.
+
+Analyzing monitoring during tests enables the team to identify pre-cursors or early warning signs to issues
+so that problems are averted before they cause wider impact.
+
+Defects in performance and load can be filed within 
 <a target="_blank" href="https://msdn.microsoft.com/en-us/library/dd293538%28v=vs.110%29.aspx">
 from within Visual Studio</a>.
-
-But the reason for doing this is evolving from catching mistakes to struct.
 
 ## <a name="Config"> Configure Recording Options</a>
 
