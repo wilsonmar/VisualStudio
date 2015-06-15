@@ -20,7 +20,8 @@ This is so you get productive in the quickest possible time.
 ## <a name="Why">Why?</a>
 Load (Stress) Testing is used for performance tuning, to uncover bottlenecks, and for capacity planning.
 
-The reason for doing it is evolving from catching mistakes to preparing a fast-response environment.
+The reason for doing it is evolving from catching mistakes to preparing a work environment that
+can scan ahead for potential issues and respond quickly when issues occur.
 
 Doing the "homework" of creating scritps and analyzing performance and capacity
 enables production issues to be diagnosed quickly.
