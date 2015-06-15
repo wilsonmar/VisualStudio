@@ -33,7 +33,8 @@ With options 1 - 3, create a new solution (shown in <a target="_blank" href="htt
 this video</a> and <a target="_blank" href="http://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Load-testing-applications-in-Visual-Studio">this for VS2010</a>):
 
 1. Install and Launch the Ultimate Visual Studio or Visual Studio Online.
-2. Press Ctrl+Shift+N or select menu File | New | Project
+If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Options](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx)
+2. In Visual Studio, press Ctrl+Shift+N or select menu File | New | Project
  
    The default project name is "WebTest".
 
