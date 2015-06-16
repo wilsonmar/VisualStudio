@@ -37,6 +37,10 @@ Defects in performance and load can be filed within
 <a target="_blank" href="https://msdn.microsoft.com/en-us/library/dd293538%28v=vs.110%29.aspx">
 from within Visual Studio</a>.
 
+http://www.codeproject.com/Articles/534797/Troubleshooting-ASP-NET-based-Enterprise-Applicati
+presents examples of performance issues in ASP.NET servers.
+
+
 ## <a name="Config"> Configure Recording Options</a>
 If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
 appears, click "Enable". 
