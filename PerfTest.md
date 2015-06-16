@@ -4,7 +4,7 @@ This is so you get productive in the quickest possible time.
 
 ## Contents
 
-1. <a href="#Why">Why</a>
+1. <a href="#Why">Why? - App Flow and Risk Assesment</a>
 2. <a href="#Config">Configure Recording Options</a>
 3. <a href="#CreateScript"> Script Performance and Load Test Test</a>
 4. <a href="#Archive"> Archive Assets</a>
@@ -20,7 +20,7 @@ This is so you get productive in the quickest possible time.
 
 <hr />
 
-## <a name="Why">Why?</a>
+## <a name="Why">Why? - App Flow and Risk Assesment</a>
 Load (Stress) Testing is used for performance tuning, to uncover bottlenecks, and for capacity planning.
 
 The reason for doing it is evolving from catching mistakes to preparing a work environment that
