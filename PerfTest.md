@@ -204,7 +204,7 @@ Unlike LoadRunner, which has a separate Controller, Visual Studio provides a one
 
 
 ## <a name="Scenarios"> Scenarios</a>
-A scenario is a collection of conditions defining a test run,
+With LoadRunner, a "scenario" is a collection of conditions defining a test run,
 such as the number of vusers, ramp-up speed, etc.
 
    * <a href="#LoadPattern"> Load Pattern</a> specifies the **user count**.
@@ -213,7 +213,7 @@ such as the number of vusers, ramp-up speed, etc.
    * <a href="#NetworkMix"> Network Mix</a>
    * <a href="#BrowserMix"> Browser Mix</a> specifies the distribution of different browsers. LoadRunner requires additional custom coding to do this.
  
-More ???   
+QUESTION: More ???   
 
 ### <a name="LoadPattern"> Scenario Load Pattern</a>
 Load Pattern ???
@@ -233,22 +233,6 @@ by clicking **Add**.
 A Distribution defaults to 100%.
 
 
-### <a name="RunSettings"> Run Settings</a>
-The duration of the run is specified in the Run Settings pane.
-
-The **Details Sampling rate** in seconds and 
-
-**Save Log on Test Failure** is True/False setting.
-
-## <a name="SetupMonitoring"> Setup Monitoring</a>
-
-### <a name="CounterSets"> Counter Sets</a>
-Counter sets specify what computers in the test rig to **monitor**.
-
-TIP:
-Monitoring involves generation of logs which fill up disk space, 
-so it's best to not monitor until serious load is imposed.
-
 
 ### <a name="TestSettings"> Test Settings</a>
 
@@ -258,6 +242,24 @@ Test settings for a local test run are stored in the **vsonline.testsettings** f
 * SampleWebTest.webtest
 * GettingStartedWithLoadTesting.csproj
 * AssemblyInfo.cs in the Properties folder
+
+
+### <a name="RunSettings"> Run Settings</a>
+The duration of the run is specified in the Run Settings pane.
+
+The **Details Sampling rate** in seconds and 
+
+**Save Log on Test Failure** is True/False setting.
+
+
+## <a name="SetupMonitoring"> Setup Monitoring</a>
+
+### <a name="CounterSets"> Counter Sets</a>
+Counter sets specify what computers in the test rig to **monitor**.
+
+TIP:
+Monitoring involves generation of logs which fill up disk space, 
+so it's best to not monitor until serious load is imposed.
 
 
 <hr />
