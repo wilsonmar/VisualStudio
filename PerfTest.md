@@ -203,10 +203,11 @@ for the New Test Wizard.
 Unlike LoadRunner, which has a separate Controller, Visual Studio provides a one-stop shop.
 
 
-## <a name="Scenario"> Scenario Specification</a>
-Each Scenario consists of:
+## <a name="Scenarios"> Scenarios</a>
+A scenario is a collection of conditions defining a test run,
+such as the number of vusers, ramp-up speed, etc.
 
-   * <a href="#LoadPattern"> Load Pattern</a> specifies the user count.
+   * <a href="#LoadPattern"> Load Pattern</a> specifies the **user count**.
    * <a href="#TestMixModel">Text Mix Model</a>
    * <a href="#TestMix"> Test Mix</a>
    * <a href="#NetworkMix"> Network Mix</a>
@@ -230,11 +231,6 @@ In Visual Studio, a "Test" refers to the projects selected for inclusion in a te
 by clicking **Add**.
 
 A Distribution defaults to 100%.
-
-
-## <a name="Scenarios"> Scenarios</a>
-A scenario is a collection of conditions defining a test run,
-such as the number of vusers, ramp-up speed, etc.
 
 
 ### <a name="RunSettings"> Run Settings</a>
