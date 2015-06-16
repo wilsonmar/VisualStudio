@@ -14,9 +14,10 @@ This is so you get productive in the quickest possible time.
 8. <a href="#VarySQLData"> Vary Data in SQL Databases</a>
 9. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
 10. <a href="#LoadGenerators"> Setup Load Generators</a>
-11. <a href="#Scenarios"> Scenarios</a>
-12. <a href="#MonitorRuns"> Monitor Runs</a>
-13. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
+11. <a href="#SetupMonitoring"> Setup Monitoring</a>
+12. <a href="#Scenarios"> Scenarios</a>
+13. <a href="#MonitorRuns"> Monitor Runs</a>
+14. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 
 <hr />
 
@@ -230,12 +231,20 @@ by clicking **Add**.
 
 A Distribution defaults to 100%.
 
+
+## <a name="Scenarios"> Scenarios</a>
+A scenario is a collection of conditions defining a test run,
+such as the number of vusers, ramp-up speed, etc.
+
+
 ### <a name="RunSettings"> Run Settings</a>
 The duration of the run is specified in the Run Settings pane.
 
 The **Details Sampling rate** in seconds and 
 
 **Save Log on Test Failure** is True/False setting.
+
+## <a name="SetupMonitoring"> Setup Monitoring</a>
 
 ### <a name="CounterSets"> Counter Sets</a>
 Counter sets specify what computers in the test rig to **monitor**.
