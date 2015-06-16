@@ -18,6 +18,7 @@ This is so you get productive in the quickest possible time.
 12. <a href="#Scenarios"> Scenarios</a>
 13. <a href="#MonitorRuns"> Monitor Runs</a>
 14. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
+15. <a href="#AnalyzeLogs"> Analyze Logs</a>
 
 <hr />
 
@@ -300,7 +301,14 @@ The states for a load test run within Visual Studio Online are:
 
 <img src="https://cloud.githubusercontent.com/assets/300046/8152936/87507aaa-12e1-11e5-9663-cb1f69007a75.png" />
 
+
 ## <a name="AnalyzeRunResults"> Analyze Run Results</a>
+Analysis includes calculating and interpreting probability statistics
+such as as average, median, standard deviation, and coefficient of variation.
+
+This also includes graphing results to illustrate relationships among metrics collected.
 
 
-
+## <a name="AnalyzeLogs"> Analyze Logs</a>
+It's rather rare, but some performance issues are identified by looking into the "weeds"
+https://msdn.microsoft.com/en-us/magazine/dn519926.aspx
