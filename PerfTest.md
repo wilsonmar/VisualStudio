@@ -10,12 +10,13 @@ This is so you get productive in the quickest possible time.
 4. <a href="#Archive"> Archive Assets</a>
 5. <a href="#DefineTransactions"> Define Transactions</a>
 6. <a href="#ResponseValidation"> Validate Responses</a>
-7. <a href="#VaryData"> Vary Data</a>
-8. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
-9. <a href="#LoadGenerators"> Setup Load Generators</a>
-10. <a href="#Scenarios"> Scenarios</a>
-11. <a href="#MonitorRuns"> Monitor Runs</a>
-12. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
+7. <a href="#VaryCSVData"> Vary Data in CSV Files</a>
+8. <a href="#VarySQLData"> Vary Data in SQL Databases</a>
+9. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
+10. <a href="#LoadGenerators"> Setup Load Generators</a>
+11. <a href="#Scenarios"> Scenarios</a>
+12. <a href="#MonitorRuns"> Monitor Runs</a>
+13. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 
 <hr />
 
@@ -146,10 +147,12 @@ Specify the name of what should be measured.
 Ensure that what is returned is what is expected.
 
 
-## <a name="VaryData"> Vary Data</a>
+## <a name="VaryCSVData"> Vary CSV Data</a>
 
 See https://msdn.microsoft.com/en-us/library/ms243142.aspx
 To add a data source (named ColorWebAppData) to a web performance test
+
+## <a name="VarySQLData"> Vary SQL Data</a>
 
 
 ## <a name="SetRunTimeSettings"> Set RunTime Settings</a>
