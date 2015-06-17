@@ -9,43 +9,68 @@ namespace Demo.Rest.Mvc.Controllers
         [Dependency]
         public IEmployeeManager EmployeeManager { get; set; }
 
-        // GET http://server:port/api/Employee
+        /// <summary>
+        /// GET : http://server:port/api/Employee
+        /// </summary>
+        /// <returns></returns>
         public IHttpActionResult Get()
         {
             return Ok(EmployeeManager.Get());
         }
 
-        //GET http://server:port/api/Employee/1
+        /// <summary>
+        /// GET : http://server:port/api/Employee/1
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public IHttpActionResult Get(string id)
         {
             return Ok(EmployeeManager.Get(id));
         }
 
-        //GET http://server:port/api/Values?param1=1&param2=2
+        /// <summary>
+        /// GET : http://server:port/api/Values?param1=1&param2=2
+        /// </summary>
+        /// <param name="param1"></param>
+        /// <param name="param2"></param>
+        /// <returns></returns>
         public IHttpActionResult Get([FromUri] string param1, [FromUri] string param2)
         {
             return Ok(string.Format("received for search : {0}, {1}", param1, param2));
         }
 
-        // POST http://server:port/api/Employee/1
-        // header -> Content-Type : application/json
-        // data { "firstName": "John" } 
+        /// <summary>
+        /// POST : http://server:port/api/Employee/1
+        /// header -> Content-Type : application/json
+        /// data { "firstName": "John" } 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public IHttpActionResult Post(string id, [FromBody] dynamic data)
         {
             EmployeeManager.Update(id, data);
             return Ok(EmployeeManager.Get(id));
         }
 
-        // PUT http://server:port/api/Employee/1
-        // header -> Content-Type : application/json
-        // data {"firstName": "x" , "lastName" : "y"}
+        /// <summary>
+        /// PUT : http://server:port/api/Employee/1
+        /// header -> Content-Type : application/json
+        /// data {"firstName": "x" , "lastName" : "y"}
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public IHttpActionResult Put([FromBody] dynamic data)
         {
             EmployeeManager.Create(data.firstName.Value, data.lastName.Value);
             return Ok(EmployeeManager.Get());
         }
 
-        // DELETE http://server:port/api/Employee/1
+        /// <summary>
+        /// DELETE : http://server:port/api/Employee/1
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public IHttpActionResult Delete(string id)
         {
             EmployeeManager.Delete(id);
