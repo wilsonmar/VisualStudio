@@ -166,11 +166,11 @@ It installer is available from:
  * VSCode installer for OS X (file VSCode-darwin.zip) is 64.7 MB (expands to 196.7 MB),
 described as "Preview" maturity as of June 2015.
 
-**VSCode works on Macs and Linux** as well as Windows.
-It's cross-platform like its competitor Sublime Text.
+**VSCode works on Macs and Linux** as well as Windows (it's cross-platform).
 
 Ohter competitors to VSCode:
 
+ * Sublime Text
  * WebStorm
  * JetBrains
  * Vi
@@ -187,6 +187,9 @@ Integration with <a target="_blank" href="http://hockeyapp.net/">
 HockyApp</a> which Microsoft bought (competitor to Apple's TestFlight)
 for beta distribution, crash reporting, and analytics.
 
+Videos by others about VSCode:
+
+* https://www.youtube.com/watch?v=e3tPWAq74v4
 
 ### Visual Studio Github
 https://visualstudio.github.com/index.html
