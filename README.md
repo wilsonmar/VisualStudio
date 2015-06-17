@@ -114,21 +114,21 @@ web HTML apps, Windows apps, and Windows Desktop apps.
 
 The Community edition is equivalent to the Pro edition.
 In [this table comparing editions](https://www.visualstudio.com/products/compare-visual-studio-products-vs).
-notice the Pro edition does not include Lab Management functionality:
+
+COMMENTARY:
+It is ironic to me that Microsoft is one of the pioneers in the "Software Developer in Test"
+job title, yet the "Test Pro" edition does not include Debugging functionality
+or even Architecture Diagrams and Code visualization.
+As http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#Editions_feature_grid
+highlights, another irony is that the **Test edition of Visual Studio does not run load tests**.
+
+The Pro edition does not include Lab Management functionality:
 
  * Virtual environment setup & teardown 	  	  	 
  * Provision environment from template 	  	  	 
  * Checkpoint environment
 
 The Online edition doesn't have them either.
-
-COMMENTARY:
-It is ironic to me that Microsoft is one of the pioneers in the "Software Developer in Test"
-job title, yet the "Test Pro" edition does not include Debugging functionality
-or even Architecture Diagrams and Code visualization.
-
-As http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#Editions_feature_grid
-highlights, another irony is that the **Test edition of Visual Studio does not run load tests**.
 
 The **Ultimate edition** of Visual Studio is required to run
 <a href="#Perftest.md">performance/load tests</a>**.
