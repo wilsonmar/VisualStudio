@@ -28,11 +28,13 @@ Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#mete
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
-The attached Excel 2013 file contains a worksheet for each category of costing
-described below:
+The Excel 2013 file at https://onedrive.live.com/redir?resid=4CF625875C66377A%21135
+contains a worksheet for each type of server: Worker, Windows, Linux, SQL.
 
-
-* <a href="#AppSvcScaleUpCostingLogic"> App Service</a>
+The <a href="#AppSvcScaleUpCostingLogic"> App</a> worksheet
+calculates the number of Minutes per Day, Month, and Year used in other sheets.
+  
+<hr />
 
 ## <a name="VSOnlineVUMs"> VS Online VUMs</a>
 
