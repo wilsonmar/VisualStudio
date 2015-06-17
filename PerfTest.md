@@ -4,6 +4,7 @@ This is so you get productive in the quickest possible time.
 
 ## Contents
 
+0. <a href="#Videos"> Videos by others about Testing Using Visual Studio</a>
 1. <a href="#Why">Why? - App Flow and Risk Assesment</a>
 2. <a href="#Config">Configure Recording Options</a>
 3. <a href="#CreateScript"> Script Performance and Load Test Test</a>
@@ -21,6 +22,13 @@ This is so you get productive in the quickest possible time.
 15. <a href="#AnalyzeLogs"> Analyze Logs</a>
 
 <hr />
+
+## <a name="Videos"> Videos by others about Testing Using Visual Studio</a>
+
+* https://www.youtube.com/watch?v=Igfz8oJ4yOk
+* http://www.pluralsight.com/courses/load-testing-visual-studio-2013 
+by <a target="_blank" href="http://www.benday.com/"> Benjamin Day</a>, 
+   <a target="_blank" href="http://www.twitter.com/benday"> @BenDay</a>
 
 ## <a name="Why">Why? - App Flow and Risk Assesment</a>
 Load (Stress) Testing is used for performance tuning, to uncover bottlenecks, and for capacity planning.
