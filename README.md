@@ -191,6 +191,7 @@ Videos by others about VSCode:
 
 * https://www.youtube.com/watch?v=e3tPWAq74v4
 
+
 ### Visual Studio Github
 https://visualstudio.github.com/index.html
 offers a Github Extension for Visual Studio 2015, in RC (Release Candidate) maturity as of June 2015.
