@@ -73,6 +73,10 @@ If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Optio
 2). In Visual Studio, press Ctrl+Shift+N or select menu File | New | Project
  
    The default project name is **WebTest1.webtest**.
+   
+   PROTIP:
+   Assign a file name according to a naming convention common to the whole team
+   so that assets across **apps** and projects and content and **versions** over time can be uniquely identified.
 
 3). Select **Web Performance and Load Test Project** in C# (there is no VB for this).
 
