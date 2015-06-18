@@ -164,6 +164,7 @@ and available to analyze what changed and to reverse those changes if need be.
 9). PROTIP: Clear-up the script by deleting extraneous lines (that are not .aspx calls):
 
    * "_browserLink" calls Visual Studio uses.
+   * "SignalR" 
 
 
 ## <a name="OpenSampleProject"> Open Sample Project</a>
@@ -195,6 +196,8 @@ walks you through how to create the
 QUESTION:
 Can Load Tests leverage JUnit tests and functional tests coded in CodedUI?
 
+QUESTION: 
+Make use of NUnit test?
 
 
 ### <a name="ConvertFiddler"> Convert Fiddler Recording</a>
@@ -226,6 +229,14 @@ This is why some organizations define a policy on this along with elements withi
 PROTIP:
 Some like to put a number in test names.
 But changes to sequential numbers would require renaming all other names.
+
+## <a name="ResponseTimeGoal"> Think Time and Response Time Goal</a>
+
+At the bottom of the requests, 
+Visual Studio automatically adds a Validation Rule **Response Time Goal**.
+
+Click the right-most menu icon to **Set Request Details**
+to change the Think Time and Response Time Goal.
 
 
 ## <a name="ParametizeWebServers"> Parametize Web Servers</a>
@@ -270,9 +281,6 @@ To ensure that what is returned is what is expected:
 
 8) Click on Context and scroll down to see the parameter.
 
-At the bottom of the requests, 
-Visual Studio automatically adds a Validation Rule **Response Time Goal**.
-
 
 ## <a name="VaryStaticData"> Parametize Static Values in Scripts</a>
 Right-click on a step and select an item to Insert or Add.
@@ -284,8 +292,12 @@ where variable_name is a name of your choosing.
 This is called "pameterization".
 
 
-## <a name="VaryCSVData"> Vary CSV Data</a>
+## <a name="VaryCSVData"> Vary CSV Data in New Project</a>
+1). Custom validation can be defined in a new Visual C# Class library project (named "Utilities").
 
+2). In the WebTest project, navigate to References - Microsoft...
+
+3). Click on the Web Test. Press Alt+Enter to Open its Properties.
 
 See https://msdn.microsoft.com/en-us/library/ms243142.aspx
 To add a SQL database data source (named ColorWebAppData) to a web performance test
