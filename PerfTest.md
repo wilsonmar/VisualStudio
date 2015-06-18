@@ -192,7 +192,7 @@ The pcap file is parsed by ??? to create a WebTest script.
 
 ## <a name="DefineTransactions"> Define Test Names (Transactions)</a>
 <a target"_blank" href="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png">
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png" width="350" /></a>
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png" width="200" /></a>
 
 Right-click on the first of each significant group of HTTP Requests
 and select **Insert a comment** to 
