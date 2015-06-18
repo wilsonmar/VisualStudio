@@ -26,19 +26,21 @@ This is so you get productive in the quickest possible time.
 
 ## <a name="Videos"> Videos by others about Testing Using Visual Studio</a>
 
-   * http://www.pluralsight.com/courses/load-testing-visual-studio-2013 
+  * http://www.pluralsight.com/courses/load-testing-visual-studio-2013 
       by <a target="_blank" href="http://www.benday.com/"> Benjamin Day</a>, 
       <a target="_blank" href="http://www.twitter.com/benday"> @BenDay</a>
-   * https://www.youtube.com/watch?v=s0VQOkyEL7M using VS 2012 Ultimate by handsonvisualstudio.com
+  * https://www.youtube.com/watch?v=-TfwvavMVg4&list=PLT_-sjxAxUnETyDOImAikBhf50CVAkiGg
+    is a playlist about VS2010 web performance tests.
+  * https://www.youtube.com/watch?v=s0VQOkyEL7M using VS 2012 Ultimate by handsonvisualstudio.com
      of meaalmcommunity.com
-   * https://www.youtube.com/watch?v=Igfz8oJ4yOk
-   * Microsoft DemoMates to provide a “click through” of product screens without needing to download and run the virtual machine.
-   * https://www.youtube.com/watch?v=37x8cHK7qLU - Load Testing SharePoint 2013 using Visual Studio 2013
+  * https://www.youtube.com/watch?v=Igfz8oJ4yOk
+  * Microsoft DemoMates to provide a “click through” of product screens without needing to download and run the virtual machine.
+  * https://www.youtube.com/watch?v=37x8cHK7qLU - Load Testing SharePoint 2013 using Visual Studio 2013
         <a target="_blank" href="http://sharepoint.rackspace.com"> Rackspace</a>
      by <a target="_blank" href="http://www.toddkilindt.com"> Todd Klindt</a> at
      and Shake Young (@ShaneseCows)
    
-## <a name="Why">Why? - App Flow and Risk Assesment</a>
+## <a name="Why">Why? - App Performance and Load Risk Assesment</a>
 Load (Stress) Testing is used for performance tuning, to uncover bottlenecks, and for capacity planning.
 
 The reason for doing it is evolving from catching mistakes to preparing a work environment that
@@ -195,7 +197,7 @@ The pcap file is parsed by ??? to create a WebTest script.
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png" width="200" /></a>
 
 Right-click on the first of each significant group of HTTP Requests
-and select **Insert a comment** to 
+and select **Insert Comment** to 
 define a **Test Name** (akin to "transactions") as an artificial way to measure **response time**
 -- how long a sequence of HTTP requests take from request to response from the server.
 
