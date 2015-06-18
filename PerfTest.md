@@ -94,12 +94,13 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applicat
 #### <a name="Record"> Record Traffic</a>
 
 5). Right-click on the **WebTest** to **Add Recording**.
-   or click the red square to begin recording.
+   or click the red square for the **Web Test Recorder**.
 
 6). Type or paste in the URL under test. Each resource requested from the HTML is listed in the Web Test Recorder pane.
 
-    * Follow a pre-planned list of manual actions.
-    * QUESTION: Transaction names are NOT added during recording?
+   Follow a pre-planned list of manual actions.
+   
+   QUESTION: Transaction names are NOT added during recording?
 
 7). Click stop recording button. Visual Studio detects dynamic parameters, etc.
 
