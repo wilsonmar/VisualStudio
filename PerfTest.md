@@ -269,7 +269,10 @@ To ensure that what is returned is what is expected:
    Web Browser | Request | Response | Context | Details
 
 8) Click on Context and scroll down to see the parameter.
-   
+
+At the bottom of the requests, 
+Visual Studio automatically adds a Validation Rule **Response Time Goal**.
+
 
 ## <a name="VaryStaticData"> Parametize Static Values in Scripts</a>
 Right-click on a step and select an item to Insert or Add.
