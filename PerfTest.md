@@ -195,6 +195,8 @@ PROTIP:
 Some like to put a number in test names.
 But changes to sequential numbers would require renaming all other names.
 
+<a target"_blank" href="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png">
+<img align="right" href="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png" width="350" /></a>
 
 ## <a name="ResponseValidation"> Validate Response</a>
 Ensure that what is returned is what is expected.
