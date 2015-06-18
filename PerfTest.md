@@ -27,9 +27,10 @@ This is so you get productive in the quickest possible time.
 
 ## <a name="SampleApp"> Sample Apps</a>
 There are several apps that can be used.
-Brian Riankel, Director of ALM Evanagelism for Microsoft, 
-has created virtual machines at
-http://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx
+<a target="_blank" href="http://blogs.msdn.com/b/briankel/">
+Brian Riankel</a>, Director of ALM Evanagelism for Microsoft, 
+has created virtual machines for
+<a target="_blank" href="http://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx"> Visual Studio 2013 Update 3 on September 2014</a>.
 
 These are very large files.
 
