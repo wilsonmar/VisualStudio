@@ -229,8 +229,8 @@ But changes to sequential numbers would require renaming all other names.
 
 
 ## <a name="ParametizeWebServers"> Parametize Web Servers</a>
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png">
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png" 
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8238119/e8e09bca-15b0-11e5-8ea6-835cecc13e55.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8238119/e8e09bca-15b0-11e5-8ea6-835cecc13e55.png" 
 width="200" /></a>
 
 1) Click on the menu icon.
