@@ -108,9 +108,25 @@ width="350" /></a>
 
 7). Click **Stop** recording button. Visual Studio detects dynamic parameters, etc.
 
+### <a name="Archive"> Archive Project Assets</a>
 8). PROTIP: Save the solution folder, then zip it up.
 
-A recording is just the beginning.
+Performance and lod tests can use up a large amount of disk space.
+And servers may need to be brought down when not used.
+So project assets need to be moved to a storage medium for lower cost than 
+instantly available drives which are more expensive to rent.
+
+WARNING: Do not manually edit the .loadtest xml.
+Doing so would result in errors such as:
+
+ * VS1550084 - run aborted because the .loadtest xml file could not be parsed.
+ * VS1550026 & VS1550027 - too many applications or counters have been selected to run for load test.
+
+
+Incremental archival would ensure that back versions of files are automatically saved
+and available to analyze what changed and to reverse those changes if need be.
+
+### <a name="CleanUpScript"> Clean Up Script</a>
 
 9). PROTIP: Clear-up the script by deleting extraneous lines (that are not .aspx calls):
 
@@ -150,24 +166,6 @@ Can Load Tests leverage JUnit tests and functional tests coded in CodedUI?
 An alternate way of creating a WebTest script is make a recording using **Fiddler**
 to generate a pcap file.
 The pcap file is parsed by ??? to create a WebTest script.
-
-<hr />
-
-## <a name="Archive"> Archive Project Assets</a>
-Performance and lod tests can use up a large amount of disk space.
-And servers may need to be brought down when not used.
-So project assets need to be moved to a storage medium for lower cost than 
-instantly available drives which are more expensive to rent.
-
-WARNING: Do not manually edit the .loadtest xml.
-Doing so would result in errors such as:
-
- * VS1550084 - run aborted because the .loadtest xml file could not be parsed.
- * VS1550026 & VS1550027 - too many applications or counters have been selected to run for load test.
-
-
-Incremental archival would ensure that back versions of files are automatically saved
-and available to analyze what changed and to reverse those changes if need be.
 
 <hr />
 
