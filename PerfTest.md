@@ -82,7 +82,7 @@ If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Optio
 
 #### <a name="Config"> Configure Recording Options</a>
 
-If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
+4). If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
 appears, click "Enable". 
 
 QUESTION:
@@ -93,9 +93,8 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applicat
 
 #### <a name="Record"> Record Traffic</a>
 
-4). Right-click on the **WebTest** to **Add Recording**.
-
-5). Click the red square to begin recording.
+5). Right-click on the **WebTest** to **Add Recording**.
+   or click the red square to begin recording.
 
 6). Type or paste in the URL under test. Each resource requested from the HTML is listed in the Web Test Recorder pane.
 
