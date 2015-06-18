@@ -65,8 +65,16 @@ It consists of a collection of HTTP requests sent from test agents instead of re
 With options 1 - 3, create a new solution (shown in <a target="_blank" href="http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/qe103">
 this video</a> and <a target="_blank" href="http://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Load-testing-applications-in-Visual-Studio">this for VS2010</a>):
 
-The default name is **WebTest1.webtest**.
+#### <a name="CreateProject"> Create Project</a>
 
+1). Install and Launch the Ultimate Visual Studio or Visual Studio Online.
+If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Options](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx)
+
+2). In Visual Studio, press Ctrl+Shift+N or select menu File | New | Project
+ 
+   The default project name is **WebTest1.webtest**.
+
+3). Right-click on the **WebTest** to **Add Recording**.
 
 #### <a name="Config"> Configure Recording Options</a>
 If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
@@ -80,11 +88,6 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applicat
 
 #### <a name="Record"> Record Traffic</a>
 
-1. Install and Launch the Ultimate Visual Studio or Visual Studio Online.
-If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Options](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx)
-2. In Visual Studio, press Ctrl+Shift+N or select menu File | New | Project
- 
-   The default project name is "WebTest".
 
 3. Select **Web Performance and Load Test Project** in C# (there is no VB for this).
 
