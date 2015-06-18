@@ -186,9 +186,15 @@ The pcap file is parsed by ??? to create a WebTest script.
 <a target"_blank" href="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png">
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png" width="350" /></a>
 
-**Insert a commnent** before each significant group of HTTP Requests.
-This defines a **Test Name** (akin to "transactions") as an artificial way to measure **response time**
+Right-click on the first of each significant group of HTTP Requests
+and select **Insert a commnent** to 
+define a **Test Name** (akin to "transactions") as an artificial way to measure **response time**
 -- how long a sequence of HTTP requests take from request to response from the server.
+
+Repeat this for the rest of the requests.
+
+PROTIP:
+Prefix test names with some character (such as "***" or ">>>") so they stand out better.
 
 PROTIP:
 Initially, some prefer to measure response time for an entire sequence of requests.
@@ -202,15 +208,24 @@ But changes to sequential numbers would require renaming all other names.
 ## <a name="ResponseValidation"> Validate Response</a>
 Ensure that what is returned is what is expected.
 
+Visual Studio Properties.
 
-## <a name="VaryStaticData"> Vary Static Data in Scripts</a>
+
+## <a name="VaryStaticData"> Parametize Static Values in Scripts</a>
 Right-click on a step and select an item to Insert or Add.
+
+Replace static (hard-coded) values with a parameter (aka variable) surrounded by "squiggly brackets"
+**{{variable_name}}**,
+where variable_name is a name of your choosing.
+
+This is called "pameterization".
 
 
 ## <a name="VaryCSVData"> Vary CSV Data</a>
 
+
 See https://msdn.microsoft.com/en-us/library/ms243142.aspx
-To add a data source (named ColorWebAppData) to a web performance test
+To add a SQL database data source (named ColorWebAppData) to a web performance test
 
 ## <a name="VarySQLData"> Vary SQL Data</a>
 
