@@ -9,17 +9,18 @@ This is so you get productive in the quickest possible time.
 2. <a href="#CreateScript"> Script Performance and Load Test Test</a>
 3. <a href="#Config">Configure Recording Options</a>
 4. <a href="#Archive"> Archive Assets</a>
-5. <a href="#DefineTransactions"> Define Transactions</a>
+5. <a href="#DefineTransactions"> Define Transaction Test Names</a>
 6. <a href="#ResponseValidation"> Validate Responses</a>
-7. <a href="#VaryCSVData"> Vary Data in CSV Files</a>
-8. <a href="#VarySQLData"> Vary Data in SQL Databases</a>
-9. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
-10. <a href="#LoadGenerators"> Setup Load Generators</a>
-11. <a href="#SetupMonitoring"> Setup Monitoring</a>
-12. <a href="#Scenarios"> Scenarios</a>
-13. <a href="#MonitorRuns"> Monitor Runs</a>
-14. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
-15. <a href="#AnalyzeLogs"> Analyze Logs</a>
+7. <a href="#VaryStaticData"> Vary Static Data in Scripts</a>
+8. <a href="#VaryCSVData"> Vary Data in CSV Files</a>
+9. <a href="#VarySQLData"> Vary Data in SQL Databases</a>
+10. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
+11. <a href="#LoadGenerators"> Setup Load Generators</a>
+12. <a href="#SetupMonitoring"> Setup Monitoring</a>
+13. <a href="#Scenarios"> Scenarios</a>
+14. <a href="#MonitorRuns"> Monitor Runs</a>
+15. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
+16. <a href="#AnalyzeLogs"> Analyze Logs</a>
 
 <hr />
 
@@ -53,9 +54,13 @@ presents examples of performance issues in ASP.NET servers.
 ## <a name="CreateScript"> Performance and Load Test Scripting</a>
 The "Performance and Load Test" is a type of C# project added to a solution. 
 
-It consists of a collection of HTTP requests sent from test agents instead of real browsers controlled by human users.
+Instead of real browsers controlled by human users,
+tests are a collection of **HTTP requests** sent from many **test agents** 
+(also called load generators or robots) which simulate what browsers send to servers.
 
- * <a href="#NewPerftest"> Create New Performance Testing Project by Recording</a>
+Options:
+
+ * <a href="#NewPerftest"> Create New Web Performance Testing Project by Recording</a>
  * <a href="#OpenSampleProject"> Open a Sample Project</a>
  * <a href="#UseFuncTests"> Use CodedUI Functional Tests</a>
  * <a href="#ConvertFiddler"> Convert Fiddler Recording</a>
@@ -108,7 +113,9 @@ width="350" /></a>
 
    Follow a pre-planned list of manual actions.
    
-   QUESTION: Transaction names are NOT added during recording?
+   QUESTION: 
+   <a href="#DefineTransactions"> Transactions</a>
+   are NOT added during recording?
 
 7). Click **Stop** recording button. Visual Studio detects dynamic parameters, etc.
 
@@ -126,9 +133,9 @@ Doing so would result in errors such as:
  * VS1550084 - run aborted because the .loadtest xml file could not be parsed.
  * VS1550026 & VS1550027 - too many applications or counters have been selected to run for load test.
 
-
 Incremental archival would ensure that back versions of files are automatically saved
 and available to analyze what changed and to reverse those changes if need be.
+
 
 ### <a name="CleanUpScript"> Clean Up Script</a>
 
@@ -144,7 +151,9 @@ If you're using Visual Studio Ultimate 2013:
 
 1. From within an internet browser, open URL
 https://code.msdn.microsoft.com/Getting-started-with-17a52e95
+
 2. Click on **C# (33.4 KB)** to download into your Downloads folder.
+
 3. In Windows Explorer, unzip file **Visual Studio Load Testing** downloaded.
 
  * File "Descriptions.html" contains the page providing the download link.
@@ -173,12 +182,26 @@ The pcap file is parsed by ??? to create a WebTest script.
 
 <hr />
 
-## <a name="DefineTransactions"> Define Transactions</a>
-Specify the name of what should be measured.
+## <a name="DefineTransactions"> Define Test Names (Transactions)</a>
+"Transactions" identified by a **Test Name** are an artificial way to measure **response time**
+-- how long a sequence of HTTP requests take from request to response from the server.
+
+PROTIP:
+Initially, some prefer to measure response time for an entire sequence of requests.
+Others prefer to invest the time up front to specify a one transaction name for each request.
+This is why some organizations define a policy on this along with elements within test names.
+
+PROTIP:
+Some like to put a number in test names.
+But changes to sequential numbers would require renaming all other names.
 
 
 ## <a name="ResponseValidation"> Validate Response</a>
 Ensure that what is returned is what is expected.
+
+
+## <a name="VaryStaticData"> Vary Static Data in Scripts</a>
+Right-click on a step and select an item to Insert or Add.
 
 
 ## <a name="VaryCSVData"> Vary CSV Data</a>
