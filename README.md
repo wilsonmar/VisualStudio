@@ -1,7 +1,5 @@
 Here are my notes on using of VisualStudio from Microsoft for ensuring the performance and capacity of systems.
 
-What else do I need to do to be an MVP on Performance Testing? ;)
-
 ## <a name="Versions"> Versions</a>
 
 http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#History
@@ -9,6 +7,9 @@ presents a table of the correspondence between product names,
 internal code names, internal version number, release date,
 and what version of the core .NET Framework each supports.
 Note Visual Studio 2013 supports up to .NET 4.5.2.
+
+<a target="_blank" href="https://www.visualstudio.com/products/vs-2015-product-editions">
+Visual Studio 2015</a> combines Premium and Ultimate into an **Enterprise** product name.
 
 For each version there are different <a href="#Editions">editions</a>.
 
