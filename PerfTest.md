@@ -74,9 +74,14 @@ If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Optio
  
    The default project name is **WebTest1.webtest**.
 
-3). Right-click on the **WebTest** to **Add Recording**.
+3). Select **Web Performance and Load Test Project** in C# (there is no VB for this).
+
+   Notice this is a different project than Coded UI and 
+   <a target="_blank" href="https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs">
+   Unit Test</a> projects. 
 
 #### <a name="Config"> Configure Recording Options</a>
+
 If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
 appears, click "Enable". 
 
@@ -88,21 +93,18 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applicat
 
 #### <a name="Record"> Record Traffic</a>
 
+4). Right-click on the **WebTest** to **Add Recording**.
 
-3. Select **Web Performance and Load Test Project** in C# (there is no VB for this).
+5). Click the red square to begin recording.
 
-   Notice this is a different project than Coded UI and 
-   <a target="_blank" href="https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs">
-   Unit Test</a> projects. 
-
-4. Click the red square to begin recording.
-5. Type or paste in the URL under test. Each resource requested from the HTML is listed in the Web Test Recorder pane.
+6). Type or paste in the URL under test. Each resource requested from the HTML is listed in the Web Test Recorder pane.
 
     * Follow a pre-planned list of manual actions.
     * QUESTION: Transaction names are NOT added during recording?
 
-6. Click stop recording button. Visual Studio detects dynamic parameters, etc.
-7. TIP: Save the solution folder, then zip it up.
+7). Click stop recording button. Visual Studio detects dynamic parameters, etc.
+
+8). TIP: Save the solution folder, then zip it up.
 
 A recording is just the beginning.
 
