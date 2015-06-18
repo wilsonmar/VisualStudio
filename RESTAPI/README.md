@@ -3,9 +3,8 @@ web service listener.
 
 There are several architectures for services which listen for and respond to web service requests.
 
- * WEB API http://www.asp.net/web-api
- * MVC 
- * FastCGI (PHP)
+ * WEB API - http://www.asp.net/web-api
+ * MVC - http://www.asp.net/mvc/overview
 
 http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 
