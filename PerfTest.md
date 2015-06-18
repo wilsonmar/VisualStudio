@@ -6,8 +6,8 @@ This is so you get productive in the quickest possible time.
 
 0. <a href="#Videos"> Videos by others about Testing Using Visual Studio</a>
 1. <a href="#Why">Why? - App Flow and Risk Assesment</a>
-2. <a href="#Config">Configure Recording Options</a>
-3. <a href="#CreateScript"> Script Performance and Load Test Test</a>
+2. <a href="#CreateScript"> Script Performance and Load Test Test</a>
+3. <a href="#Config">Configure Recording Options</a>
 4. <a href="#Archive"> Archive Assets</a>
 5. <a href="#DefineTransactions"> Define Transactions</a>
 6. <a href="#ResponseValidation"> Validate Responses</a>
@@ -50,22 +50,12 @@ http://www.codeproject.com/Articles/534797/Troubleshooting-ASP-NET-based-Enterpr
 presents examples of performance issues in ASP.NET servers.
 
 
-## <a name="Config"> Configure Recording Options</a>
-If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
-appears, click "Enable". 
-
-QUESTION:
-Are SSL/TLS certificates or a proxy needed?
- 
-
-To Access via Network see
-http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applications-behind-firewall-using-trusted-ip.aspx
-
-
 ## <a name="CreateScript"> Performance and Load Test Scripting</a>
-Automated scripts create **virtual users** that take the place of browser real human users.
+The "Performance and Load Test" is a type of C# project added to a solution. 
 
- * <a href="#NewPerftest"> Create New Performance Testing Script by Recording</a>
+It consists of a collection of HTTP requests sent from test agents instead of real browsers controlled by human users.
+
+ * <a href="#NewPerftest"> Create New Performance Testing Project by Recording</a>
  * <a href="#OpenSampleProject"> Open a Sample Project</a>
  * <a href="#UseFuncTests"> Use CodedUI Functional Tests</a>
  * <a href="#ConvertFiddler"> Convert Fiddler Recording</a>
@@ -74,6 +64,21 @@ Automated scripts create **virtual users** that take the place of browser real h
 ### <a name="NewPerftest"> Create New Performance Testing Script by Recording</a>
 With options 1 - 3, create a new solution (shown in <a target="_blank" href="http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/qe103">
 this video</a> and <a target="_blank" href="http://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Load-testing-applications-in-Visual-Studio">this for VS2010</a>):
+
+The default name is **WebTest1.webtest**.
+
+
+#### <a name="Config"> Configure Recording Options</a>
+If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
+appears, click "Enable". 
+
+QUESTION:
+Are SSL/TLS certificates or a proxy needed?
+
+To Access via Network see
+http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applications-behind-firewall-using-trusted-ip.aspx
+
+#### <a name="Record"> Record Traffic</a>
 
 1. Install and Launch the Ultimate Visual Studio or Visual Studio Online.
 If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Options](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx)
