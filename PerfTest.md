@@ -96,6 +96,9 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applicat
 5). Right-click on the **WebTest** to **Add Recording**.
    or click the red square for the **Web Test Recorder**.
 
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8223466/356efff8-1535-11e5-899f-8bafe47dd68e.png">
+<img src="https://cloud.githubusercontent.com/assets/300046/8223466/356efff8-1535-11e5-899f-8bafe47dd68e.png" /></a>
+
 6). Type or paste in the URL under test. Each resource requested from the HTML is listed in the Web Test Recorder pane.
 
    Follow a pre-planned list of manual actions.
