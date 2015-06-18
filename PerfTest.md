@@ -26,11 +26,18 @@ This is so you get productive in the quickest possible time.
 
 ## <a name="Videos"> Videos by others about Testing Using Visual Studio</a>
 
-* https://www.youtube.com/watch?v=Igfz8oJ4yOk
-* http://www.pluralsight.com/courses/load-testing-visual-studio-2013 
-by <a target="_blank" href="http://www.benday.com/"> Benjamin Day</a>, 
-   <a target="_blank" href="http://www.twitter.com/benday"> @BenDay</a>
-
+   * http://www.pluralsight.com/courses/load-testing-visual-studio-2013 
+      by <a target="_blank" href="http://www.benday.com/"> Benjamin Day</a>, 
+      <a target="_blank" href="http://www.twitter.com/benday"> @BenDay</a>
+   * https://www.youtube.com/watch?v=s0VQOkyEL7M using VS 2012 Ultimate by handsonvisualstudio.com
+     of meaalmcommunity.com
+   * https://www.youtube.com/watch?v=Igfz8oJ4yOk
+   * Microsoft DemoMates to provide a “click through” of product screens without needing to download and run the virtual machine.
+   * https://www.youtube.com/watch?v=37x8cHK7qLU - Load Testing SharePoint 2013 using Visual Studio 2013
+        <a target="_blank" href="http://sharepoint.rackspace.com"> Rackspace</a>
+     by <a target="_blank" href="http://www.toddkilindt.com"> Todd Klindt</a> at
+     and Shake Young (@ShaneseCows)
+   
 ## <a name="Why">Why? - App Flow and Risk Assesment</a>
 Load (Stress) Testing is used for performance tuning, to uncover bottlenecks, and for capacity planning.
 
@@ -66,7 +73,7 @@ Options:
  * <a href="#ConvertFiddler"> Convert Fiddler Recording</a>
 
 
-### <a name="NewPerftest"> Create New Performance Testing Script by Recording</a>
+## <a name="NewPerftest"> Create New Performance Testing Script by Recording</a>
 With options 1 - 3, create a new solution (shown in <a target="_blank" href="http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/qe103">
 this video</a> and <a target="_blank" href="http://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Load-testing-applications-in-Visual-Studio">this for VS2010</a>):
 
@@ -119,6 +126,7 @@ width="350" /></a>
 
 7). Click **Stop** recording button. Visual Studio detects dynamic parameters, etc.
 
+
 ### <a name="Archive"> Archive Project Assets</a>
 8). PROTIP: Save the solution folder, then zip it up.
 
@@ -144,7 +152,7 @@ and available to analyze what changed and to reverse those changes if need be.
    * "_browserLink" calls Visual Studio uses.
 
 
-### <a name="OpenSampleProject"> Open Sample Project</a>
+## <a name="OpenSampleProject"> Open Sample Project</a>
 Opening an existing project provides a glimpse into the complete set of folders and files involved.
 
 If you're using Visual Studio Ultimate 2013:
@@ -205,9 +213,25 @@ PROTIP:
 Some like to put a number in test names.
 But changes to sequential numbers would require renaming all other names.
 
-## <a name="ResponseValidation"> Validate Response</a>
+
+## <a name="ParametizeWebServers"> Parametize Web Servers</a>
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png">
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png" 
+width="350" />
+
+1) Click on the menu icon.
+
+   Visual Studio creates "WebServer1" as the default **Context Parameter Name** for the web servers it finds.
+
+2) Click OK.
+
+   The host name in all requests are replaced with **{{WebServer1}}**
+   "squiggly brackets" or "double braces".
+
+
+## <a name="ResponseValidation"> Validate Response</a>
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8235938/3e0eee9e-15a2-11e5-846f-bd14c2d13f08.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8235938/3e0eee9e-15a2-11e5-846f-bd14c2d13f08.png" 
 width="350" />
 
 To ensure that what is returned is what is expected:
@@ -224,6 +248,14 @@ To ensure that what is returned is what is expected:
 
 6) Specify the Attribute Value.
 
+7) Do a test run
+
+   The nice thing about Visual Studio is for each request you can see its
+
+   Web Browser | Request | Response | Context | Details
+
+8) Click on Context and scroll down to see the parameter.
+   
 
 ## <a name="VaryStaticData"> Parametize Static Values in Scripts</a>
 Right-click on a step and select an item to Insert or Add.
@@ -366,6 +398,9 @@ Credits: This expands on these:
 * https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
 
 ## <a name="MonitorRuns"> Monitor Runs</a>
+Video:
+
+   * https://www.youtube.com/watch?v=eR-zDM-hhv4 - distributed load tests using VS2010
 
 Subscribe to alerts
 http://social.msdn.microsoft.com/Forums/vstudio/en-US/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status
