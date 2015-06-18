@@ -187,7 +187,7 @@ The pcap file is parsed by ??? to create a WebTest script.
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8229282/9171665a-1572-11e5-828d-e93718ae85dd.png" width="350" /></a>
 
 Right-click on the first of each significant group of HTTP Requests
-and select **Insert a commnent** to 
+and select **Insert a comment** to 
 define a **Test Name** (akin to "transactions") as an artificial way to measure **response time**
 -- how long a sequence of HTTP requests take from request to response from the server.
 
@@ -206,9 +206,23 @@ Some like to put a number in test names.
 But changes to sequential numbers would require renaming all other names.
 
 ## <a name="ResponseValidation"> Validate Response</a>
-Ensure that what is returned is what is expected.
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png" 
+width="350" />
 
-Visual Studio Properties.
+To ensure that what is returned is what is expected:
+
+1) Right-click on a HTTP request and select **Add Extraction Rule**.
+
+2) Select (CSS) **Tag Inner Text** which puts what is extracted into a **Context Parameter**.
+
+3) Specify the Context Parameter Name.
+
+4) Specify the Tag Name in HTML - "span" or "div", etc.
+
+5) Specify the Attribute Name - "id" or "class".
+
+6) Specify the Attribute Value.
 
 
 ## <a name="VaryStaticData"> Parametize Static Values in Scripts</a>
