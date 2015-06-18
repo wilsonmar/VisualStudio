@@ -6,7 +6,7 @@ There are several architectures for services which listen for and respond to web
  * ASP.NET WEB API - http://www.asp.net/web-api
  * ASP.NET MVC - http://www.asp.net/mvc/overview
  * WCF (Web Communications Framework)
-  * OData - see http://www.odata.org/
+ * OData - see http://www.odata.org/
  From https://code.msdn.microsoft.com/ASPNET-Web-API-OData-cecdb524
  The Open Data Protocol (OData) is a data access protocol for the web. OData provides a uniform way to query and manipulate data sets through CRUD operations (create, read, update, and delete). Using ASP.NET Web API, it is easy to create an OData endpoint. You can control which OData operations are exposed. You can host multiple OData endpoints, alongside non-OData endpoints. You have full control over your data model, back-end business logic, and data layer.
 
@@ -53,8 +53,8 @@ The
 |GET |	Get a resource or list of resources|
 |POST	| Create a resource. Get a list of resources using a more advanced query|
 |PUT |	Create a resource if it doesn't exist or, if it does, update it|
-|PATCH	Update a resource |
 |DELETE	| Delete a resource |
+|PATCH	| Update a resource (used for Web Sockets) |
 
 
 ### <a name="WebServer"> Web Service Engines</a>
