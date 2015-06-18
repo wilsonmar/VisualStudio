@@ -4,6 +4,7 @@ This is so you get productive in the quickest possible time.
 
 ## Contents
 
+0. <a href="#SampleApp"> Sample Apps</a>
 0. <a href="#Videos"> Videos by others about Testing Using Visual Studio</a>
 1. <a href="#Why">Why? - App Flow and Risk Assesment</a>
 2. <a href="#CreateScript"> Script Performance and Load Test Test</a>
@@ -24,6 +25,15 @@ This is so you get productive in the quickest possible time.
 
 <hr />
 
+## <a name="SampleApp"> Sample Apps</a>
+There are several apps that can be used.
+Brian Riankel, Director of ALM Evanagelism for Microsoft, 
+has created virtual machines at
+http://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx
+
+These are very large files.
+
+
 ## <a name="Videos"> Videos by others about Testing Using Visual Studio</a>
 
   * http://www.pluralsight.com/courses/load-testing-visual-studio-2013 
@@ -39,7 +49,8 @@ This is so you get productive in the quickest possible time.
         <a target="_blank" href="http://sharepoint.rackspace.com"> Rackspace</a>
      by <a target="_blank" href="http://www.toddkilindt.com"> Todd Klindt</a> at
      and Shake Young (@ShaneseCows)
-   
+
+
 ## <a name="Why">Why? - App Performance and Load Risk Assesment</a>
 Load (Stress) Testing is used for performance tuning, to uncover bottlenecks, and for capacity planning.
 
