@@ -217,7 +217,7 @@ But changes to sequential numbers would require renaming all other names.
 ## <a name="ParametizeWebServers"> Parametize Web Servers</a>
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png">
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8232498/8f1733ce-158d-11e5-869e-9920bcd07b31.png" 
-width="350" />
+width="200" /></a>
 
 1) Click on the menu icon.
 
@@ -232,7 +232,7 @@ width="350" />
 ## <a name="ResponseValidation"> Validate Response</a>
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8235938/3e0eee9e-15a2-11e5-846f-bd14c2d13f08.png">
 <img align="right" src="https://cloud.githubusercontent.com/assets/300046/8235938/3e0eee9e-15a2-11e5-846f-bd14c2d13f08.png" 
-width="350" />
+width="200" /></a>
 
 To ensure that what is returned is what is expected:
 
