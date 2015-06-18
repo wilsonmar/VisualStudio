@@ -106,11 +106,15 @@ width="350" /></a>
    
    QUESTION: Transaction names are NOT added during recording?
 
-7). Click stop recording button. Visual Studio detects dynamic parameters, etc.
+7). Click **Stop** recording button. Visual Studio detects dynamic parameters, etc.
 
-8). TIP: Save the solution folder, then zip it up.
+8). PROTIP: Save the solution folder, then zip it up.
 
 A recording is just the beginning.
+
+9). PROTIP: Clear-up the script by deleting extraneous lines (that are not .aspx calls):
+
+   * "_browserLink" calls Visual Studio uses.
 
 
 ### <a name="OpenSampleProject"> Open Sample Project</a>
