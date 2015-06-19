@@ -272,15 +272,17 @@ to change the Think Time and Response Time Goal.
 1). Right-click on a request and select **Insert Condition**.
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8256432/4d2d4728-1664-11e5-9dfb-8f3ebd0aa995.png">
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8256432/4d2d4728-1664-11e5-9dfb-8f3ebd0aa995.png" 
+<img src="https://cloud.githubusercontent.com/assets/300046/8256432/4d2d4728-1664-11e5-9dfb-8f3ebd0aa995.png" 
 width="200" /></a>
+
 2). Select rule **Context Parameter Exists** 
 
 3). Right-click on the same request and select **Insert Loop**.
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8256620/918dd3dc-1665-11e5-8830-32a601c48c32.png">
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8256620/918dd3dc-1665-11e5-8830-32a601c48c32.png" 
+<img src="https://cloud.githubusercontent.com/assets/300046/8256620/918dd3dc-1665-11e5-8830-32a601c48c32.png" 
 width="200" /></a>
+
 4). Select rule **Context Parameter Exists** 
 
 
