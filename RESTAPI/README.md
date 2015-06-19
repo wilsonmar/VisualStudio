@@ -56,6 +56,7 @@ Microsoft provides several architectures for services which listen for and respo
  * ASP.NET WEB API - http://www.asp.net/web-api
  * ASP.NET MVC - http://www.asp.net/mvc/overview
  * WCF (Web Communications Framework)
+ * HTML5 Web Sockets - http://social.technet.microsoft.com/wiki/contents/articles/7148.websockets-in-asp-net.aspx
 
 Web API and MVC controller are mixed in a single project to handle advanced AJAX requests which may return data in JSON, XML or any others format and building a full blown HTTP service. Typically, this is called **Web API self hosting**.
 
@@ -84,7 +85,7 @@ https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?a
 |POST	| Create a resource. Get a list of resources using a more advanced query|
 |PUT |	Create a resource if it doesn't exist or, if it does, update it|
 |DELETE	| Delete a resource |
-|PATCH	| Update a resource (used for Web Sockets) |
+|PATCH	| Update a resource |
 
 Alternately, 
 https://code.msdn.microsoft.com/ASPNET-Web-API-OData-cecdb524
@@ -111,6 +112,31 @@ will be referenced here.
 http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 
 
+## <a name="MVC"> Serialization by ASP.NET MVC</a>
+David Ward in http://encosia.com/asp-net-web-api-vs-asp-net-mvc-apis/
+points out that because MVC performs serialization of JSON,
+it is more "wordy" than ASP.NET Web API coding:
+
+```
+public class TweetsController : Controller {
+  // GET: /Tweets/
+  [HttpGet]
+  public ActionResult Index() {
+    return Json(Twitter.GetTweets(), JsonRequestBehavior.AllowGet);
+  }
+}
+```
+
+The Web API:
+
+```
+public class TweetsController : ApiController {
+  // GET: /Api/Tweets/
+  public List<Tweet> Get() {
+    return Twitter.GetTweets();
+  }
+}
+```
 
 
 ### <a name="Deploy2Hosting"> Depoloy to Hosting</a>
