@@ -204,7 +204,7 @@ Tutorials on CodedUI:
 
  * http://www.pluralsight.com/courses/codedui-test-automation by Marcel de Vries
  
-1) Download "Agents for Microsoft Visual Studio 2013", file VS2013_RTM_AGTS_ENU.iso
+1) Download "Agents for Microsoft Visual Studio 2013" 287 MB file VS2013_RTM_AGTS_ENU.iso
 from http://www.microsoft.com/en-us/download/details.aspx?id=40750.
 
 2) Use Pismo 
