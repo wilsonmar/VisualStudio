@@ -9,6 +9,7 @@ This is so you get productive in the quickest possible time.
 1. <a href="#Why">Why? - App Flow and Risk Assesment</a>
 2. <a href="#CreateScript"> Script Performance and Load Test Test</a>
 3. <a href="#Config">Configure Recording Options</a>
+4. <a href="#RecordUIRequests"> Record Traffic</a>
 4. <a href="#Archive"> Archive Scripts</a>
 5. <a href="#DefineTransactions"> Define Transaction Test Names</a>
 6. <a href="#ResponseValidation"> Validate Responses</a>
@@ -94,7 +95,7 @@ Options:
 With options 1 - 3, create a new solution (shown in <a target="_blank" href="http://channel9.msdn.com/Events/Visual-Studio/Launch-2013/qe103">
 this video</a> and <a target="_blank" href="http://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Load-testing-applications-in-Visual-Studio">this for VS2010</a>):
 
-#### <a name="CreateProject"> Create Project</a>
+### <a name="CreateProject"> Create Project</a>
 
 1). Install and Launch the Ultimate Visual Studio or Visual Studio Online.
 If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Options](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx)
@@ -113,7 +114,8 @@ If using IE 11, [disable "Enabled Enhanced Protected Mode" within Internet Optio
    <a target="_blank" href="https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs">
    Unit Test</a> projects. 
 
-#### <a name="Config"> Configure Recording Options</a>
+
+##### <a name="Config"> Configure Recording Options</a>
 
 4). If the message "The 'Microsoft Web Test Recorder 12.0 Helper' add-on from 'Microsoft Corporation' is ready for use."
 appears, click "Enable". 
@@ -124,7 +126,7 @@ Are SSL/TLS certificates or a proxy needed?
 To Access via Network see
 http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/10/load-testing-applications-behind-firewall-using-trusted-ip.aspx
 
-#### <a name="Record"> Record Traffic</a>
+##### <a name="RecordUIRequests"> Record UI Traffic</a>
 
 5). Right-click on the **WebTest** to **Add Recording**.
    or click the red square for the **Web Test Recorder**.
@@ -143,8 +145,13 @@ width="350" /></a>
 
 7). Click **Stop** recording button. Visual Studio detects dynamic parameters, etc.
 
+##### <a name="RecordAPIRequests"> Record API Traffic</a>
 
-### <a name="Archive"> Archive Project Assets</a>
+QUESTION:
+To create a "headless" API request sent by a server without UI ...
+
+
+## <a name="Archive"> Archive Project Assets</a>
 8). PROTIP: Save the solution folder, then zip it up.
 
 Performance and lod tests can use up a large amount of disk space.
