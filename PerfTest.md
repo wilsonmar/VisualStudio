@@ -454,7 +454,7 @@ Test settings for a local test run are stored in the **vsonline.testsettings** f
 ### <a name="RunSettings"> Run Settings</a>
 The duration of the run is specified in the Run Settings pane.
 
-The **Details Sampling rate** in seconds and 
+The **Details Sampling rate** in seconds.
 
 **Save Log on Test Failure** is True/False setting.
 
@@ -639,7 +639,8 @@ is built into the same program that defines and runs load tests.
 11). Click View Source associated with the line.
 
 All this is usually done by the developer who wrote the program.
-
+A course on performance is at:
+* https://developer.innerworkings.com/Catalog/B0005-CS
 
 ## <a name="ArchiveResults"> Archive Run Results</a>
 The general rule is that, on average, runs generate **10 GB** of data per run.
