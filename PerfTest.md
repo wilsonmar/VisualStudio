@@ -304,7 +304,7 @@ To ensure that what is returned is what is expected:
 
 
 ## <a name="VaryStaticData"> Parametize Static Values in Scripts</a>
-Right-click on a step and select an item to Insert or Add.
+Right-click on a HTTP Request step and select an item to Insert or Add.
 
 Replace static (hard-coded) values with a parameter (aka variable) surrounded by "squiggly brackets"
 **{{variable_name}}**,
@@ -312,18 +312,55 @@ where variable_name is a name of your choosing.
 
 This is called "pameterization".
 
-
 ## <a name="VaryCSVData"> Vary CSV Data in New Project</a>
-1). Custom validation can be defined in a new Visual C# Class library project (named "Utilities").
+## <a name="CustomRules"> Custom Validation and Extraction Rules</a>
+1). Right-click on the solution.
 
-2). In the WebTest project, navigate to References - Microsoft...
+2). Add a New Project - Class Library named "Utilities".
 
-3). Click on the Web Test. Press Alt+Enter to Open its Properties.
+3). Expand the WebTest project to References to the
+Microsoft.VisualStudio.QualityTools.WebTestFramework.dll.
+
+4). Right-click on it for Properties to copy into your invisible Windows clipboard path
+C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssembiles\
+
+5). In the new Utilities class References, select Add References.
+
+6). Browse.
+
+7). Paste the path in the File Name and click Add, then OK.
+
+8). Rename the default Class1.cs.
+
+9). Extend the class from the ValidationRule or ExtractionRule base class
+
+```
+public class TableColumnValueValidator : validationRule
+```
+
+10). From the autocomplete select **using Microsoft.VisualStudio.TestTools.WebTesting**.
+
+11). Right-click again to select **Implement abstract class 'Validation Rule' to generate a basic method code.
+
+```
+public override void Validate(object sender, ValidatiionEventArgs e)
+{
+    throw new NotImplementedException();
+}
+```
+
+12). Add  attributes for use by a Validate() or Extract() method.
+
+```
+[DisplayName("Table Column Value")] 
+[Description("Validates value exists in column X in HTML table")]
+```
+
+
+## <a name="VarySQLData"> Vary SQL Data</a>
 
 See https://msdn.microsoft.com/en-us/library/ms243142.aspx
 To add a SQL database data source (named ColorWebAppData) to a web performance test
-
-## <a name="VarySQLData"> Vary SQL Data</a>
 
 
 ## <a name="SetRunTimeSettings"> Set RunTime Settings</a>
