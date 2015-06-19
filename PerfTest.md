@@ -425,20 +425,28 @@ The **Details Sampling rate** in seconds and
 ## <a name="SetupAppCounters"> Add Custom Counters into App Source</a>
 Exposing counters of how many of each operation has occured is like having a 3D X-Ray video of an app.
 
-1). Create a .PerfCounters namespace containing a PerformanceCounterLocator class
-and a CategoryName for Perfmon.
+Based on these tutorials:
+* http://rtarlowski.blogspot.com/2011/10/c-custom-performance-counters-part-ii.html
+* http://www.codeproject.com/Articles/8590/An-Introduction-To-Performance-Counters by Michael Groeger in 2005.
+* http://www.benday.com/2011/12/17/how-to-create-custom-performance-monitor-perfmon-counters/
+* http://www.codeproject.com/Articles/12992/Using-custom-attributes-to-add-performance-counter uses the .NET Framework's
+  PerformanceCounterCategory class.
+
+
+1). Using the <a target="_blank" href="https://msdn.microsoft.com/en-us/library/system.diagnostics.performancecountertype.aspx">
+System.Diagnostics library</a>, create a .PerfCounters namespace containing a PerfmonCounterLocator class
+and a CategoryName for Perfmon to display.
 
 ```
+using System.Diagnostics;
+
 namespace my.app.PerfCounters {
-    public class PerformonCounterLocator {
+    public class PerfmonCounterLocator {
         private static object m_SyncRoot = new object();
         private const string CategoryName = "My App Custom Counters";
         private PerfmonCounterLocator() {
             GetAllStuff = new PerfmonOp( Category Name, "Get all Stuff" );
             ....
-        }
-    }
-}
 ```
 
 2). Identify in the source code the various **operations** (get, save, set, etc.).
