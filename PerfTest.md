@@ -258,6 +258,7 @@ PROTIP:
 Some like to put a number in test names.
 But changes to sequential numbers would require renaming all other names.
 
+
 ## <a name="ResponseTimeGoal"> Think Time and Response Time Goal</a>
 
 At the bottom of the requests, 
@@ -265,6 +266,23 @@ Visual Studio automatically adds a Validation Rule **Response Time Goal**.
 
 Click the right-most menu icon to **Set Request Details**
 to change the Think Time and Response Time Goal.
+
+
+## <a name="WaitLoops"> Loops and Wait</a>
+1). Right-click on a request and select **Insert Condition**.
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8256432/4d2d4728-1664-11e5-9dfb-8f3ebd0aa995.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8256432/4d2d4728-1664-11e5-9dfb-8f3ebd0aa995.png" 
+width="200" /></a>
+2). Select rule **Context Parameter Exists** 
+
+3). Right-click on the same request and select **Insert Loop**.
+
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8256432/4d2d4728-1664-11e5-9dfb-8f3ebd0aa995.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8256432/4d2d4728-1664-11e5-9dfb-8f3ebd0aa995.png" 
+width="200" /></a>
+4). Select rule **Context Parameter Exists** 
+
 
 
 ## <a name="ParametizeWebServers"> Parametize Web Servers</a>
@@ -280,6 +298,7 @@ width="200" /></a>
 
    The host name in all requests are replaced with **{{WebServer1}}**
    "squiggly brackets" or "double braces".
+
 
 
 ## <a name="ResponseValidation"> Validate Response</a>
