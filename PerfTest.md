@@ -574,18 +574,6 @@ so it's best to not monitor until serious load is imposed.
 <hr />
 
 
-
-Credits: This expands on these:
-
-* https://www.visualstudio.com/en-us/support/load-testing-faq-vs.aspx
-* http://blogs.msdn.com/b/visualstudioalm/p/cltknowledgebase.aspx
-
-* what Charles Sterling posted on June 1, 2015 in  http://blogs.msdn.com/b/charles_sterling/archive/2015/06/02/load-test-series-part-i-creating-web-performance-tests-for-a-load-test.aspx
-
-* https://www.visualstudio.com/en-us/get-started/test/load-test-your-app-vs
-
-* https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
-
 ## <a name="MonitorRuns"> Monitor During Runs</a>
 1). Open Microsoft SQL Server Management Studio.
 
@@ -704,3 +692,17 @@ Put into removeable hard drives:
  * Parsed data
 
 There should be a policy about destruction based on a calendar such as 1 year.
+
+
+## <a name="Credits"> Credits</a>
+Further information on this topic:
+
+* https://www.visualstudio.com/en-us/support/load-testing-faq-vs.aspx
+
+* http://blogs.msdn.com/b/visualstudioalm/p/cltknowledgebase.aspx
+
+* what Charles Sterling posted on June 1, 2015 in  http://blogs.msdn.com/b/charles_sterling/archive/2015/06/02/load-test-series-part-i-creating-web-performance-tests-for-a-load-test.aspx
+
+* https://www.visualstudio.com/en-us/get-started/test/load-test-your-app-vs
+
+* https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
