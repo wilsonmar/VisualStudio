@@ -284,7 +284,9 @@ width="200" /></a>
 width="200" /></a>
 
 4). Select rule **Context Parameter Exists** 
-or Probability rule to run a request only the specified percentage of the time.
+or **Probability Rule** to run a request only the specified percentage of the time.
+
+**For Loop** modifies a context parameter where Counting Loop does not.
 
 
 ## <a name="ParametizeWebServers"> Parametize Web Servers</a>
