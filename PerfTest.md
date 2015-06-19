@@ -22,7 +22,8 @@ This is so you get productive in the quickest possible time.
 14. <a href="#MonitorRuns"> Monitor Runs</a>
 15. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 16. <a href="#AnalyzeLogs"> Analyze Logs</a>
-17. <a href="#ArchiveRuns"> Archive Run Outputs</a>
+17. <a href="#ProfileCode"> Profile Code During Runs</a>
+18. <a href="#ArchiveRuns"> Archive Run Outputs</a>
 
 <hr />
 
@@ -445,8 +446,16 @@ Credits: This expands on these:
 
 * https://www.visualstudio.com/en-us/get-started/test/get-performance-data-for-load-tests
 
-## <a name="MonitorRuns"> Monitor Runs</a>
-Video:
+## <a name="MonitorRuns"> Monitor During Runs</a>
+1). Open Microsoft SQL Server Management Studio.
+
+2). Connect to the database being used in the test.
+
+3). Invoke **sql_who2** to list current connections to the database 
+
+The total is shown in yellow at the bottom of the UI, as the number of rows.
+
+Tutorial Videos on this topic:
 
    * https://www.youtube.com/watch?v=eR-zDM-hhv4 - distributed load tests using VS2010
 
@@ -480,6 +489,42 @@ It's rather rare, but some performance issues are identified by looking into the
 https://msdn.microsoft.com/en-us/magazine/dn519926.aspx
 
 
+## <a name="ProfileCode"> Profile Code During Runs</a>
+One advantage of Visual Studio is that its **Performance Wizard** 
+is built into the same program that defines and runs load tests.
+
+1). Press Alt+F2 or select from the ANALYZE menu Performance and Diagnostics.
+
+ The current project is pre-selected as the Startup project.
+ 
+2). Click Start.
+
+3). Select the method of profiling:
+
+ * CPU Sampling is the recommended method to monitor CPU-bound applications with low overhead.
+ * Instrumentation to measure function call counts and timing
+ * .NET Memory allocation, 
+ * Resource contention data (concurrency) to detect threads waiting for other threads
+
+4). Select the app and click Next.
+
+5). Select the client (Internet Explorer) and click Next.
+
+6). Click Finish to launch.
+
+7). Manually operate the app.
+
+8). Close the browser.
+
+9). In **Call Tree**, click **Expand Hot Path** at each level of function calls.
+
+10). Click on the line with a large number under the Inclusive Samples column.
+
+11). Click View Source associated with the line.
+
+All this is usually done by the developer who wrote the program.
+
+
 ## <a name="#rchiveRuns"> Archive Run Outputs</a>
 The general rule is that, on average, runs generate **10 GB** of data per run.
 
@@ -491,10 +536,26 @@ PROTIP:
 Define a naming convention for run outputs so you can
 separate out files in a way that you can reassemble them again later.
 
-The dimensions in the hierarchy of run outputs.
+PROTIP:
+Put in GitHub or source coutrol programmoing code such as:
 
- * Analysis of results include notes about each run.
- * Raw results
  * Custom programs to parse data
- * Parsed data
 
+Put into SharePoint human-reable information:
+
+ * Presentation PowerPoint files
+ * Final Excel files which provide the numbers and graphs in the presentation
+ * Procedures Word documents
+ * Project Contacts data (exported from Outlook)
+ * Video (avi or mp4) files
+ * Analysis Notes for each load test result
+ * List of monitors
+
+Put into removeable hard drives:
+
+ * Intermediate Excel files
+ * Emails and Lync/Skype logs
+ * Video capture (Camtasia .trec) files
+ * Raw results
+ * SQL Trace files
+ * Parsed data
