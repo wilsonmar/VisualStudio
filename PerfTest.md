@@ -425,7 +425,9 @@ The **Details Sampling rate** in seconds and
 ## <a name="SetupAppCounters"> Add Custom Counters into App Source</a>
 Exposing counters of how many of each operation has occured is like having a 3D X-Ray video of an app.
 
-Based on these tutorials:
+The earlier this is implemented early in the dev cycle, the better the pay-back throughout the life of the program.
+
+This tutorial is based on these writings:
 * http://rtarlowski.blogspot.com/2011/10/c-custom-performance-counters-part-ii.html
 * http://www.codeproject.com/Articles/8590/An-Introduction-To-Performance-Counters by Michael Groeger in 2005.
 * http://www.benday.com/2011/12/17/how-to-create-custom-performance-monitor-perfmon-counters/
@@ -443,7 +445,7 @@ using System.Diagnostics;
 namespace my.app.PerfCounters {
     public class PerfmonCounterLocator {
         private static object m_SyncRoot = new object();
-        private const string CategoryName = "My App Custom Counters";
+        private const string CategoryName = "Stuff App Custom Counters";
         private PerfmonCounterLocator() {
             GetAllStuff = new PerfmonOp( Category Name, "Get all Stuff" );
             ....
@@ -478,13 +480,30 @@ PerfmonCounterLocator.Instance.GetAllStuff.RecordOperation(
 ```
 
 
-
 ## <a name="SetupMonitoring"> Setup Monitoring</a>
+
+
 
 ### <a name="CounterSets"> Counter Sets</a>
 Counter sets specify what computers in the test rig to **monitor**.
 
-TIP:
+1). Right-click on **Custom Counter** to Add Counters.
+
+2). Select the Computer (web server), Performance category ("Stuff App Custom Counters" above).
+
+3). Multi-select the counters defined in the source code.
+
+### <a name="RunSettings"> Run Settings</a>
+
+1). Right-click on the web server name under Counter Set Mappings.
+
+2). Select **Manage Counter Sets...*.
+
+3). Select Custom Counter, then OK.
+
+4). Run a Load Test to see the counters.
+
+PROTIP:
 Monitoring involves generation of logs which fill up disk space, 
 so it's best to not monitor until serious load is imposed.
 
