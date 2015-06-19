@@ -702,3 +702,5 @@ Put into removeable hard drives:
  * Raw results
  * SQL Trace files
  * Parsed data
+
+There should be a policy about destruction based on a calendar such as 1 year.
