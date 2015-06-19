@@ -17,12 +17,13 @@ This is so you get productive in the quickest possible time.
 9. <a href="#VarySQLData"> Vary Data in SQL Databases</a>
 10. <a href="#SetRunTimeSettings"> Set RunTime Settings</a>
 11. <a href="#LoadGenerators"> Setup Load Generators</a>
+12. <a href="#SetupAppCounters"> Add Perfmon Counters into App Source</a>
 12. <a href="#SetupMonitoring"> Setup Monitoring</a>
 13. <a href="#Scenarios"> Scenarios</a>
 14. <a href="#MonitorRuns"> Monitor Runs</a>
 15. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 16. <a href="#AnalyzeLogs"> Analyze Logs</a>
-17. <a href="#ProfileCode"> Profile Code During Runs</a>
+17. <a href="#ProfileCode"> Profile App Source Code</a>
 18. <a href="#ArchiveResults"> Archive Run Results</a>
 
 <hr />
@@ -421,6 +422,55 @@ The **Details Sampling rate** in seconds and
 **Save Log on Test Failure** is True/False setting.
 
 
+## <a name="SetupAppCounters"> Add Custom Counters into App Source</a>
+Exposing counters of how many of each operation has occured is like having a 3D X-Ray video of an app.
+
+1). Create a .PerfCounters namespace containing a PerformanceCounterLocator class
+and a CategoryName for Perfmon.
+
+```
+namespace my.app.PerfCounters {
+    public class PerformonCounterLocator {
+        private static object m_SyncRoot = new object();
+        private const string CategoryName = "My App Custom Counters";
+        private PerfmonCounterLocator() {
+            GetAllStuff = new PerfmonOp( Category Name, "Get all Stuff" );
+            ....
+        }
+    }
+}
+```
+
+2). Identify in the source code the various **operations** (get, save, set, etc.).
+For each potentially problematic operation function on key objects (for example, GetAllStuff), define:
+
+```
+public PerfmonOp GetAllStuff { get; private set; }
+```
+
+3). In the .cs file that does real work, before the try code,
+begin the clock:
+
+```
+var startTicks = DateTime.Now.Ticks;
+```
+
+4). In the .cs file that does real work, code in the catch section (before the throw),
+the Manager error counter: 
+
+```
+PerfmonCounterLocator.Instance.PersonManagerError.RecordOperation();
+```
+
+5). Code in the finally section calculate and report the elapsed time:
+
+```
+PerfmonCounterLocator.Instance.GetAllStuff.RecordOperation(
+    DateTime.Now.Ticks - startTicks);
+```
+
+
+
 ## <a name="SetupMonitoring"> Setup Monitoring</a>
 
 ### <a name="CounterSets"> Counter Sets</a>
@@ -489,7 +539,7 @@ It's rather rare, but some performance issues are identified by looking into the
 https://msdn.microsoft.com/en-us/magazine/dn519926.aspx
 
 
-## <a name="ProfileCode"> Profile Code During Runs</a>
+## <a name="ProfileCode"> Profile App Source Code</a>
 One advantage of Visual Studio is that its **Performance Wizard** 
 is built into the same program that defines and runs load tests.
 
@@ -512,7 +562,9 @@ is built into the same program that defines and runs load tests.
 
 6). Click Finish to launch.
 
-7). Manually operate the app.
+7). **Manually** operate the app.
+
+  QUESTION: Can this be automated?
 
 8). Close the browser.
 
