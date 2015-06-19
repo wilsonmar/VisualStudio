@@ -17,6 +17,38 @@ http://expressjs.com/
 as its web services engine.
 Walmart's subsidiary has also written a web services engine.
 
+[Node's app.json file](https://github.com/heroku/node-js-sample/blob/master/app.json)
+specifies resources, like a manifest file:
+
+```
+{
+  "name": "Node.js Sample",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/heroku/node-js-sample",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}
+```
+
+[Node's **index.js** file](https://github.com/heroku/node-js-sample/blob/master/index.js) 
+holds the configuration logic:
+
+```
+var express = require('express')
+var app = express();
+
+app.set('port', (process.env.PORT || 5000))
+app.use(express.static(__dirname + '/public'))
+
+app.get('/', function(request, response) {
+  response.send('Hello World!')
+})
+
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
+})
+```
+
 
 ### <a name="WebSvcs"> Why Web Services APIs</a>
 Microsoft provides several architectures for services which listen for and respond to web service requests.
@@ -79,50 +111,6 @@ will be referenced here.
 http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 
 
-### <a name="WebServer"> Web Service Engine Resources</a>
-[Node's app.json file](https://github.com/heroku/node-js-sample/blob/master/app.json)
-specifies resources, like a manifest file:
-
-```
-{
-  "name": "Node.js Sample",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-sample",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"]
-}
-```
-
-The equivalent in ASP.NET is the .config file:
-
-```
-???
-```
-
-[Node's **index.js** file](https://github.com/heroku/node-js-sample/blob/master/index.js) 
-holds the configuration logic:
-
-```
-var express = require('express')
-var app = express();
-
-app.set('port', (process.env.PORT || 5000))
-app.use(express.static(__dirname + '/public'))
-
-app.get('/', function(request, response) {
-  response.send('Hello World!')
-})
-
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-})
-```
-
-The equivalent of this in ASP.NET is the .cs (C#) code-behind files:
-
-```
-???
-```
 
 
 ### <a name="Deploy2Hosting"> Depoloy to Hosting</a>
