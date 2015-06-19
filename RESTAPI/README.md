@@ -53,8 +53,8 @@ app.listen(app.get('port'), function() {
 ### <a name="WebSvcs"> Why Web Services APIs</a>
 Microsoft provides several architectures for services which listen for and respond to web service requests.
 
- * ASP.NET WEB API - http://www.asp.net/web-api
  * ASP.NET MVC - http://www.asp.net/mvc/overview
+ * ASP.NET WEB API which began in 2012 with ASP.NET MVC 4.0 - http://www.asp.net/web-api 
  * WCF (Web Communications Framework)
  * HTML5 Web Sockets - http://social.technet.microsoft.com/wiki/contents/articles/7148.websockets-in-asp-net.aspx
 
@@ -62,12 +62,23 @@ Web API and MVC controller are mixed in a single project to handle advanced AJAX
 
 | Aspect	| MVC | Web API |
 |----|----|----|
+| Call format | RPC | REST |
 | Returns |	Views and Data | Data only |
 | Result Formats |	JSON only | XML, JSON, ATOM, etc. |
 | Basis for route mapping |	<a href="#RESTActions">REST in URL Actions</a> | <a href="#HTTPVerbs">HTTP Verbs</a> |
 
 XML is the default format for Web API.
 
+### <a name="RPC"> RPC (Remote Procedure Call)</a>
+RPC Style Actions are like
+
+```
+api/{controller}/{action}/{id}
+```
+
+To make Web API support RPC-style endpoints:
+* http://encosia.com/rest-vs-rpc-in-asp-net-web-api-who-cares-it-does-both/
+* http://www.code-magazine.com/Article.aspx?quickid=1206081
 
 ### <a name="RESTActions"> REST in URL Actions</a>
 The GET started with the VSO REST APIs article at
