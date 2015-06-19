@@ -23,7 +23,7 @@ This is so you get productive in the quickest possible time.
 15. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 16. <a href="#AnalyzeLogs"> Analyze Logs</a>
 17. <a href="#ProfileCode"> Profile Code During Runs</a>
-18. <a href="#ArchiveRuns"> Archive Run Outputs</a>
+18. <a href="#ArchiveResults"> Archive Run Results</a>
 
 <hr />
 
@@ -525,7 +525,7 @@ is built into the same program that defines and runs load tests.
 All this is usually done by the developer who wrote the program.
 
 
-## <a name="#rchiveRuns"> Archive Run Outputs</a>
+## <a name="ArchiveResults"> Archive Run Results</a>
 The general rule is that, on average, runs generate **10 GB** of data per run.
 
 Each DVD stores up to 4 GB of data, but do provide 30 years of stable storage.
