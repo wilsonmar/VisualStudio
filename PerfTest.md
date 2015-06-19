@@ -259,6 +259,22 @@ Some like to put a number in test names.
 But changes to sequential numbers would require renaming all other names.
 
 
+
+## <a name="ParametizeWebServers"> Parametize Web Servers</a>
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8238119/e8e09bca-15b0-11e5-8ea6-835cecc13e55.png">
+<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8238119/e8e09bca-15b0-11e5-8ea6-835cecc13e55.png" 
+width="200" /></a>
+
+1) Click on the menu icon.
+
+   Visual Studio creates "WebServer1" as the default **Context Parameter Name** for the web servers it finds.
+
+2) Click OK.
+
+   The host name in all requests are replaced with **{{WebServer1}}**
+   "squiggly brackets" or "double braces".
+
+
 ## <a name="ResponseTimeGoal"> Think Time and Response Time Goal</a>
 
 At the bottom of the requests, 
@@ -277,6 +293,9 @@ width="200" /></a>
 
 2). Select rule **Context Parameter Exists** 
 
+ If you specify a Context Parameter Name value, and the value, it will perform the function in the 
+ **Items in condition** at the bottom of the dialog.
+
 3). Right-click on the same request and select **Insert Loop**.
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8256620/918dd3dc-1665-11e5-8830-32a601c48c32.png">
@@ -288,20 +307,6 @@ or **Probability Rule** to run a request only the specified percentage of the ti
 
 **For Loop** modifies a context parameter where Counting Loop does not.
 
-
-## <a name="ParametizeWebServers"> Parametize Web Servers</a>
-<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8238119/e8e09bca-15b0-11e5-8ea6-835cecc13e55.png">
-<img align="right" src="https://cloud.githubusercontent.com/assets/300046/8238119/e8e09bca-15b0-11e5-8ea6-835cecc13e55.png" 
-width="200" /></a>
-
-1) Click on the menu icon.
-
-   Visual Studio creates "WebServer1" as the default **Context Parameter Name** for the web servers it finds.
-
-2) Click OK.
-
-   The host name in all requests are replaced with **{{WebServer1}}**
-   "squiggly brackets" or "double braces".
 
 
 
