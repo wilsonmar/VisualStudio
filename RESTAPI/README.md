@@ -63,8 +63,10 @@ Web API and MVC controller are mixed in a single project to handle advanced AJAX
 | Aspect	| MVC | Web API |
 |----|----|----|
 | Returns |	Views and Data | Data only |
-| Result Formats |	JSON only | JSON, XML, ATOM, etc. |
+| Result Formats |	JSON only | XML, JSON, ATOM, etc. |
 | Basis for route mapping |	<a href="#RESTActions">REST in URL Actions</a> | <a href="#HTTPVerbs">HTTP Verbs</a> |
+
+XML is the default format for Web API.
 
 
 ### <a name="RESTActions"> REST in URL Actions</a>
