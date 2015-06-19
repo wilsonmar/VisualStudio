@@ -9,7 +9,7 @@ This is so you get productive in the quickest possible time.
 1. <a href="#Why">Why? - App Flow and Risk Assesment</a>
 2. <a href="#CreateScript"> Script Performance and Load Test Test</a>
 3. <a href="#Config">Configure Recording Options</a>
-4. <a href="#Archive"> Archive Assets</a>
+4. <a href="#Archive"> Archive Scripts</a>
 5. <a href="#DefineTransactions"> Define Transaction Test Names</a>
 6. <a href="#ResponseValidation"> Validate Responses</a>
 7. <a href="#VaryStaticData"> Vary Static Data in Scripts</a>
@@ -22,6 +22,7 @@ This is so you get productive in the quickest possible time.
 14. <a href="#MonitorRuns"> Monitor Runs</a>
 15. <a href="#AnalyzeRunResults"> Analyze Run Results</a>
 16. <a href="#AnalyzeLogs"> Analyze Logs</a>
+17. <a href="#ArchiveRuns"> Archive Run Outputs</a>
 
 <hr />
 
@@ -83,7 +84,7 @@ Options:
 
  * <a href="#NewPerftest"> Create New Web Performance Testing Project by Recording</a>
  * <a href="#OpenSampleProject"> Open a Sample Project</a>
- * <a href="#UseFuncTests"> Use CodedUI Functional Tests</a>
+ * <a href="#CodedUITests"> Use CodedUI Functional Tests</a>
  * <a href="#ConvertFiddler"> Convert Fiddler Recording</a>
 
 
@@ -192,12 +193,30 @@ This MSDN website</a>
 walks you through how to create the
 "ColorWebAppTest" project.
 
-### <a name="UseFuncTests"> Use CodedUI Functional Tests</a>
-QUESTION:
-Can Load Tests leverage JUnit tests and functional tests coded in CodedUI?
 
-QUESTION: 
-Make use of NUnit test?
+### <a name="CodedUITests"> Use CodedUI Functional Tests</a>
+Wheras WPTs simulate request and response traffic out of and back to browsers,
+Microsoft's CodedUI tests **take over a runnning app** and controls keyboard clicks and mouse activities. 
+Thus, one agent machine is needed to emulate each individual UI user.
+(Can you afford to do that?)
+
+Tutorials on CodedUI:
+
+ * http://www.pluralsight.com/courses/codedui-test-automation by Marcel de Vries
+ 
+1) Download "Agents for Microsoft Visual Studio 2013", file VS2013_RTM_AGTS_ENU.iso
+from http://www.microsoft.com/en-us/download/details.aspx?id=40750.
+
+2) Use Pismo 
+or other program to mount the iso file.
+
+3) Run the **Test Agent Configuration Tool** (TestAgentConfig.exe).
+
+The test agent can be re-configured from service mode to process mode.
+
+
+### <a name="NUnitTests"> Use NUnit API Tests</a>
+NUnit tests operate at the API level.
 
 
 ### <a name="ConvertFiddler"> Convert Fiddler Recording</a>
@@ -459,3 +478,23 @@ This also includes graphing results to illustrate relationships among metrics co
 ## <a name="AnalyzeLogs"> Analyze Logs</a>
 It's rather rare, but some performance issues are identified by looking into the "weeds"
 https://msdn.microsoft.com/en-us/magazine/dn519926.aspx
+
+
+## <a name="#rchiveRuns"> Archive Run Outputs</a>
+The general rule is that, on average, runs generate **10 GB** of data per run.
+
+Each DVD stores up to 4 GB of data, but do provide 30 years of stable storage.
+
+USB hard drives now can store 1 TB (1,000 GB) for $100 each.
+
+PROTIP:
+Define a naming convention for run outputs so you can
+separate out files in a way that you can reassemble them again later.
+
+The dimensions in the hierarchy of run outputs.
+
+ * Analysis of results include notes about each run.
+ * Raw results
+ * Custom programs to parse data
+ * Parsed data
+
