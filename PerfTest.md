@@ -174,7 +174,7 @@ and available to analyze what changed and to reverse those changes if need be.
 9). PROTIP: Clear-up the script by deleting extraneous lines (that are not .aspx calls):
 
    * "_browserLink" calls Visual Studio uses.
-   * "SignalR" 
+   * "SignalR" uses HTTP Web Sockets.
 
 
 ## <a name="OpenSampleProject"> Open Sample Project</a>
@@ -284,7 +284,7 @@ width="200" /></a>
 width="200" /></a>
 
 4). Select rule **Context Parameter Exists** 
-
+or Probability rule to run a request only the specified percentage of the time.
 
 
 ## <a name="ParametizeWebServers"> Parametize Web Servers</a>
