@@ -298,3 +298,7 @@ https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294
 * LinkedIn
 * Twitter
 
+https://github.com/tjanczuk/edge
+enables .NET to run within Node.js.
+Why one would want to is another matter.
+
