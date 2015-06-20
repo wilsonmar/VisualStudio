@@ -1,34 +1,14 @@
 This page and associated test script describes use of Visual Studio and the C# language to create a basic 
 web service listener.
 
-We want to compare REST API Async calls using <a href="#WebSockets">HTML5 Web Sockets protocol</a> using
+We want to compare REST API Async calls 
   * Restify (at http://mcavage.me/node-restify/) is a node.js + Socket.io module
     built specifically to build "correct" REST API web services.
 
     It was influenced by Express written by TJ Holowaychuk (visionmedia) was in 2014 transferred to for-profit StrangeLoop,
     which created the LoopBack Node framework built on Express.
 
-  * ASP.NET Web API with **SignalR** (not ASP.NET web forms nor ASP.NET Web API),
-    which is a "real-time" protocol that provides fast mobile data exchange.
 
-
-## <a name="WebSockets"> Web Sockets</a>
-Web Sockets is popular now because:
-* its HTTP headers take less bytes than HTTP 
-* data exchanged is more compact than JSON.
-* it enables **two-way** communication, so pages automatically refresh without user action (thus "real time").
-
-Microsoft offers its SignalR library (at http://SignalR.net)
-for addition to all ASP.NET project types (MVC).
-
-  * http://www.pluralsight.com/courses/one-aspdotnet-from-scratch
-  demostrates how to create a SignalR "ChatHub" app updates the user count on all browser instances automatically
-  as browser instances are added and disengaged.
-  
-  * http://shooter.signalr.net provides a demo app written in HTML using SignalR.
-  
-WebSockets is 
-  * https://developer.mozilla.org/en-US/docs/WebSockets/Writing_WebSocket_client_applications
 
 
 
@@ -107,7 +87,6 @@ Microsoft provides several architectures for services which listen for and respo
   and tutorial about this Template and 
   Controller Class at http://www.codemag.com/article/1206081
  * WCF (Web Communications Framework) REST
- * HTML5 Web Sockets - http://social.technet.microsoft.com/wiki/contents/articles/7148.websockets-in-asp-net.aspx
 
 Web API and MVC controller are mixed in a single project to handle advanced AJAX requests which may return data in JSON, XML or any others format and building a full blown HTTP service. Typically, this is called **Web API self hosting**.
 
