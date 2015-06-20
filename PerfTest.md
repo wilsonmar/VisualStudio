@@ -2,6 +2,9 @@ This text mark-down (.md) file describes how to do performance testing using Vis
 using an approach that introduces concepts as you work hands-on following step-by-step instructions.
 This is so you get productive in the quickest possible time.
 
+BTW, I'm looking for work doing this, paid or otherwise.
+Call me! - WilsonMar@gmail.com, 310.320-7878, Skype: wilsonmar4
+
 ## Contents
 
 0. <a href="#SampleApp"> Sample Apps</a>
@@ -216,8 +219,11 @@ Tutorials on CodedUI:
 1) Download "Agents for Microsoft Visual Studio 2013" 287 MB file VS2013_RTM_AGTS_ENU.iso
 from http://www.microsoft.com/en-us/download/details.aspx?id=40750.
 
-2) Use Pismo 
-or other program to mount the iso file.
+2) Use Pismo or WinZip or other program to mount the iso file as a folder/drive.
+
+ The .iso contains vstf (Visual Studio Test Facility) assets:
+ * A TestController folder containing **vstf_testcontroller.exe**.
+ * A TestAgent folder containing **vstf_testagent.exe**.
 
 3) Run the **Test Agent Configuration Tool** (TestAgentConfig.exe).
 
