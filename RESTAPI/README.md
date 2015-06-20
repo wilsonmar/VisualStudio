@@ -113,7 +113,7 @@ Web API and MVC controller are mixed in a single project to handle advanced AJAX
 
 | Aspect	| MVC | Web API |
 |----|----|----|
-| Call format | RPC | REST |
+| Call format | <a href="#RPC">RPC</a> | <a href="#REST">REST</a> |
 | Returns |	Views and Data | Data only |
 | Result Formats |	JSON only | XML, JSON, ATOM, etc. |
 | Basis for route mapping |	<a href="#RESTActions">REST in URL Actions</a> | <a href="#HTTPVerbs">HTTP Verbs</a> |
@@ -131,6 +131,45 @@ To make Web API support RPC-style endpoints:
 * http://encosia.com/rest-vs-rpc-in-asp-net-web-api-who-cares-it-does-both/
 * http://www.code-magazine.com/Article.aspx?quickid=1206081
 
+### <a name="REST"> REST</a>
+REST (Representational Transform) was first proposed by Roy Fielding in his doctoral dissertation
+at UC Irvine: http://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf
+
+REST is not a protocol like HTTP, but an "architectural style".
+
+Is this fictional URL "RESTful", meaning "everything is a resource"?
+
+```
+http://api.example.com/posts/delete/233/
+```
+
+http://blog.luisrei.com/articles/rest.html
+says no because delete is an action, not a resource.
+
+### <a name="HTTPVerbs"> HTTP Verbs (Request methods)</a>
+
+| Verb	| Used for... |
+|----|----|
+|GET |	retrieves a representation of a resource without side-effects (nothing changes on the server).
+ -- a resource or list of resources. |
+| HEAD	| retrieves just the resource meta-information (headers) i.e. same as GET but without the response body - also without side-effects. |
+| OPTIONS |	returns the actions supported for specified the resource - also without side-effects. |
+|POST	| Create a resource. Get a list of resources using a more advanced query.|
+|PUT |	(completely) replaces an existing resource. Create a resource if it doesn't exist or, if it does, update it.|
+|DELETE	| Delete a resource. |
+|PATCH	|  	partial modification of (update) a resource. |
+
+For POST, PUT, the expected HTTP response code is 201 Created.
+
+Alternately, 
+https://code.msdn.microsoft.com/ASPNET-Web-API-OData-cecdb524
+describes how using ASP.NET Web API can be an OData endpoint. 
+the Open Data Protocol (OData) 
+described at http://www.odata.org/
+is a public data access protocol that provides a uniform way to query and manipulate data sets through CRUD operations (create, read, update, and delete). 
+By controling which OData operations are exposed, you can host multiple OData endpoints, alongside non-OData endpoints. 
+You have full control over your data model, back-end business logic, and data layer.
+
 ### <a name="RESTActions"> REST in URL Actions</a>
 The GET started with the VSO REST APIs article at
 https://www.visualstudio.com/integrate/get-started/rest/basics
@@ -141,24 +180,6 @@ curl -u {username}[:{password}]
 https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version=1.0
 ```
 
-### <a name="HTTPVerbs"> HTTP Verbs</a>
-
-| Verb	| Used for... |
-|----|----|
-|GET |	Get a resource or list of resources|
-|POST	| Create a resource. Get a list of resources using a more advanced query|
-|PUT |	Create a resource if it doesn't exist or, if it does, update it|
-|DELETE	| Delete a resource |
-|PATCH	| Update a resource |
-
-Alternately, 
-https://code.msdn.microsoft.com/ASPNET-Web-API-OData-cecdb524
-describes how using ASP.NET Web API can be an OData endpoint. 
-the Open Data Protocol (OData) 
-described at http://www.odata.org/
-is a public data access protocol that provides a uniform way to query and manipulate data sets through CRUD operations (create, read, update, and delete). 
-By controling which OData operations are exposed, you can host multiple OData endpoints, alongside non-OData endpoints. 
-You have full control over your data model, back-end business logic, and data layer.
 
 ### <a name="Sample"> Repo Samples</a>
 This repo is similar to Charles Sterling's
