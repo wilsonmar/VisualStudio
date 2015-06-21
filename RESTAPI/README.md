@@ -8,7 +8,10 @@ We want to compare REST API Async calls
     It was influenced by Express written by TJ Holowaychuk (visionmedia) was in 2014 transferred to for-profit StrangeLoop,
     which created the LoopBack Node framework built on Express.
 
-
+### <a name="AgileApproach"> Agile Approach</a>
+When Howard Dierking @howard_dierking provides his https://github.com/howarddierking/RestBugs
+sample, he noted:
+"I’m going to write my client to consume a series of static [JSON] files and will see how easy it is to drive my entire workflow through those resources. I’ll then use that experience (and the resulting representation design) to drive the design of my server, which will then drive the runtime execution of my client."
 
 
 
