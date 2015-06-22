@@ -28,6 +28,9 @@ Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#mete
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
+BTW, by contrast, Amazon's pricing calculator is at
+http://calculator.s3.amazonaws.com/index.html.
+
 The Excel 2013 file at https://onedrive.live.com/redir?resid=4CF625875C66377A%21135
 contains a worksheet for each type of server: Worker, Windows, Linux, SQL.
 
