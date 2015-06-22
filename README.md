@@ -1,15 +1,14 @@
 Here are my notes on using of VisualStudio from Microsoft for ensuring the performance and capacity of systems.
 
 ## <a name="Versions"> Versions</a>
+<a target="_blank" href="https://www.visualstudio.com/products/vs-2015-product-editions">
+Visual Studio 2015</a> combines Premium and Ultimate into an **Enterprise** product name.
 
 http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#History
 presents a table of the correspondence between product names, 
 internal code names, internal version number, release date,
 and what version of the core .NET Framework each supports.
 Note Visual Studio 2013 supports up to .NET 4.5.2.
-
-<a target="_blank" href="https://www.visualstudio.com/products/vs-2015-product-editions">
-Visual Studio 2015</a> combines Premium and Ultimate into an **Enterprise** product name.
 
 For each version there are different <a href="#Editions">editions</a>.
 
@@ -64,7 +63,7 @@ But the request is registration within 30 days.
 ### <a name="OptionalFeatures"> Optional Features to Install</a>
 
 * Blend for Visual Studio for UI Design of XAML-based interfaces for Windows Presentation Foundation and Silverlight applications.. See https://en.wikipedia.org/wiki/Microsoft_Blend
-* LightSwitch 
+* LightSwitch - a simplified, self-service development tool that enables you to build business applications quickly and easily for the desktop and cloud. 
 * Microsoft Foundation Classes for C++ [uncheck]
 * Microsoft Office Developer Tools [uncheck]
 * Microsoft SQL Server Data Tools
