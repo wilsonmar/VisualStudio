@@ -1,5 +1,15 @@
 Here are my notes on using of VisualStudio from Microsoft for ensuring the performance and capacity of systems.
 
+## <a name="Contents"> Contents</a>
+0. <a href="#Versions"> Versions</a>
+0. <a href="#DownloadOptions"> Download Options</a>
+0. <a href="#OptionalFeatures"> Optional Features to Install</a>
+0. <a href="#Distinctives"> Distinctives of Microsoft's Approach</a>
+0. <a href="#Editions"> What Edition of Visual Studio?</a>
+    0. <a href="#CommunityEdition"> Visual Studio Community</a>
+    0. <a href="VSCode"> Visual Studio Code</a>
+
+
 ## <a name="Versions"> Versions</a>
 <a target="_blank" href="https://www.visualstudio.com/products/vs-2015-product-editions">
 Visual Studio 2015</a> combines Premium and Ultimate into an **Enterprise** product name.
@@ -150,7 +160,7 @@ https://www.visualstudio.com/en-us/features/xamarin-vs.aspx
 Xamarin is licensed for $1500 per platform per year per develop.
 
 
-### <a name="CommunityCode"> Visual Studio Code</a>
+### <a name="VSCode"> Visual Studio Code</a>
 
 Microsoft released its Code IDE April 2015 during its BUILD conference.
 
