@@ -6,8 +6,13 @@ Here are my notes on using of VisualStudio from Microsoft for ensuring the perfo
 0. <a href="#OptionalFeatures"> Optional Features to Install</a>
 0. <a href="#Distinctives"> Distinctives of Microsoft's Approach</a>
 0. <a href="#Editions"> What Edition of Visual Studio?</a>
-    0. <a href="#CommunityEdition"> Visual Studio Community</a>
-    0. <a href="VSCode"> Visual Studio Code</a>
+0. <a href="#CommunityEdition"> Visual Studio Community</a>
+0. <a href="#VSCode"> Visual Studio Code</a>
+0. <a href="#VSGithub"> Visual Studio Github</a>
+0. <a href="#VSOnline"> Visual Studio Online</a>
+0. <a href="#VS_Tips"> Visual Studio Usage Tips</a>
+0. <a href="#PlugIns"> Plug-Ins (Extension Pack)</a>
+0. <a href="#SocialMedia"> Social Media around Visual Studio</a>
 
 
 ## <a name="Versions"> Versions</a>
@@ -202,7 +207,7 @@ Videos by others about VSCode:
 * https://www.youtube.com/watch?v=e3tPWAq74v4
 
 
-### Visual Studio Github
+## <a name="VSGithub"> Visual Studio Github</a>
 https://visualstudio.github.com/index.html
 offers a Github Extension for Visual Studio 2015, in RC (Release Candidate) maturity as of June 2015.
 This enables Visual Studio to use Github as a source code repository instead of Microsoft's own 
@@ -212,7 +217,7 @@ But where's the local git repo support?
 For VS 2012, see 
 http://www.codeproject.com/Articles/581907/IntegratingplusandplusUsingplusGithubplusinplusVis
 
-## Visual Studio Online
+## <a name="VSOnline"> Visual Studio Online</a>
 While it's true that Visual Studio is available **online**
 (see https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs),
 many developers still prefer to download and install Visual Studio on computers used to develop code,
@@ -246,7 +251,7 @@ http://blogs.msdn.com/b/benwilli/archive/2015/04/07/back-to-basics-visual-studio
 9. Edit directly in the Diff tool
 
 
-### <a name="PlugIns"> Plug-Ins (Extension Pack)</a>
+## <a name="PlugIns"> Plug-Ins (Extension Pack)</a>
 
 These can be downloaded and installed from inside Visual Studio's Tools menu "Extensions and Updates".
 
@@ -296,7 +301,7 @@ shows how to set a red color to highlight
 Adam Driscoll's PowerShell Tools for Visual Studio (free)
 https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597?SRC=Home
 
-## <a name="SocialMedia"> Social Media</a>
+## <a name="SocialMedia"> Social Media around Visual Studio</a>
 * http://developer.microsoft.com/
 * https://www.facebook.com/MicrosoftItPro app
 * https://www.facebook.com/WindowsServer app
