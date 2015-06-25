@@ -47,6 +47,24 @@ of server, database, notifications, etc. which are not free.
 BTW, by contrast, Amazon's pricing calculator is at
 http://calculator.s3.amazonaws.com/index.html.
 
+
+## <a name="PROSMultipleServers"> PROS: Multiple Servers</a>
+The disadvantage of several smaller servers:
+
+  * Automation of server initiation and take-down requires work
+  * Communication among servers (for redunduncy) complicates and use up bandwidth
+  * There is a limit to number of physical servers serviced by a single switch
+  * Waste in purchasing excess stand-by capacity that "don't earn money"
+  * Each copy of the operating system consumes overhead memory
+  
+The advantage of several smaller servers:
+
+  * Automation of server initiation eliminate human error and enables learning
+  * Ability to down individual servers
+  * Ability to incrementally add or subtract instances dynamically
+  * Assets deployed are more fully utilized
+
+
 ## <a name="Comparison"> Comparison Spreadsheet</a>
 
 The Excel 2013 file 
@@ -62,21 +80,6 @@ in the worksheet contains analysis of prices for each type of server.
 The <a href="#AppSvcScaleUpCostingLogic"> App</a> worksheet
 calculates the number of Minutes per Day, Month, and Year used in other sheets.
   
-
-## <a name="PROSMultipleServers"> PROS: Multiple Servers</a>
-The disadvantage of several smaller servers:
-
-  * Automation of server initiation and take-down requires work
-  * Communication among servers (for redunduncy) complicates and use up bandwidth
-  * There is a limit to number of physical servers serviced by a single switch
-  * Waste in purchasing excess stand-by capacity that "don't earn money"
-  
-The advantage of several smaller servers:
-
-  * Automation of server initiation eliminate human error and enables learning
-  * Ability to down individual servers
-  * Ability to incrementally add or subtract instances dynamically
-  * Assets deployed are more fully utilized
 
 <hr />
 
