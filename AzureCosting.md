@@ -1,18 +1,25 @@
-This mark-down text file analyzes the likely cost of using Microsoft's Azure cloud.
+This mark-down text file analyzes the likely cost of using Microsoft's Azure cloud
+from Visual Studio Code and other performance testing utiliities (such as LoadRunner).
 
-Here we gather facts based on **actual usage** rather than estimates and conjecture.
-
-Facts are gathered by conducting performance test runs 
-which imposes sample (but artificial) loads on servers within Azure
-using both Visual Studio Online and other approaches such as LoadRunner.
+Here we gather facts based on **actual usage** rather than estimates and conjecture,
+by conducting performance test runs 
+which imposes sample (but artificial) loads on servers within Azure.
 
 This technical tutorial assumes that the reader is familiar with 
 Azure cloud computing (why DevTest, etc.) as taught in
 [this free Udemy course](https://www.udemy.com/introduction-to-cloud-computing-and-microsoft-azure/#/).
 
-There are two basic components of response time: 
-a) time in the server and 
-b) time requests and c) responses spend over the network.
+Efforts to tune configurations and predict what <a href="#Costing">production usage will cost</a>
+typically require a way to impose an emulated load on the system. 
+
+
+## <a name="CostingLogic"> Costing Logic</a>
+
+## <a name="ImposingLoad"> Imposing Load</a>
+The basic components of response time: 
+  a) time in the server and 
+  b) time requests and 
+  c) responses spend over the network.
 
 Public networks can introduce a significant amount of time to response time.
 And that time can vary significantly due to travel distance (propagation delay) 
@@ -22,11 +29,9 @@ When load generators are placed within actual user machines at the other end of 
 network times can be so significant and vary so significantly that they "drown out" 
 the server time component.
 
-So the ideal situation is to have a load generator near the front-end web server
-within the data center to adequately measure time spent on the server.
-
-Efforts to tune configurations and predict what <a href="#Costing">production usage will cost</a>
-typically require a way to impose an emulated load on the system. 
+To adequately measure time spent on the server without network variation,
+the ideal situation is to have a **load generator agent near the front-end web server**
+within the data center.
 
 
 ## <a name="CostingLogic"> Costing Logic</a>
@@ -180,3 +185,4 @@ An alternative approach is to run LoadRunner instead of Visual Studio Cloud.
 
 This situation would be useful to use labor-saving TruClient scripts.
 
+More on this in the future.
