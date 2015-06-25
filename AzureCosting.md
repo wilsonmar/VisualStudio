@@ -62,6 +62,22 @@ in the worksheet contains analysis of prices for each type of server.
 The <a href="#AppSvcScaleUpCostingLogic"> App</a> worksheet
 calculates the number of Minutes per Day, Month, and Year used in other sheets.
   
+
+## <a name="PROSMultipleServers"> PROS: Multiple Servers</a>
+The disadvantage of several smaller servers:
+
+  * Automation of server initiation and take-down requires work
+  * Communication among servers (for redunduncy) complicates and use up bandwidth
+  * There is a limit to number of physical servers serviced by a single switch
+  * Waste in purchasing excess stand-by capacity that "don't earn money"
+  
+The advantage of several smaller servers:
+
+  * Automation of server initiation eliminate human error and enables learning
+  * Ability to down individual servers
+  * Ability to incrementally add or subtract instances dynamically
+  * Assets deployed are more fully utilized
+
 <hr />
 
 ## <a name="VSOnlineVUMs"> VS Online VUMs</a>
@@ -172,6 +188,9 @@ QUESTION:
 Why is Standard SQL Server Basic A3 less than Windows base ($0.696)?
 
 
+## <a name="Security"> Security</a>
+
+
 ## <a name="MFA"> Multi-Factor Authentication</a>
 MFA is charged both by user and by authentication exchange:
 * $1.40 per use to maintain keys for that user.
@@ -189,6 +208,14 @@ See https://www.visualstudio.com/features/application-insights-vs
 to read about Microsoft's **Application Insights** offering.
 
 
+## <a name="BackupLogShipping"> Backup and Log Shipping</a>
+To avoid loss of data if a server crashes, 
+a duplicate of data in production servers are shipped off to another location.
+
+And that may racks up data communication costs, perhaps across AWS Availability Centers.
+Google does not 
+
+
 ## <a name="#StormRunner"> Test Cloud Comparison Across Competitors</a>
 Compare this against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
 
@@ -200,3 +227,9 @@ An alternative approach is to run LoadRunner instead of Visual Studio Cloud.
 This situation would be useful to use labor-saving TruClient scripts.
 
 More on this in the future.
+
+## <a name="References"> References</a>
+Additional information on this topic by JeffreyLush.Net
+
+* https://www.youtube.com/watch?v=nMMJu7IbWfk
+  Sizing Cloud with RAM, Storage, CPUs
