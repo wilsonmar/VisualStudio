@@ -1,11 +1,12 @@
 This mark-down text file analyzes the likely cost of using Microsoft's Azure cloud.
 
-Here we gather facts based on actual usage rather than estimates.
+Here we gather facts based on **actual usage** rather than estimates and conjecture.
 
-This is done by conducting performance tests which imposes sample (but artificial) loads on servers within Azure
+Facts are gathered by conducting performance test runs 
+which imposes sample (but artificial) loads on servers within Azure
 using both Visual Studio Online and other approaches such as LoadRunner.
 
-This assumes that the reader is familiar with 
+This technical tutorial assumes that the reader is familiar with 
 Azure cloud computing (why DevTest, etc.) as taught in
 [this free Udemy course](https://www.udemy.com/introduction-to-cloud-computing-and-microsoft-azure/#/).
 
@@ -169,7 +170,13 @@ See https://www.visualstudio.com/features/application-insights-vs
 to read about Microsoft's **Application Insights** offering.
 
 
-## <a name="#StormRunner"> Comparison Across Competitors</a>
-Compare that against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
+## <a name="#StormRunner"> Test Cloud Comparison Across Competitors</a>
+Compare this against HP's StormRunner Load which charges a flat 15 cents per vuser hour.
 
 * http://blogs.msdn.com/b/charles_sterling/archive/2015/06/02/load-test-series-part-iii-taking-your-load-test-to-the-cloud-i-e-creating-a-cloud-based-load-test.aspx
+
+## <a name="#LoadRunner"> LoadRunner Within AWS</a>
+An alternative approach is to run LoadRunner instead of Visual Studio Cloud.
+
+This situation would be useful to use labor-saving TruClient scripts.
+
