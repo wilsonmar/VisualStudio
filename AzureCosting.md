@@ -1,4 +1,9 @@
-This mark-down text file describes an analysis of costing of Microsoft's Azure cloud to conduct performance testing.
+This mark-down text file analyzes the likely cost of using Microsoft's Azure cloud.
+
+Here we gather facts based on actual usage rather than estimates.
+
+This is done by conducting performance tests which imposes sample (but artificial) loads on servers within Azure
+using both Visual Studio Online and other approaches such as LoadRunner.
 
 This assumes that the reader is familiar with 
 Azure cloud computing (why DevTest, etc.) as taught in
