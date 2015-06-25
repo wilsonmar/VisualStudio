@@ -16,10 +16,11 @@ typically require a way to impose an emulated load on the system.
 
 
 ## <a name="ImposingLoad"> Imposing Load</a>
-The basic components of response time: 
-  a) time in the server and 
-  b) time requests and 
-  c) responses spend over the network.
+The basic components of response time as observed by end-users:
+
+  1. time client request spend over the network into the server.
+  2. time in the server to send response
+  3. time the response travels over the network
 
 Public networks can introduce a significant amount of time to response time.
 And that time can vary significantly due to travel distance (propagation delay) 
