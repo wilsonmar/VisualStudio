@@ -1,5 +1,7 @@
-This mark-down text file analyzes the likely cost of using Microsoft's Azure cloud
-from Visual Studio Code and other performance testing utiliities (such as LoadRunner).
+This mark-down text file describes how to find the **least-cost** configuration of an app
+running in the Microsoft's Azure cloud, 
+with load simulated from Visual Studio Code and other performance testing utiliities (such as LoadRunner).
+
 
 ## <a name="ActualCosts"> Actual Costs</a>
 
