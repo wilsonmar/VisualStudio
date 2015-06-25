@@ -164,7 +164,7 @@ MFA is charged both by user and by authentication exchange:
 * $0.14 per authentication exchange.
 
 Compare versus https://www.authy.com/pricing/
-* $0.15 per user (Azure costs 11 times more)
+* $0.15 per user (Azure costs 9 times more)
 * $0.05 per successful authentication (Azure costs 3 times more)
 
 
