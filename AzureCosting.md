@@ -47,8 +47,17 @@ of server, database, notifications, etc. which are not free.
 BTW, by contrast, Amazon's pricing calculator is at
 http://calculator.s3.amazonaws.com/index.html.
 
-The Excel 2013 file at https://onedrive.live.com/redir?resid=4CF625875C66377A%21135
-contains a worksheet for each type of server: Worker, Windows, Linux, SQL.
+## <a name="Comparison"> Comparison Spreadsheet</a>
+
+The Excel 2013 file 
+https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel 
+contains a summary graphic of sample run results showing different runs.
+
+
+
+
+Tabs named **Worker, Windows, Linux, SQL**
+in the worksheet contains analysis of prices for each type of server.
 
 The <a href="#AppSvcScaleUpCostingLogic"> App</a> worksheet
 calculates the number of Minutes per Day, Month, and Year used in other sheets.
