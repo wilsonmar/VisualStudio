@@ -21,10 +21,12 @@ typically require a way to impose an emulated load on the system.
 The basic components of response time as observed by end-users:
 
   1. time client request spend over the network into the server.
-  2. time in the server to send response
-  3. time the response travels over the network
+  2. time in the server to prepare responses 
+  3. time the response travels over the network (as measured by the time when the first byte is received)
+  4. time the client spends painting the response on the screen.
 
 Public networks can introduce a significant amount of time to response time.
+Some say that it's 75% of the total time.
 And that time can vary significantly due to travel distance (propagation delay) 
 and competition with others (congestion).
 
