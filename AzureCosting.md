@@ -48,7 +48,9 @@ BTW, by contrast, Amazon's pricing calculator is at
 http://calculator.s3.amazonaws.com/index.html.
 
 
-## <a name="PROSMultipleServers"> PROS: Multiple Servers</a>
+## <a name="MultipleServers"> Single vs. Multiple Servers</a>
+Not quantified here are **qualitative** aspects that nevertheless can have a significant impact.
+
 The disadvantage of several smaller servers:
 
   * Automation of server initiation and take-down requires work
