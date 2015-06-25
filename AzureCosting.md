@@ -1,6 +1,8 @@
 This mark-down text file analyzes the likely cost of using Microsoft's Azure cloud
 from Visual Studio Code and other performance testing utiliities (such as LoadRunner).
 
+## <a name="CostingLogic"> Costing Logic</a>
+
 Here we gather facts based on **actual usage** rather than estimates and conjecture,
 by conducting performance test runs 
 which imposes sample (but artificial) loads on servers within Azure.
@@ -12,8 +14,6 @@ Azure cloud computing (why DevTest, etc.) as taught in
 Efforts to tune configurations and predict what <a href="#Costing">production usage will cost</a>
 typically require a way to impose an emulated load on the system. 
 
-
-## <a name="CostingLogic"> Costing Logic</a>
 
 ## <a name="ImposingLoad"> Imposing Load</a>
 The basic components of response time: 
