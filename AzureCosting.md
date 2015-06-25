@@ -52,7 +52,7 @@ http://calculator.s3.amazonaws.com/index.html.
 The Excel 2013 file 
 https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel 
 contains a summary graphic of sample run results showing different runs.
-
+(Microsoft requires you to sign in using one of their accounts)
 
 
 
