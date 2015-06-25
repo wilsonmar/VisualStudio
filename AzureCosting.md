@@ -1,7 +1,7 @@
 This mark-down text file analyzes the likely cost of using Microsoft's Azure cloud
 from Visual Studio Code and other performance testing utiliities (such as LoadRunner).
 
-## <a name="CostingLogic"> Costing Logic</a>
+## <a name="ActualCosts"> Actual Costs</a>
 
 Here we gather facts based on **actual usage** rather than estimates and conjecture,
 by conducting performance test runs 
