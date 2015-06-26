@@ -63,14 +63,15 @@ columns ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the
 
 ### <a name="IncrementRatio"> Incr. (Increment) Ratio</a>
 To begin with a simpler example,
-pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
+pricing for a "Basic" Windows App Service (providing network load balancing, autoscale, and backup support)
+but no disk, in the <a href="#Calcs"> Calcs Spreadsheet</a>:
 
 | ID |  Cores | RAM GB | SSD GB | $/hour | Incr. Ratio | #Machines | $Total |
 | ---- | ---- | ----: | ----    | ----:  | ---- | ---- | ----: |
-| A1   | 1    | 1.75  | 50      | $0.074 | -    | 8 | $0.59 |
-| A2   | 2    |  3.5  | 50      | $0.148 | 2.0  | 4 | $0.59 |
-| A3   | 4    |  7.0  | 50      | $0.296 | 2.0  | 2 | $0.59 |
-| A4   | 8    | 14.0  | 50      | $0.592 | 2.0  | 1 | $0.59 |
+| A1   | 1    | 1.75  | 0      | $0.074 | -    | 8 | $0.59 |
+| A2   | 2    |  3.5  | 0      | $0.148 | 2.0  | 4 | $0.59 |
+| A3   | 4    |  7.0  | 0      | $0.296 | 2.0  | 2 | $0.59 |
+| A4   | 8    | 14.0  | 0      | $0.592 | 2.0  | 1 | $0.59 |
 
 Notice The number of **Cores** and **RAM** double as the size increases 
 (from 2 to 4 to 8, etc.).
@@ -78,31 +79,45 @@ Notice The number of **Cores** and **RAM** double as the size increases
 For these specific servers, cost is directly proportional to the number of cores. 
 So 8 smaller machines with 1 core is the same cost as 1 big machine with 8 cores.
 
-### <a name="Calcs"> Calcs</a>
-Using more cores does not necessarily mean a proportional increase in processing rate is achieved.
-    Typically, doubling the number of cores would yield 70% or less improvement in processing throughput.
-    This means more smaller servers may be cost less overall than larger servers.
+The **Incr. Ratio** (Increment Ratio) of the larger divided by the smaller 
+is calculated to show that pricing also doubles as servers get larger.
+
+In reality using more cores does not necessarily mean a proportional increase in processing rate is achieved.
+In our experiments, doubling the number of cores would yield at most 70% in transaction processing throughput.
+This means more smaller servers may be cost less overall than larger servers.
+
+Load balancers that distribute load across servers do not distribute load evenly.
 
   COMMENTARY:
   Microsoft may consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
   However, this would complicate calculations somewhat.
 
-The **Incr. Ratio** (Increment Ratio) of the larger divided by the smaller 
-is calculated for use in determining the most cost-effective selection of machine size for a given load.
-
-If the ratio is lower than 2.0, such as D13 to D14 having a ratio of **1.80**, 
-**prices dropped** less than the doubling of cores and RAM.
-
-
-However:
-
-* other machines do not have such a linear cost structure in Azure.
+That may be why there is a ratio of **1.80** going from D13 to D14 and the largest machine of each group.
+The lower the ratio, the less increase.
 
 DO THIS:
 Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
 "Standard" App Service (providing network load balancing, autoscale, and backup support)
 in order to select the righ size of server that can servicie a set of transactions at the lowest overall price.
 
+This would involve configuration of a load balancer for servers.
+
+Sample results of such an experiment is presented in the
+<a href="#Calcs"> Calcs Spreadsheet</a>.
+
+If there were no "dissipation" factor, an 8 core server would process the same number of transactions
+as 8 one-core servers, say 4800 transactions during a one-hour run,
+if transactions occured at the rate of 80 transactions per second.
+
+The total dollars spent ($0.59) divided by the transactions processed is $0.00012 per transaction.
+
+But what if more transactions were processed by several machines?
+
+DO THIS:
+In the Calc spreadsheet, 
+change the Tot. Trans per sec value for the 1 core machines to 100.
+
+It contains a summary graphic of sample run results showing different runs.
 
 
 ## <a name="MultipleServers"> Single vs. Multiple Servers</a>
@@ -123,10 +138,6 @@ The advantage of several smaller servers:
   * Ability to incrementally add or subtract instances dynamically
   * Assets deployed are more fully utilized
 
-
-## <a name="MultipleServers"> Single vs. Multiple Servers</a>
-
-It contains a summary graphic of sample run results showing different runs.
 
 <hr />
 
