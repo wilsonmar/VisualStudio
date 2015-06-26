@@ -31,25 +31,31 @@ At the bottom of the spreadsheet are tabs that contain calculations for some cat
 
 Other types of charges are not in this spreadsheet yet.
 
+### <a name="Basics"> Basics Spreadsheet</a>
+The **Basics** tab provides the number of Hours per Day, Month, and Year used in other sheets.
+
+If you bring your servers down and up each day, change 24 to whatever usage you have per day.
+
+<a href="#AzurePricingCalculator"> Microsoft's Azure Pricing Calculator</a>
+uses **31** as the number of days per month.
+
+Change the spreadsheet to that if you want to compare pricing with the website.
+But to account for leap years, some may consider it more accurate to use 365.25/12
+and 365.25/12 so the fractional number of days each month adds up to the yearly number.
+
+My spreadsheet adds an additional column to provide the **$/Day** calculation not in
+<a href="#AzurePricingCalculator"> Microsoft's Azure Pricing Calculator</a>.
+
+
+### <a name="PricingTabs"> Pricing Tabs</a>
 Within the **Worker, Windows, Linux, SQL** tabs,
 columns ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the 
-<a href="#AzurePricingCalculator"> Azure Pricing Calculator</a>.
+<a href="#AzurePricingCalculator"> Microsoft's Azure Pricing Calculator</a>.
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8377401/3ecb3518-1bce-11e5-8555-df8a9117c0e6.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/8377401/3ecb3518-1bce-11e5-8555-df8a9117c0e6.png" 
 /></a>
 
-### <a name="Basics"> Basics Spreadsheet</a>
-The spreadsheet includes an additional column calculating **$/Day** for convenience of comparison.
-
-The **Basics** tab specifies the number of Minutes per Day, Month, and Year used in other sheets.
-
-If you bring your servers down and up each day, change 24 to whatever usage you have per day.
-
-Microsoft's Azure Price Calculator uses **31** as the number of days per month.
-Change the spreadsheet to that if you want to compare pricing with the website.
-But to account for leap years, some may consider it more accurate to use 365.25/12
-and 365.25/12 so the fractional number of days each month adds up to the yearly number.
 
 The number of **Cores** and **RAM** usually double each time.
 
