@@ -136,7 +136,7 @@ Most performance testing runs are conducted in bursts of an hour or a few hours.
 
 Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
-| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | Machines | $ Tot. |
+| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | #Machines | $Total |
 | ---- | --- | ----  | ---- | ----              | ----  | -- | --- |
 | S1   | 1   | 1     | 1.75 | 50                | $0.10 | 4 | $0.40 |
 | S2   | 1   | 2     | 3.5  | 50                | $0.20 | 2 | $0.40 |
@@ -160,6 +160,7 @@ DO THIS:
 Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
 "Standard" App Service (providing network load balancing, autoscale, and backup support)
 in order to select the righ size of server that can servicie a set of transactions at the lowest overall price.
+
 
 ## <a name="AppSvcScaleAcrossCostingLogic"> App Service Scale-Across Costing Logic</a>
 Similarly, the cost per VM stays the same as the number VMs deployed increases.
