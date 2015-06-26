@@ -62,18 +62,19 @@ columns ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the
 /></a>
 
 ### <a name="IncrementRatio"> Incr. (Increment) Ratio</a>
+To begin with a simpler example,
+pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
-Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
+| ID |  Cores | RAM GB | SSD GB | $/hour | #Machines | $Total |
+| ---- | ---- | ----: | ----              | ----:  | ---- | ----: |
+| S1   | 1    | 1.75  | 50                | $0.10 | 4 | $0.40 |
+| S2   | 2    |  3.5  | 50                | $0.20 | 2 | $0.40 |
+| S3   | 4    |  7.0  | 50                | $0.40 | 1 | $0.40 |
+| S4   | 8    | 14.0  | 50                | $0.40 | 1 | $0.40 |
 
-| ID |  Cores | RAM GB | Std. Storage GB | $/hour | #Machines | $Total |
-| ---- | ---- | ---- | ----              | ----  | ---- | ---- |
-| S1   | 1    | 1.75 | 50                | $0.10 | 4 | $0.40 |
-| S2   | 2    | 3.5  | 50                | $0.20 | 2 | $0.40 |
-| S3   | 4    | 7.0  | 50                | $0.40 | 1 | $0.40 |
+Notice The number of **Cores** and **RAM** double as the size increases.
 
-The number of **Cores** and **RAM** usually double each time.
-
-For these servers, cost is directly proportional to the number of cores. 
+For these specific servers, cost is directly proportional to the number of cores. 
 So 4 machines with 1 core is the same cost as 1 machine with 4 cores.
 
 ### <a name="Calcs"> Calcs</a>
