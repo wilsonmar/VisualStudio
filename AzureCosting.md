@@ -19,6 +19,23 @@ Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#mete
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
+Under App Service, free usage is with IP address and HTTP protocol 
+rather than domain names with HTTPS.
+Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
+
+QUESTION:
+Is this an error in the calculator?
+
+24 hours in a day * 31 days = 744.
+Since the number of days during each month varies,
+the actual total would vary as well.
+The calculation is for a month that has 31 days.
+
+However, servers are not typically used continuously the whole month.
+
+Most performance testing runs are conducted in bursts of an hour or a few hours.
+
+
 ## <a name="Cost Comparison"> Cost Comparison Spreadsheet</a>
 Analysis of prices are in my Excel (97-2000 format) file 
 https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel.  
@@ -196,23 +213,7 @@ VUserMinutes (minimum 250, including warm-up period) are deducted from your acco
 *    Completed runs, based on the full duration of the run
 *    Aborted runs, based on the elapsed run duration
 
-## <a name="AppSvcScaleUpCostingLogic"> App Service Scale-Up Costing Logic</a>
 
-Under App Service, free usage is with IP address and HTTP protocol 
-rather than domain names with HTTPS.
-Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
-
-QUESTION:
-Is this an error in the calculator?
-
-24 hours in a day * 31 days = 744.
-Since the number of days during each month varies,
-the actual total would vary as well.
-The calculation is for a month that has 31 days.
-
-However, servers are not typically used continuously the whole month.
-
-Most performance testing runs are conducted in bursts of an hour or a few hours.
 
 ## <a name="AppSvcScaleAcrossCostingLogic"> App Service Scale-Across Costing Logic</a>
 Similarly, the cost per VM stays the same as the number VMs deployed increases.
