@@ -190,9 +190,10 @@ within the data center.
 
 ## <a name="VSOnlineVUMs"> VS Online VUMs</a>
 
-Each Cloud account is provided first 20,000 VUMs free each month. 
-Because you must have a minimum of 25 VUsers per agent core in your run,
-that's 800 minutes or (x60=) or **13.3 hours of free runs**.
+As of this writing, Microsoft charges gives each Cloud account's first 20,000 VUMs free each month. 
+
+Because you must have a **minimum of 25 VUsers per agent core** in a run,
+that's 800 minutes or (x60=) or **13 one-hour runs free** each month at minimnum load.
 
 No VUserMinutes are charged for runs that end in an error state.
 
