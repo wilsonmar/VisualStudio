@@ -17,6 +17,53 @@ Efforts to tune configurations and predict what <a href="#Costing">production us
 typically require a way to impose an emulated load on the system. 
 
 
+
+## <a name="CostingLogic"> Costing Logic</a>
+Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
+contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
+of server, database, notifications, etc. which are not free.
+
+BTW, by contrast, Amazon's pricing calculator is at
+http://calculator.s3.amazonaws.com/index.html.
+
+
+
+## <a name="Comparison"> Comparison Spreadsheet</a>
+
+The Excel 2013 file 
+https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel 
+contains a summary graphic of sample run results showing different runs.
+(Microsoft requires you to sign in using one of their accounts)
+
+
+
+Tabs named **Worker, Windows, Linux, SQL**
+in the worksheet contains analysis of prices for each type of server.
+
+The <a href="#AppSvcScaleUpCostingLogic"> App</a> worksheet
+calculates the number of Minutes per Day, Month, and Year used in other sheets.
+  
+## <a name="MultipleServers"> Single vs. Multiple Servers</a>
+Not quantified here are **qualitative** aspects that nevertheless can have a significant impact.
+
+The disadvantage of several smaller servers:
+
+  * Automation of server initiation and take-down requires work
+  * Communication among servers (for redunduncy) complicates and use up bandwidth
+  * There is a limit to number of physical servers serviced by a single switch
+  * Waste in purchasing excess stand-by capacity that "don't earn money"
+  * Each copy of the operating system consumes overhead memory
+  
+The advantage of several smaller servers:
+
+  * Automation of server initiation eliminate human error and enables learning
+  * Ability to down individual servers
+  * Ability to incrementally add or subtract instances dynamically
+  * Assets deployed are more fully utilized
+
+
+<hr />
+
 ## <a name="ImposingLoad"> Imposing Load</a>
 The basic components of response time as observed by end-users:
 
@@ -37,53 +84,6 @@ the server time component.
 To adequately measure time spent on the server without network variation,
 the ideal situation is to have a **load generator agent near the front-end web server**
 within the data center.
-
-
-## <a name="CostingLogic"> Costing Logic</a>
-Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
-contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
-of server, database, notifications, etc. which are not free.
-
-BTW, by contrast, Amazon's pricing calculator is at
-http://calculator.s3.amazonaws.com/index.html.
-
-
-## <a name="MultipleServers"> Single vs. Multiple Servers</a>
-Not quantified here are **qualitative** aspects that nevertheless can have a significant impact.
-
-The disadvantage of several smaller servers:
-
-  * Automation of server initiation and take-down requires work
-  * Communication among servers (for redunduncy) complicates and use up bandwidth
-  * There is a limit to number of physical servers serviced by a single switch
-  * Waste in purchasing excess stand-by capacity that "don't earn money"
-  * Each copy of the operating system consumes overhead memory
-  
-The advantage of several smaller servers:
-
-  * Automation of server initiation eliminate human error and enables learning
-  * Ability to down individual servers
-  * Ability to incrementally add or subtract instances dynamically
-  * Assets deployed are more fully utilized
-
-
-## <a name="Comparison"> Comparison Spreadsheet</a>
-
-The Excel 2013 file 
-https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel 
-contains a summary graphic of sample run results showing different runs.
-(Microsoft requires you to sign in using one of their accounts)
-
-
-
-Tabs named **Worker, Windows, Linux, SQL**
-in the worksheet contains analysis of prices for each type of server.
-
-The <a href="#AppSvcScaleUpCostingLogic"> App</a> worksheet
-calculates the number of Minutes per Day, Month, and Year used in other sheets.
-  
-
-<hr />
 
 ## <a name="VSOnlineVUMs"> VS Online VUMs</a>
 
