@@ -136,7 +136,7 @@ Most performance testing runs are conducted in bursts of an hour or a few hours.
 
 Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
-| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | # | $ Tot. |
+| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | Machines | $ Tot. |
 | ---- | --- | ----  | ---- | ----              | ----  | -- | --- |
 | S1   | 1   | 1     | 1.75 | 50                | $0.10 | 4 | $0.40 |
 | S2   | 1   | 2     | 3.5  | 50                | $0.20 | 2 | $0.40 |
@@ -150,11 +150,11 @@ However:
     Typically, doubling the number of cores would yield 70% or less improvement in processing throughput.
     This means more smaller servers may be cost less overall than larger servers.
 
-* other machines do not have such a linear cost structure.
+  COMMENTARY:
+  Microsoft may consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
+  However, this would complicate calculations somewhat.
 
-COMMENTARY:
-Microsoft may consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
-However, this would complicate calculations somewhat.
+* other machines do not have such a linear cost structure in Azure.
 
 DO THIS:
 Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
