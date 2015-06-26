@@ -136,11 +136,11 @@ Most performance testing runs are conducted in bursts of an hour or a few hours.
 
 Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
-| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | $/month |
-| ---- | --- | ----  | ---- | ----              | ----   | ---- |
-| S1   | 1   | 1     | 1.75 | 50                | $0.10 | $074.40 |
-| S2   | 1   | 2     | 3.5  | 50                | $0.20 | $148.80 |
-| S3   | 1   | 4     | 7.0  | 50                | $0.40 | $297.60 |
+| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | # | $ Tot.
+| ---- | --- | ----  | ---- | ----              | ----   | - | --- |
+| S1   | 1   | 1     | 1.75 | 50                | $0.10 | 4 | $0.40 |
+| S2   | 1   | 2     | 3.5  | 50                | $0.20 | 2 | $0.40 |
+| S3   | 1   | 4     | 7.0  | 50                | $0.40 | 1 | $0.40 |
 
 Notice that cost is directly proportional to the number of cores. 
 
