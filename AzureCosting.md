@@ -61,20 +61,22 @@ columns ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the
 <img src="https://cloud.githubusercontent.com/assets/300046/8377401/3ecb3518-1bce-11e5-8555-df8a9117c0e6.png" 
 /></a>
 
-
-The number of **Cores** and **RAM** usually double each time.
+### <a name="IncrementRatio"> Incr. (Increment) Ratio</a>
 
 Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
 
-| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | #Machines | $Total |
-| ---- | --- | ----  | ---- | ----              | ----  | ---- | ---- |
-| S1   | 1   | 1     | 1.75 | 50                | $0.10 | 4 | $0.40 |
-| S2   | 1   | 2     | 3.5  | 50                | $0.20 | 2 | $0.40 |
-| S3   | 1   | 4     | 7.0  | 50                | $0.40 | 1 | $0.40 |
+| ID |  Cores | RAM GB | Std. Storage GB | $/hour | #Machines | $Total |
+| ---- | ---- | ---- | ----              | ----  | ---- | ---- |
+| S1   | 1    | 1.75 | 50                | $0.10 | 4 | $0.40 |
+| S2   | 2    | 3.5  | 50                | $0.20 | 2 | $0.40 |
+| S3   | 4    | 7.0  | 50                | $0.40 | 1 | $0.40 |
+
+The number of **Cores** and **RAM** usually double each time.
 
 For these servers, cost is directly proportional to the number of cores. 
 So 4 machines with 1 core is the same cost as 1 machine with 4 cores.
 
+### <a name="Calcs"> Calcs</a>
 Using more cores does not necessarily mean a proportional increase in processing rate is achieved.
     Typically, doubling the number of cores would yield 70% or less improvement in processing throughput.
     This means more smaller servers may be cost less overall than larger servers.
