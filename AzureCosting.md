@@ -13,36 +13,80 @@ This technical tutorial assumes that the reader is familiar with
 Azure cloud computing (why DevTest, etc.) as taught in
 [this free Udemy course](https://www.udemy.com/introduction-to-cloud-computing-and-microsoft-azure/#/).
 
-Efforts to tune configurations and predict what <a href="#Costing">production usage will cost</a>
-typically require a way to impose an emulated load on the system. 
 
-
-
-## <a name="CostingLogic"> Costing Logic</a>
+## <a name="Cost Comparison"> Cost Comparison Spreadsheet</a>
 Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
-BTW, by contrast, Amazon's pricing calculator is at
-http://calculator.s3.amazonaws.com/index.html.
-
-
-
-## <a name="Comparison"> Comparison Spreadsheet</a>
-
-The Excel 2013 file 
+My Excel (97-2000 format) file 
 https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel 
 contains a summary graphic of sample run results showing different runs.
 (Microsoft requires you to sign in using one of their accounts)
 
+### <a name="Basics"> Basics Spreadsheet</a>
+At the bottom of the worksheet,
+tabs named **Worker, Windows, Linux, SQL**
+contains analysis of prices for each type of server.
+
+Other types of charges are not in this spreadsheet yet.
+
+The ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the Azure website.
 
 
-Tabs named **Worker, Windows, Linux, SQL**
-in the worksheet contains analysis of prices for each type of server.
+### <a name="Basics"> Basics Spreadsheet</a>
+The spreadsheet includes an additional column calculating **$/Day** for convenience of comparison.
 
-The <a href="#AppSvcScaleUpCostingLogic"> App</a> worksheet
-calculates the number of Minutes per Day, Month, and Year used in other sheets.
-  
+At the bottom of the worksheet,
+the **Basics** tab specifies the number of Minutes per Day, Month, and Year used in other sheets.
+
+If you bring your servers down and up each day, change 24 to whatever usage you have per day.
+
+
+Microsoft's Azure Price Calculator uses **31** as the number of days per month.
+Change the spreadsheet to that if you want to compare pricing with the website.
+But to account for leap years, some may consider it more accurate to use 365.25/12
+and 365.25/12 so the fractional number of days each month adds up to the yearly number.
+
+The number of **Cores** and **RAM** usually double each time.
+
+Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
+
+| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | #Machines | $Total |
+| ---- | --- | ----  | ---- | ----              | ----  | ---- | ---- |
+| S1   | 1   | 1     | 1.75 | 50                | $0.10 | 4 | $0.40 |
+| S2   | 1   | 2     | 3.5  | 50                | $0.20 | 2 | $0.40 |
+| S3   | 1   | 4     | 7.0  | 50                | $0.40 | 1 | $0.40 |
+
+For these servers, cost is directly proportional to the number of cores. 
+So 4 machines with 1 core is the same cost as 1 machine with 4 cores.
+
+Using more cores does not necessarily mean a proportional increase in processing rate is achieved.
+    Typically, doubling the number of cores would yield 70% or less improvement in processing throughput.
+    This means more smaller servers may be cost less overall than larger servers.
+
+  COMMENTARY:
+  Microsoft may consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
+  However, this would complicate calculations somewhat.
+
+The **Incr. Ratio** (Increment Ratio) of the larger divided by the smaller 
+is calculated for use in determining the most cost-effective selection of machine size for a given load.
+
+If the ratio is lower than 2.0, such as D13 to D14 having a ratio of **1.80**, 
+**prices dropped** less than the doubling of cores and RAM.
+
+
+However:
+
+* other machines do not have such a linear cost structure in Azure.
+
+DO THIS:
+Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
+"Standard" App Service (providing network load balancing, autoscale, and backup support)
+in order to select the righ size of server that can servicie a set of transactions at the lowest overall price.
+
+
+
 ## <a name="MultipleServers"> Single vs. Multiple Servers</a>
 Not quantified here are **qualitative** aspects that nevertheless can have a significant impact.
 
@@ -62,7 +106,13 @@ The advantage of several smaller servers:
   * Assets deployed are more fully utilized
 
 
+## <a name="MultipleServers"> Single vs. Multiple Servers</a>
+
+
 <hr />
+
+Efforts to tune configurations and predict what <a href="#Costing">production usage will cost</a>
+typically require a way to impose an emulated load on the system. 
 
 ## <a name="ImposingLoad"> Imposing Load</a>
 The basic components of response time as observed by end-users:
@@ -84,6 +134,7 @@ the server time component.
 To adequately measure time spent on the server without network variation,
 the ideal situation is to have a **load generator agent near the front-end web server**
 within the data center.
+
 
 ## <a name="VSOnlineVUMs"> VS Online VUMs</a>
 
@@ -133,35 +184,6 @@ However, servers are not typically used continuously the whole month.
 
 Most performance testing runs are conducted in bursts of an hour or a few hours.
 
-
-Pricing for a "Standard" App Service (providing network load balancing, autoscale, and backup support):
-
-| Size | VMs | Cores | RAM GB | Std. Storage GB | $/hour | #Machines | $Total |
-| ---- | --- | ----  | ---- | ----              | ----  | -- | --- |
-| S1   | 1   | 1     | 1.75 | 50                | $0.10 | 4 | $0.40 |
-| S2   | 1   | 2     | 3.5  | 50                | $0.20 | 2 | $0.40 |
-| S3   | 1   | 4     | 7.0  | 50                | $0.40 | 1 | $0.40 |
-
-For these servers, cost is directly proportional to the number of cores. 
-So 4 machines with 1 core is the same cost as 1 machine with 4 cores.
-However:
-
-* using more cores does not necessarily mean a proportional increase in processing rate is achieved.
-    Typically, doubling the number of cores would yield 70% or less improvement in processing throughput.
-    This means more smaller servers may be cost less overall than larger servers.
-
-  COMMENTARY:
-  Microsoft may consider a "volume discount" of sorts to reflect the diminishing returns from more cores. 
-  However, this would complicate calculations somewhat.
-
-* other machines do not have such a linear cost structure in Azure.
-
-DO THIS:
-Conduct experiment performance test runs on how many transactions can be processed within an hour on a 
-"Standard" App Service (providing network load balancing, autoscale, and backup support)
-in order to select the righ size of server that can servicie a set of transactions at the lowest overall price.
-
-
 ## <a name="AppSvcScaleAcrossCostingLogic"> App Service Scale-Across Costing Logic</a>
 Similarly, the cost per VM stays the same as the number VMs deployed increases.
 Azure does not offer a "volume discount" for the number of VMs used.
@@ -186,6 +208,7 @@ The largest of each Standard series (D14, A11, G5) have a lower cost than double
 even though the RAM doubled. From 15% to 21% less.
 
 Linux are 59% less than Windows (A4 $0.352 vs. $0.592).
+
 
 ## <a name="SQLCosting"> SQL Costing</a>
 
@@ -243,3 +266,10 @@ Additional information on this topic by JeffreyLush.Net
 
 * https://www.youtube.com/watch?v=nMMJu7IbWfk
   Sizing Cloud with RAM, Storage, CPUs
+
+
+## <a name="#OtherClouds"> Other Clouds</a>
+
+BTW, by contrast, Amazon's pricing calculator is at
+http://calculator.s3.amazonaws.com/index.html.
+
