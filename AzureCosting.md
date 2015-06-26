@@ -19,29 +19,28 @@ Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#mete
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
-My Excel (97-2000 format) file 
+Calculations of prices are in my Excel (97-2000 format) file 
 https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel 
 contains a summary graphic of sample run results showing different runs.
 (Microsoft requires you to sign in using one of their accounts)
 
-### <a name="Basics"> Basics Spreadsheet</a>
-At the bottom of the worksheet,
-tabs named **Worker, Windows, Linux, SQL**
-contains analysis of prices for each type of server.
+At the bottom of the spreadsheet are tabs that contain calculations for some category of Azure pricing:
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8377107/91da2aaa-1bcb-11e5-8cb3-a1897f057995.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/8377107/91da2aaa-1bcb-11e5-8cb3-a1897f057995.png" /></a>
 
 Other types of charges are not in this spreadsheet yet.
 
+The **Worker, Windows, Linux, SQL** tabs are 
+
+In each
 The ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the Azure website.
 
 
 ### <a name="Basics"> Basics Spreadsheet</a>
 The spreadsheet includes an additional column calculating **$/Day** for convenience of comparison.
 
-At the bottom of the worksheet,
-the **Basics** tab specifies the number of Minutes per Day, Month, and Year used in other sheets.
+The **Basics** tab specifies the number of Minutes per Day, Month, and Year used in other sheets.
 
 If you bring your servers down and up each day, change 24 to whatever usage you have per day.
 
