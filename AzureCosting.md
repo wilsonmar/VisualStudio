@@ -43,7 +43,8 @@ Change the spreadsheet to that if you want to compare pricing with the website.
 But to account for leap years, some may consider it more accurate to use 365.25/12
 and 365.25/12 so the fractional number of days each month adds up to the yearly number.
 
-My spreadsheet adds an additional column to provide the **$/Day** calculation not in
+The number of days is used to calculate the **$/Day** calculation 
+in my spreadsheet, a column not in
 <a href="#AzurePricingCalculator"> Microsoft's Azure Pricing Calculator</a>.
 
 
