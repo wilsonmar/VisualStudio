@@ -67,10 +67,10 @@ pricing for a "Standard" App Service (providing network load balancing, autoscal
 
 | ID |  Cores | RAM GB | SSD GB | $/hour | Incr. Ratio | #Machines | $Total |
 | ---- | ---- | ----: | ----    | ----:  | ---- | ---- | ----: |
-| S1   | 1    | 1.75  | 50      | $0.074 | -    | 8 | $0.59 |
-| S2   | 2    |  3.5  | 50      | $0.148 | 2.0  | 4 | $0.59 |
-| S3   | 4    |  7.0  | 50      | $0.296 | 2.0  | 2 | $0.59 |
-| S4   | 8    | 14.0  | 50      | $0.592 | 2.0  | 1 | $0.59 |
+| A1   | 1    | 1.75  | 50      | $0.074 | -    | 8 | $0.59 |
+| A2   | 2    |  3.5  | 50      | $0.148 | 2.0  | 4 | $0.59 |
+| A3   | 4    |  7.0  | 50      | $0.296 | 2.0  | 2 | $0.59 |
+| A4   | 8    | 14.0  | 50      | $0.592 | 2.0  | 1 | $0.59 |
 
 Notice The number of **Cores** and **RAM** double as the size increases 
 (from 2 to 4 to 8, etc.).
