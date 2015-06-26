@@ -19,6 +19,8 @@ Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#mete
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
+While in Preview mode (June 2015), Premium prices are lower than Standard.
+
 Under App Service, free usage is with IP address and HTTP protocol 
 rather than domain names with HTTPS.
 Sharing a single site (domain) costs $0.0013/hour or $9.98 per month of 7446 hours.  
@@ -81,7 +83,7 @@ columns ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the
 ### <a name="IncrementRatio"> Incr. (Increment) Ratio</a>
 To begin with a simpler example,
 pricing for a "Basic" Windows App Service (providing network load balancing, autoscale, and backup support)
-but no disk, in the <a href="#Calcs"> Calcs Spreadsheet</a>:
+but no disk, in the Calcs Spreadsheet:
 
 | ID |  Cores | RAM GB | SSD GB | $/hour | Incr. Ratio | #Machines | $Total |
 | ---- | ---- | ----: | ----    | ----:  | ---- | ---- | ----: |
@@ -134,8 +136,11 @@ DO THIS:
 In the Calc spreadsheet, 
 change the Tot. Trans per sec value for the 1 core machines to 100.
 
-It contains a summary graphic of sample run results showing different runs.
 
+
+In production, is the number of server instances necessary at each particular point in time?
+**Auto-provisioning** by server automation scripts make it possible to automatically adjust the number of 
+servers in use at any point in time.
 
 ## <a name="MultipleServers"> Single vs. Multiple Servers</a>
 Not quantified here are **qualitative** aspects that nevertheless can have a significant impact.
@@ -213,18 +218,6 @@ VUserMinutes (minimum 250, including warm-up period) are deducted from your acco
 *    Completed runs, based on the full duration of the run
 *    Aborted runs, based on the elapsed run duration
 
-
-
-## <a name="AppSvcScaleAcrossCostingLogic"> App Service Scale-Across Costing Logic</a>
-Similarly, the cost per VM stays the same as the number VMs deployed increases.
-Azure does not offer a "volume discount" for the number of VMs used.
-
-The question is whether what number of server instances are necessary at each particular point in time.
-
-Auto-provisioning by server automation scripts make it possible to automatically adjust the number of 
-servers in use at any point in time.
-
-Additionally, while in Preview mode (June 2015), Premium prices are lower than Standard.
 
 
 ## <a name="WebWorkerCosting"> Web Worker Costing</a>
