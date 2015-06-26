@@ -14,14 +14,14 @@ Azure cloud computing (why DevTest, etc.) as taught in
 [this free Udemy course](https://www.udemy.com/introduction-to-cloud-computing-and-microsoft-azure/#/).
 
 
-## <a name="Cost Comparison"> Cost Comparison Spreadsheet</a>
+## <a name="AzurePricingCalculator"> Azure Pricing Calculator</a>
 Web page http://azure.microsoft.com/en-us/pricing/calculator/?scenario=full#meter45
 contains the **Azure Pricing Calculator** to determine total cost based on your estimated usage
 of server, database, notifications, etc. which are not free.
 
-Calculations of prices are in my Excel (97-2000 format) file 
-https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel 
-contains a summary graphic of sample run results showing different runs.
+## <a name="Cost Comparison"> Cost Comparison Spreadsheet</a>
+Analysis of prices are in my Excel (97-2000 format) file 
+https://onedrive.live.com/view.aspx?cid=4cf625875c66377a&page=view&resid=4CF625875C66377A!25949&parId=4CF625875C66377A!135&app=Excel.  
 (Microsoft requires you to sign in using one of their accounts)
 
 At the bottom of the spreadsheet are tabs that contain calculations for some category of Azure pricing:
@@ -31,11 +31,13 @@ At the bottom of the spreadsheet are tabs that contain calculations for some cat
 
 Other types of charges are not in this spreadsheet yet.
 
-The **Worker, Windows, Linux, SQL** tabs are 
+Within the **Worker, Windows, Linux, SQL** tabs,
+columns ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the 
+<a href="#AzurePricingCalculator"> Azure Pricing Calculator</a>.
 
-In each
-The ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the Azure website.
-
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8377401/3ecb3518-1bce-11e5-8555-df8a9117c0e6.png">
+<img src="https://cloud.githubusercontent.com/assets/300046/8377401/3ecb3518-1bce-11e5-8555-df8a9117c0e6.png" 
+/></a>
 
 ### <a name="Basics"> Basics Spreadsheet</a>
 The spreadsheet includes an additional column calculating **$/Day** for convenience of comparison.
@@ -43,7 +45,6 @@ The spreadsheet includes an additional column calculating **$/Day** for convenie
 The **Basics** tab specifies the number of Minutes per Day, Month, and Year used in other sheets.
 
 If you bring your servers down and up each day, change 24 to whatever usage you have per day.
-
 
 Microsoft's Azure Price Calculator uses **31** as the number of days per month.
 Change the spreadsheet to that if you want to compare pricing with the website.
@@ -110,6 +111,7 @@ The advantage of several smaller servers:
 
 ## <a name="MultipleServers"> Single vs. Multiple Servers</a>
 
+It contains a summary graphic of sample run results showing different runs.
 
 <hr />
 
