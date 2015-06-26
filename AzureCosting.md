@@ -45,7 +45,7 @@ and 365.25/12 so the fractional number of days each month adds up to the yearly 
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8377647/24c136ac-1bd0-11e5-9464-2d4a3c6efa5a.png">
 <img src="https://cloud.githubusercontent.com/assets/300046/8377647/24c136ac-1bd0-11e5-9464-2d4a3c6efa5a.png" 
-width="200" /></a>
+width="300" /></a>
 
 The number of days is used to calculate the **$/Day** calculation 
 in my spreadsheet, a column not in
