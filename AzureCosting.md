@@ -29,6 +29,9 @@ At the bottom of the worksheet,
 tabs named **Worker, Windows, Linux, SQL**
 contains analysis of prices for each type of server.
 
+<a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/8377107/91da2aaa-1bcb-11e5-8cb3-a1897f057995.png">
+<img src="https://cloud.githubusercontent.com/assets/300046/8377107/91da2aaa-1bcb-11e5-8cb3-a1897f057995.png" /></a>
+
 Other types of charges are not in this spreadsheet yet.
 
 The ID, Cores, RAM, SSD, Gbit/s, $/Hour, and $/Month are copied from the Azure website.
